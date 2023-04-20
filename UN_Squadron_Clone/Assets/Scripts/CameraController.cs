@@ -12,6 +12,7 @@ public class CameraController : MonoBehaviour
     }
     private void Update()
     {
+        //Moviemiento lateral de la camara
         transform.Translate(Vector3.right * speed * Time.deltaTime);
     }
 }

@@ -98,8 +98,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56291e49b391f394192584c219daad7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   health: 8
   explosionPrefab: {fileID: 3336104701328597698, guid: d207451a5c8262b4d9753a7d39dbe53b, type: 3}
+  bulletPrefab: {fileID: 1744197573988224712, guid: 62ab3dd4cfe8a314f8625e515a587ace, type: 3}
+  fireRate: 0.85
+  fireRateCounter: 0
 --- !u!61 &2674018841052043698
 BoxCollider2D:
   m_ObjectHideFlags: 0

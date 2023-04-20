@@ -12,6 +12,8 @@ public class EnemyBullet : MonoBehaviour
     {
         transform.Translate(shootDir * speed * Time.deltaTime);
     }
+
+    //La direccion que se setee aca, sera la direccion a la que se movera la bala al spawnear
     public void SetDirection(Vector3 dir)
     {
         shootDir = dir;
