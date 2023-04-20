@@ -1,0 +1,3250 @@
+fileFormatVersion: 2
+guid: 64dc3db828679c5478fe17d44ca3e1e1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Level1_enemies_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 231
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96beab1147106e0418aede421d845cd8
+      internalID: -68631571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 232
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd6babc52a22af4486752686bf63e28
+      internalID: -58591927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 232
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c051e68081352743be2ae7a8e377a1b
+      internalID: -56074752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_3
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 232
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3a2fb3c95ce6c4182c6e1b6865f333
+      internalID: -531350722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_4
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 232
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45282c1aae20db4881c63cc218e902d
+      internalID: -1691381268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_5
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 232
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad0f6299b5e48544b59fb462efac11a
+      internalID: 1495292946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_6
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 232
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a57e29c7ba216c4e8823bb6d223514c
+      internalID: 1486175064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_7
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 232
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330002bfb3c19fa449af91ed823883ef
+      internalID: -707390816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_8
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 232
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9bd5e3ce079e842bb89fccf661fa4e
+      internalID: -1866387079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_9
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 232
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1cf1107ee408124b9cc75e98e98de77
+      internalID: 1671951461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 198
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc50dd4e30e1ab14490b0cd8a1c72c31
+      internalID: 1205283457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_12
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 206
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8920d6a366d5940bf9f0fe582658d7
+      internalID: 1385839632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_13
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 205
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1a3f7593395fb4c90a962906e5f57a
+      internalID: 983609154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_14
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 204
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4b1267db0086248a89bbf401f6cd66
+      internalID: 1162985991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_15
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 204
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23c9901a70e2ff46b6980bed3dfc620
+      internalID: 1301890566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_16
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 202
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8e1ed5257127046b5c416363e01afa
+      internalID: 664401758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_17
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 202
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b15b6e0d4ed8c4e960ca78be162623
+      internalID: 835694337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_18
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 198
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0acf421feaa694da0e5707d5a8fb7f
+      internalID: -1304448410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_19
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 198
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4682dcdf687708a4bb1f28316b84e15c
+      internalID: -863475797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_20
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 198
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d127d37f0b2a94b92f8f2984d92895
+      internalID: -1846284387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_21
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 198
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05dbd36c735fadc4b9cf350204399b05
+      internalID: 498542624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_22
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 198
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b52ee7110bf9e46881af86c482c40f
+      internalID: -1008377988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_23
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 198
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05dcf0f83a8c6b047bc329838d8dedda
+      internalID: 1325724536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_24
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 198
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c0366dba3b121e47a1443583c696386
+      internalID: 299077185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_25
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 198
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af17cb88f53c5c44b8b6f66faa32ac7
+      internalID: -251203786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_26
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 198
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ef4782af993094f8bdf67bac746158
+      internalID: 56226875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_27
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 198
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3f174ff3b64db4d90ed6983cf73a47
+      internalID: -633447150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_30
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 198
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45186931c43ab64d88e4dc767397234
+      internalID: -125441390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_31
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 198
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c826176639207a044b4ce7bc0b41253a
+      internalID: -1388131781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_32
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 198
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f6fc53a8fd1b041a516d96307b4f37
+      internalID: -617131201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_33
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 198
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce339ce5b391704dbc4cdefdbd3c1e3
+      internalID: -404363138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_34
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 198
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4eb987d8c0976438d4fa6e1a5974ab
+      internalID: -1498735705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_35
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 198
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d8ec0ed830c044785767923c76abfa
+      internalID: 1954952607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 198
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f6cc2d7fe93fe4aa4d99cc0a3643d2
+      internalID: 1222300291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_37
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 198
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0aac198aad4a74f9fb47dece669929
+      internalID: 1095199329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_38
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 198
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd3f3fa742bf034eb0a770974dcc950
+      internalID: 2111833786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_39
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 198
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b84e4175ef9d3499e9f05d30e10bff
+      internalID: 1210066463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 39
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2557bf571bc0884da21d0c8477b657e
+      internalID: 1756284312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_41
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 160
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491f04d2066cf284794d25a7adf7feff
+      internalID: -2055221635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_42
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 160
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1114acf9c63935947993288a5c1affad
+      internalID: 392324007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_43
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 160
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53600c2f7b787f43b75f81fbd6b0338
+      internalID: -1880721019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_44
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 160
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a149c45f7cf5d354e8a36ee8fd18a7ed
+      internalID: -2014434484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_45
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 160
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0548d3b7f2eba50489c4023499c34433
+      internalID: 608165174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_46
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 160
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514edb01c1e9dc84ea9ff9f5320c9dfe
+      internalID: -1289286664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_47
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 160
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f5472802e84ce4981692289cf271c6
+      internalID: 465517887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_48
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 160
+        width: 38
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a116ec1a28f68c141a8bfab2cf1e7435
+      internalID: 145147393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 122
+        width: 39
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48f1defc15a55341a5c9da6ce17cf13
+      internalID: 1478560641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_50
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 122
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11fa448fc3c0504f9b6d9282a0dc609
+      internalID: -744639455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_51
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 122
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 584dcce55fb106d46ab314fe8521340d
+      internalID: 1870956226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_52
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 122
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5277a5c03e2ef0346a5c756bc347c16d
+      internalID: 1958499120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_53
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 122
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4213bdde5713a104899e0023631172a0
+      internalID: -484108281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_54
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 122
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebad9ee01d291b54491e901f055c80f5
+      internalID: -920720829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_55
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 122
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b94ed4c6453e77418083037338a1750
+      internalID: 1324750047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_56
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 122
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9e2448f99d47847b3b83a715c9af06
+      internalID: -306302858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_57
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 122
+        width: 38
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ff3327778cc8b4fa6a3c537cc22c96
+      internalID: -501475757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 39
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8001730fb784eaf44bfd63da1ce056b0
+      internalID: 1094294182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_59
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 84
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37be7aabf627eeb4392b84dbfd35fafc
+      internalID: 531428496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_60
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 84
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9708230f7a804d24c93319509b038882
+      internalID: -62565257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_61
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 84
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 818fefe8b5fd1c34a9383957568943b3
+      internalID: -215194468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_62
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 84
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b295964fa547bb640aee53a6b740a6b2
+      internalID: -1816670746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_63
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 84
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2286474eb9f882446b042a5d53786b10
+      internalID: -521849494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_64
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 84
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd8c4cd91d3e7f4e83fd91cb3bd53c1
+      internalID: 819238499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_65
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 84
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335814ec9f4708043a93ff57aab7e93c
+      internalID: 1542020891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_66
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 84
+        width: 38
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ceecf93ae82b044b5bbd7e1de26819
+      internalID: 842337408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_67
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af659a66379cae488931b46f48d4c6a
+      internalID: -1476713656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_68
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 63
+        width: 31
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2fd3214b5a28a246a0f06fc7253802c
+      internalID: -1995442972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_69
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 63
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2cc3661d699a84fbfc03b4776988e9
+      internalID: 910026639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_70
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 63
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462865f4364c4544ca5f96d79aa571d9
+      internalID: 1776477906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_71
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 63
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12987dee23360a14ea1c082162c422c4
+      internalID: 1978140479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_72
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 63
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99887fb283391142b823e1c39e2a771
+      internalID: 131883433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_73
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 66
+        width: 31
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a258738e70722498ef1742822863f9
+      internalID: -898897365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_74
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 66
+        width: 31
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adedc0c052aba69409729a23645861b9
+      internalID: -1346707751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 42
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa23c2c6b8d28d4d88f456eb4eecb84
+      internalID: 1202334049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_76
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 55
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ba971daaf736848af6bb76f0b50b95
+      internalID: -2025957187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_77
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 54
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f70130feb9ad054fa5f976acb9513f3
+      internalID: 1366700942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_78
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 55
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e878aacc91fafab4aa509eb018650968
+      internalID: 580019380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_79
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 54
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efef6acebc829024b9004d3a147bc2ca
+      internalID: -1770264469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_80
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 42
+        width: 31
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe93c68de507534fbeac0a8b24805b1
+      internalID: -399840485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_81
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 42
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baa40f60bd87bd445ab778583c228717
+      internalID: -799690866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_82
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 42
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b9a74e988b1ef40a1b5189cf94dd2d
+      internalID: -480005094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_83
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 42
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e753bbfe8e47c346867517005b93352
+      internalID: -1497242489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_84
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 42
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c069ba05413277548aac5d99ab2c2250
+      internalID: 1379977466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_85
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 39
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8554f50db41ee4692e9a1e85186352
+      internalID: -1107849492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_86
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 39
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee1a37161543d049b29ce9ce6bf66ed
+      internalID: 892355232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_87
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 39
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269a0b9a869e1434a9282047f5565914
+      internalID: 1202619503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_88
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 36
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129eddb022c32ca48a6fe10d563c0cbb
+      internalID: 785683978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_89
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 39
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0859420ffb76945ad2b0e8abe6b455
+      internalID: -1416515765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_90
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 39
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b2157d1b7b4fd4d86e1b8df75af522
+      internalID: -464365905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_91
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 39
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e265c361c68216347acaf6c95e02a74b
+      internalID: 223902004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_92
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 39
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657e2d190be1e784f9c42524720a324e
+      internalID: 599569234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_93
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 39
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0509dac86783fce4293f01cec0d641c1
+      internalID: 1693486464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_94
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 39
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd2141df78815743b88c1a6555d595d
+      internalID: -542974857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_95
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 39
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42adc7380f7bbd9489627636341bd15c
+      internalID: 1699366303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_96
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 39
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 566fd616ae7c05e49bc350bef93ec68e
+      internalID: 1692023265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_97
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 39
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52443d72820ea348828ae3a64efe68d
+      internalID: 151549527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_98
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 39
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1617be1edc66743a0990ed78181210
+      internalID: -87902099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_99
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 39
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5264d311c7a9c4b459b2c4e4ed454736
+      internalID: 1033554338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_100
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 39
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6e31432d2b9914f87a8a5a04b2c142
+      internalID: -2069620561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_101
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 39
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78917dc1cb056349bebc88e21ae0916
+      internalID: -1649346111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_102
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 39
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d15df4b2694a8f469fb10c0d672a41a
+      internalID: 1959047961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_103
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 21
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d242097a7e3e14e9b845120538564a
+      internalID: -944858458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_104
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 21
+        width: 31
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f2ad2e94c76f44693fb51cb36af6bf
+      internalID: 510536913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_105
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 21
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb5f932c72b67945999e76c37a2ac0e
+      internalID: 1196385701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_106
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 21
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99fb3ff2a6bc0f1408316b6e38bf4072
+      internalID: 975443460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_107
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 21
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b849bae275c0c42ab6180ddb539e00
+      internalID: -1358460625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_108
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 21
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9daab1d170ec14b9a8602d521bdcf3
+      internalID: 2069343407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_109
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 23
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe961c7f7c700384bbd0b557cb5dafff
+      internalID: -29280033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_110
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 20
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec03aa851b1c5754f8b7cb766e17ef4e
+      internalID: -618926622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_111
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 20
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f8e466637b086e40a046a233d1a76e7
+      internalID: 1118640592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_112
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 23
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b340078bdb9bf45ac8d82c963b4b55
+      internalID: -762534297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_113
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 23
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1ec3a3773ce684996fcef4d8e70cdc
+      internalID: -2075163441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_114
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 23
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb99fbcfda08ce47b3c0de4810b2b20
+      internalID: 174944509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_115
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 20
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94fb0ef7afee9994d955f79cefe7b7ff
+      internalID: 1143418360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_116
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 23
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a0344f6ffbccf4e8e85aa016b9bee8
+      internalID: -2017032549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_117
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 23
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7108bcb80c5fc4583f9c44595581e3
+      internalID: 780932889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_118
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 23
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf915278553995468f334d14b58cec8
+      internalID: -201298959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_119
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 23
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b9c200f9824a44aadd42134674c3a6
+      internalID: -730328184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_120
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 23
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e18ba2cf9c4d8844acab7214237e646
+      internalID: -245319769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_121
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 23
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d34934077a36146b73b1f44935039d
+      internalID: -990848988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_122
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 23
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc6e7d154282294b9cc27538380be41
+      internalID: -1689371852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_123
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 23
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbbe2b7f62f43042a73fabc7ebd9799
+      internalID: -1004848205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_124
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 23
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389d72ac5d384294bb4298aa0bf125f2
+      internalID: -1202821107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_125
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 23
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1cf53a3f4edf50408c6479ca625a742
+      internalID: 845897563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_126
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 23
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0d683b348955f4080b746458d20b08
+      internalID: -661605097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_127
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c5385893891eb479f55e4c2df29bcd
+      internalID: 1702299977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_128
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 31
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c24f1f5f120be4394d75d95a0a6cf4
+      internalID: 1762882199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_129
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7802661aeea8e4083f37feb767c613
+      internalID: 1028331078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_130
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188a83646add32e4ab755d90f07a03ae
+      internalID: -94851298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_131
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 0
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97fa14c2dc63fa14c92d8176964d8352
+      internalID: 849925037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_132
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 0
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df763d9b355f8d418df8c12ce20cca4
+      internalID: -381594091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_133
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 7
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc31791f50209c24a93c7b4fbb2d3f42
+      internalID: -1271238017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_134
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 7
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21b4e50126395a4ca212606f666528d
+      internalID: 320967008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_135
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 7
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65fc9d384802a03428b21928ff4d8ae4
+      internalID: -720484177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_136
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 7
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00594da5e8dec92439d82219b20fa5a2
+      internalID: -600796982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_137
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 7
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9924f7f4e2bf5e48a9f8623884b8a31
+      internalID: -1457652702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_138
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 4
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3792370fffc27e44ca454a5e09c0a206
+      internalID: -43565500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_139
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 7
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74abf2896a7d7743b6b3a38325a822b
+      internalID: -625415777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_140
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 7
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4faabda698d4de94ab5c68ce0e55ff4e
+      internalID: 1886999031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_141
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 7
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a7f181da7d1aa43a4ae02ba11f5476
+      internalID: 1664203667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_142
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 7
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95b96379f829b44eb806a45f9a7d140
+      internalID: 799646146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_143
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 7
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26eaa36469ab0f240be0b121adddd49e
+      internalID: 864056710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_enemies_144
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 7
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08713a6bca505e1458c1c7e0d2a278a7
+      internalID: -1142363960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Level1_enemies_0: -68631571
+      Level1_enemies_1: -58591927
+      Level1_enemies_10: 1205283457
+      Level1_enemies_100: -2069620561
+      Level1_enemies_101: -1649346111
+      Level1_enemies_102: 1959047961
+      Level1_enemies_103: -944858458
+      Level1_enemies_104: 510536913
+      Level1_enemies_105: 1196385701
+      Level1_enemies_106: 975443460
+      Level1_enemies_107: -1358460625
+      Level1_enemies_108: 2069343407
+      Level1_enemies_109: -29280033
+      Level1_enemies_11: -619470573
+      Level1_enemies_110: -618926622
+      Level1_enemies_111: 1118640592
+      Level1_enemies_112: -762534297
+      Level1_enemies_113: -2075163441
+      Level1_enemies_114: 174944509
+      Level1_enemies_115: 1143418360
+      Level1_enemies_116: -2017032549
+      Level1_enemies_117: 780932889
+      Level1_enemies_118: -201298959
+      Level1_enemies_119: -730328184
+      Level1_enemies_12: 1385839632
+      Level1_enemies_120: -245319769
+      Level1_enemies_121: -990848988
+      Level1_enemies_122: -1689371852
+      Level1_enemies_123: -1004848205
+      Level1_enemies_124: -1202821107
+      Level1_enemies_125: 845897563
+      Level1_enemies_126: -661605097
+      Level1_enemies_127: 1702299977
+      Level1_enemies_128: 1762882199
+      Level1_enemies_129: 1028331078
+      Level1_enemies_13: 983609154
+      Level1_enemies_130: -94851298
+      Level1_enemies_131: 849925037
+      Level1_enemies_132: -381594091
+      Level1_enemies_133: -1271238017
+      Level1_enemies_134: 320967008
+      Level1_enemies_135: -720484177
+      Level1_enemies_136: -600796982
+      Level1_enemies_137: -1457652702
+      Level1_enemies_138: -43565500
+      Level1_enemies_139: -625415777
+      Level1_enemies_14: 1162985991
+      Level1_enemies_140: 1886999031
+      Level1_enemies_141: 1664203667
+      Level1_enemies_142: 799646146
+      Level1_enemies_143: 864056710
+      Level1_enemies_144: -1142363960
+      Level1_enemies_15: 1301890566
+      Level1_enemies_16: 664401758
+      Level1_enemies_17: 835694337
+      Level1_enemies_18: -1304448410
+      Level1_enemies_19: -863475797
+      Level1_enemies_2: -56074752
+      Level1_enemies_20: -1846284387
+      Level1_enemies_21: 498542624
+      Level1_enemies_22: -1008377988
+      Level1_enemies_23: 1325724536
+      Level1_enemies_24: 299077185
+      Level1_enemies_25: -251203786
+      Level1_enemies_26: 56226875
+      Level1_enemies_27: -633447150
+      Level1_enemies_28: -1405553038
+      Level1_enemies_29: -2010050094
+      Level1_enemies_3: -531350722
+      Level1_enemies_30: -125441390
+      Level1_enemies_31: -1388131781
+      Level1_enemies_32: -617131201
+      Level1_enemies_33: -404363138
+      Level1_enemies_34: -1498735705
+      Level1_enemies_35: 1954952607
+      Level1_enemies_36: 1222300291
+      Level1_enemies_37: 1095199329
+      Level1_enemies_38: 2111833786
+      Level1_enemies_39: 1210066463
+      Level1_enemies_4: -1691381268
+      Level1_enemies_40: 1756284312
+      Level1_enemies_41: -2055221635
+      Level1_enemies_42: 392324007
+      Level1_enemies_43: -1880721019
+      Level1_enemies_44: -2014434484
+      Level1_enemies_45: 608165174
+      Level1_enemies_46: -1289286664
+      Level1_enemies_47: 465517887
+      Level1_enemies_48: 145147393
+      Level1_enemies_49: 1478560641
+      Level1_enemies_5: 1495292946
+      Level1_enemies_50: -744639455
+      Level1_enemies_51: 1870956226
+      Level1_enemies_52: 1958499120
+      Level1_enemies_53: -484108281
+      Level1_enemies_54: -920720829
+      Level1_enemies_55: 1324750047
+      Level1_enemies_56: -306302858
+      Level1_enemies_57: -501475757
+      Level1_enemies_58: 1094294182
+      Level1_enemies_59: 531428496
+      Level1_enemies_6: 1486175064
+      Level1_enemies_60: -62565257
+      Level1_enemies_61: -215194468
+      Level1_enemies_62: -1816670746
+      Level1_enemies_63: -521849494
+      Level1_enemies_64: 819238499
+      Level1_enemies_65: 1542020891
+      Level1_enemies_66: 842337408
+      Level1_enemies_67: -1476713656
+      Level1_enemies_68: -1995442972
+      Level1_enemies_69: 910026639
+      Level1_enemies_7: -707390816
+      Level1_enemies_70: 1776477906
+      Level1_enemies_71: 1978140479
+      Level1_enemies_72: 131883433
+      Level1_enemies_73: -898897365
+      Level1_enemies_74: -1346707751
+      Level1_enemies_75: 1202334049
+      Level1_enemies_76: -2025957187
+      Level1_enemies_77: 1366700942
+      Level1_enemies_78: 580019380
+      Level1_enemies_79: -1770264469
+      Level1_enemies_8: -1866387079
+      Level1_enemies_80: -399840485
+      Level1_enemies_81: -799690866
+      Level1_enemies_82: -480005094
+      Level1_enemies_83: -1497242489
+      Level1_enemies_84: 1379977466
+      Level1_enemies_85: -1107849492
+      Level1_enemies_86: 892355232
+      Level1_enemies_87: 1202619503
+      Level1_enemies_88: 785683978
+      Level1_enemies_89: -1416515765
+      Level1_enemies_9: 1671951461
+      Level1_enemies_90: -464365905
+      Level1_enemies_91: 223902004
+      Level1_enemies_92: 599569234
+      Level1_enemies_93: 1693486464
+      Level1_enemies_94: -542974857
+      Level1_enemies_95: 1699366303
+      Level1_enemies_96: 1692023265
+      Level1_enemies_97: 151549527
+      Level1_enemies_98: -87902099
+      Level1_enemies_99: 1033554338
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

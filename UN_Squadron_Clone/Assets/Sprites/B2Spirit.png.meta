@@ -1,0 +1,3797 @@
+fileFormatVersion: 2
+guid: 5685d7d9485dd6b45bed397210d71999
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: B2Spirit_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 482
+        width: 139
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692ac136ac765ed408368e4e56b6aa62
+      internalID: -813505391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_1
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 482
+        width: 139
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a9f49944ea0360419543527ae3e74ec
+      internalID: -144448639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_2
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 486
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed49a28af1c89c44b1967447f08504d
+      internalID: 1721542751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_3
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 486
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1a9a5c6dbcc8a4b8f149342ef41103
+      internalID: 1830087819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_4
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 485
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab413a46f97169b4f902c45202882dd4
+      internalID: -694413250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_5
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 399
+        width: 139
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8961da1688e9364591a94dbd78d6d5d
+      internalID: 1646329702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_6
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 399
+        width: 139
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1edae2680a0513645a5bb2d9abbae36c
+      internalID: -1019322650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_7
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 465
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2377f22e39f64a4fb5778b1b9f7db7d
+      internalID: -257189953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_8
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 468
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adef2e0b30c7930448e224119c4859fe
+      internalID: -1915620276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_9
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 466
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe1b27b35963ae48a40b254432d18b9
+      internalID: 1792475440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_10
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 466
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce8371442978544dacae579995e8700
+      internalID: -404164541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_11
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 448
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb97c44bc95614444be6193bbd52c202
+      internalID: -548513872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_12
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 451
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d7c586a4a0e2b49b210dd6a337c130
+      internalID: -262785470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_13
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 448
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ac51fd75d165f48895ff47d30e3204
+      internalID: -435719207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_14
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 448
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c7070cc8929af4892ecef8213e6d0c
+      internalID: -674823388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_15
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 450
+        width: 4
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ac95b4fadbfdc42b31638b7a43d6ee
+      internalID: 702622498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_16
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 448
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2efc6f3103bb8e042bda1cc69b7aa795
+      internalID: -2048531191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_17
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 437
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650b7ad378be18d4e81aceab76d6b88e
+      internalID: 945647976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_18
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 437
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d53500880a609f4aae2cd64365030ec
+      internalID: -1956914774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_19
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 437
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf0ef267734a8c4eb1262210c067a34
+      internalID: 1316036096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_20
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 437
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4469dc6ff120b4244a464b5b743a40eb
+      internalID: 237776136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_21
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 425
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfcb28409f53b9b4094e324d44d8f40e
+      internalID: 33124674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_22
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 420
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778da893ab04185418fe3c835ad53415
+      internalID: 63052265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_23
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 425
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c6cf57cff6e8e4990c92817cf30052
+      internalID: -2145386954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_24
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 425
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b54ddc0ae29f04bbac370d35f88455
+      internalID: 324115496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_25
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 419
+        width: 4
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8a3324e6d5b0b47b0fb635d2d52639
+      internalID: -763392468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_26
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 425
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54ae9e1f17db1c4eaf01a380e19a99f
+      internalID: -2053759867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_27
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 401
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca504a9b7d9a5b419d0cb0d84d83d62
+      internalID: 1220617999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_28
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 401
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 125ceb64df4dde145830b2a07895e741
+      internalID: 881071126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_29
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 401
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935d736f209cfed4eac7823c4dc5762a
+      internalID: 499161925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_30
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 316
+        width: 139
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac7be1330d598649919a7241e906260
+      internalID: 164139264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_31
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 316
+        width: 164
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412ac7839e4dfde488b1175734dbb171
+      internalID: 171840974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_32
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 378
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b55e55ed0a757428e518d151cb3a6c
+      internalID: 1326652169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_33
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 378
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64313ef153e8ba24dbcbb68d7bb2656c
+      internalID: 2002857965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_34
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 378
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca00d895bb5d364597250f75f2167ca
+      internalID: 1869832245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_35
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 378
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f07e96b77b090ad41a9fbdca3d706f64
+      internalID: -1281524398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_36
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 378
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd6328795818ae4c875392d050103f3
+      internalID: -236381198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_37
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 348
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664124b25205fa845bf6a3dc11b77d3a
+      internalID: 1487126371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_38
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 348
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9fee67ed251ab48be036704d0694b2
+      internalID: -1533793083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_39
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 347
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f7d7013dfdec84eb99fc221a6cb13c
+      internalID: -1992522957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_40
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 346
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc065cc84de8c074386f34c4fdbed612
+      internalID: 1594950797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_41
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 346
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3bd27d51085226498823f9234e70b10
+      internalID: 75691017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_42
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 346
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab90caeb2c95594e85ee7dc2e90ab50
+      internalID: -207734315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_43
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 347
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d46e824df4438b43887bedfa7312a50
+      internalID: -1439345032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_44
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 347
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b71977e066a6534586a01d87f8fdf7d
+      internalID: -1297528666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_45
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 322
+        width: 35
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e50a76bcc91d94abcdff8d3bf00856
+      internalID: 1475234701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_46
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 321
+        width: 47
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8112a764689700b4e81d0e5cd1d1d4f6
+      internalID: 1685548821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_47
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 321
+        width: 47
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90086a13ed65fa34db5cb7682882de8c
+      internalID: -1107179672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_48
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 320
+        width: 47
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d816250b633180141a62670f993684a9
+      internalID: 1164565011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_49
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 233
+        width: 139
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db87520515b32c34c97ab04c2091feab
+      internalID: 1685306278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_50
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 233
+        width: 139
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38d43e6c8e827c47a83f141e26d42db
+      internalID: 168023907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_51
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 233
+        width: 139
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749f626f0dea01a4cbb116c4db716503
+      internalID: 933940714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_52
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 5
+        width: 128
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b51213da5b86914dacd3689a9860af7
+      internalID: 908357717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_53
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 216
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371673065654ece4a9368e5331d0f8f7
+      internalID: 2005510595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_54
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 216
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1516f8bf3f641fd4cb1af270dde17df5
+      internalID: 1360511743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_55
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 216
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1c08a7dd9de0f40806cb7ffbad08ea
+      internalID: 1172108347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_56
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 213
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4fa12f6200c3d4dbba36c9c4b7a9c1
+      internalID: 1331314375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_57
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 216
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 383f48519f02b8444bf7b98dbd5096d7
+      internalID: 533341585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_58
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 216
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd07f6d6cfa8404fb6e82af21b7135b
+      internalID: -370368009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_59
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 213
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea62c78f1ec38749bc0f87fc9c587f7
+      internalID: 1893906340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_60
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 216
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e4fa182d0c0f043b13ce736c969ea7
+      internalID: 1386056508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_61
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 216
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2dc84490ef382f47b696c716b2a545f
+      internalID: -408552769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_62
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 216
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774a33f9d7646fa469890e34f88bab1b
+      internalID: -653075897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_63
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 216
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517be3679febf0b42ae9dee6e3c80e5a
+      internalID: -948245796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_64
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 216
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93499cfc318f994ba882fa2f6297a99
+      internalID: 844582506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_65
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 216
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57b855e492e9b24ca0ad02084424bb2
+      internalID: -599715581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_66
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 216
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1cdcc34ae30cd4b8f121d71da26e51
+      internalID: 1206270123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_67
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 213
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa110d6a93fd8694199853e240bb6769
+      internalID: 885491875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_68
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 216
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3e083bfb802c545835fa836584ef6c
+      internalID: 149578872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_69
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 216
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4843240746816e488b63fbdcb8ed20b
+      internalID: -962479095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_70
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 216
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ceb4e572054cf4cad19d0e25d6e700
+      internalID: 154689734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_71
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 216
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56871a86840c25b40a11aa5a584863b0
+      internalID: -77945996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_72
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 216
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bcb8f00ca481074a8b474b87a624b06
+      internalID: -169778540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_73
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 216
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d417fbab9ff0f4418bf805cc71c5145
+      internalID: -1543547365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_74
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 216
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc0c917b50f37743845ddf339e116ce
+      internalID: 1640517566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_75
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 213
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98af40de34801d140bc6198e6e52342b
+      internalID: -1992289456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_76
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 216
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f92d68be1e1353458030f0b0a56fb4b
+      internalID: 417394671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_77
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 216
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464610edfc74e0a4587535cb6e779e59
+      internalID: 2101572532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_78
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 216
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4437a94f51a1ba44d91d3a78bd2457cc
+      internalID: 2133744619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_79
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 216
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e86110fdfb14a240bc7148af1889fb2
+      internalID: -447577488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_80
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 216
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8c7d4debb7dee4a98d627f4c09d1c1
+      internalID: -1776932588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_81
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 216
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab32046230ae46946b2e97642064bff0
+      internalID: 472584077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_82
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 213
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d977cac09f6a8a469dcf18712ffa20d
+      internalID: 136233512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_83
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 216
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ff3006624d8654a8cfa26c5ad0457b
+      internalID: 1492254937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_84
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 216
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc8124f6e6e2fa4a8bdec4f7c68aded
+      internalID: -1302112245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_85
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 213
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7c60fc27928c3489fd83c3e17f6ac8
+      internalID: 2145148667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_86
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 200
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c156f6f3d9b1b224e8dddf0982968095
+      internalID: -1790344897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_87
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 197
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35a1855d3a2e7c41b4d2a0d50286f55
+      internalID: -576776433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_88
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 197
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e889bd1b20a026f4babec8d214147bc6
+      internalID: 25456898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_89
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 200
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc2d28ab174e2d45a3e587fe44e36b1
+      internalID: 1402673584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_90
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 200
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c43e2168fec4754982c591de81c29c8
+      internalID: -231466165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_91
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 200
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7381df591e2a4c4b8bbd85ae905a5a8
+      internalID: 102379910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_92
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 197
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196cac1812fc1b841add9b89b151e7da
+      internalID: -34199022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_93
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 200
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb85f6067d483746a3d1a096121d1e9
+      internalID: -908378335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_94
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 200
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83697e3ffdba31f4daff943f035013c2
+      internalID: 512554446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_95
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 200
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ccfd7d6e6b921544ba600729bd45c87
+      internalID: 996933955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_96
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 200
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 867d5751dc1bb3a4ebbdb4c005967065
+      internalID: -1026556381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_97
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 200
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6dbd22f28768ff4e95848e6ffe1df57
+      internalID: 1350830036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_98
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 200
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2930d000c824bcd46ab4607f4ab966fe
+      internalID: 2092941260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_99
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 200
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0331d550ec79d9f4685ebfa7fbd2ed12
+      internalID: 749908767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_100
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 200
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52796d28941d3d14c80fa92381191a2c
+      internalID: -1768403284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_101
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 200
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714ef4f3e9eef9d4b815d9484512c51f
+      internalID: -745386202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_102
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 200
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f27afdbe41de94f99d06733c8f8bff
+      internalID: -1207120638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_103
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 200
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a17acfe7388304e9ea5bc1c831535d
+      internalID: -1848813352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_104
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 200
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4210ba92e6958247aefdbf410ffec1b
+      internalID: -1292646388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_105
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 200
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56febdc886841ec49af66b715f03d5fe
+      internalID: 329729177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_106
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 200
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ccbceb21fdbc24199a133113c66008
+      internalID: -902593307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_107
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 200
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a1a9508884a2a479a3a43306219e60
+      internalID: -1249225741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_108
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 200
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef87d9cfb7c37641a11d3e6796c6d49
+      internalID: -402229923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_109
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 197
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77692a966e17f15499539c1c6d43b738
+      internalID: -438302586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_110
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 200
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65604347e28cc034e9c9da0d0b64174e
+      internalID: -449162778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_111
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 200
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1141c61f0c00647a6125cc7ba5a243
+      internalID: 1067523878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_112
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 200
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de8bf1f0ce003246844765d569c4001
+      internalID: -2137508701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_113
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 200
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4deaffa03267a4eabf525894930e63
+      internalID: -1562729290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_114
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 200
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e301795ac16b9408bbf9e0143899db
+      internalID: 1049431191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_115
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 200
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500c5502451cd8742b5176d14820af32
+      internalID: 310812227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_116
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 168
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a086007c75dd3a48ab2b032d48fb09b
+      internalID: -1106439600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_117
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 168
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8f37fd9e4533b419c5f7ab2001abd4
+      internalID: 1816928739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_118
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 168
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6dc6d90bb7675449653e55f735ba67
+      internalID: 595426724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_119
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 168
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23de453b3366d69428ffee9667c3eddd
+      internalID: 493510861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_120
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 168
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b138298d08b7074fbb3d27ca4400665
+      internalID: -1154024951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_121
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 168
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607e031c4d455524487c75cf4b02ebc5
+      internalID: 232327914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_122
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 168
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edadbbf630ac9fd4aa9f359d9c867f0c
+      internalID: -1268597786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_123
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 166
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3594c360d74eeb4d8899a16b808af2a
+      internalID: -531414234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_124
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 165
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20dab9d7550f76b4d9afb1866d88e79f
+      internalID: 73101904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_125
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 168
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17647ad237c64f94ebc53b37597f12f3
+      internalID: -1344842947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_126
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 168
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd3b63600474844ea15f5bf8c85bc56
+      internalID: 1846274183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_127
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 168
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a304aff19c0f084c947bb5a07bfcdc3
+      internalID: 2024390631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_128
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 168
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d0289ff336ed745a91f96e9dcef5b7
+      internalID: -819571840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_129
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 168
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788b2dc07c2b8154781c330f740cbf1a
+      internalID: 722485928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_130
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 168
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d3a36d44b239d458a99172c29312c3
+      internalID: 2032503149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_131
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 168
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1ceb34514a3ea4ca75b8cd14bd8fb7
+      internalID: 36652366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_132
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 168
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd73f4db80c31a44ab4c8a18ae4c4af
+      internalID: 2001072943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_133
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 168
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ffd871d60821524aab2f16cf1920f31
+      internalID: -1448153422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_134
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 168
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f260af29a4e904ebc728ac36b66a67
+      internalID: 1278353919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_135
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 168
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5202ca4b4b0864baff304228a624e3
+      internalID: -981528061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_136
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 165
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1be7df1aa383e48ba431bf536af176
+      internalID: 1705395516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_137
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 168
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124941af819dcf4429679f9a12066aad
+      internalID: 1450599142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_138
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 168
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a10142f80e4884b841ab0b45e191f4
+      internalID: 1584511780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_139
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 168
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae39116df381db440bfe0304dec73091
+      internalID: 1211198744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_140
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 168
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf743b42d757fe48a6e42e83458206b
+      internalID: 2128557559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_141
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 152
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152bca6c2c3ea894887b5631630ffa81
+      internalID: 711840681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_142
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 152
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c217ed705a570418ce42670cadc92e
+      internalID: 2119158558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_143
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 152
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30f6dea09fcad245a2fe036205bfdfb
+      internalID: 306655506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_144
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 152
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a08167ce3caed94d9185526c8d97867
+      internalID: -1937094534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_145
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 152
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e834ead6abc5764180a3d7d1dda7b3c
+      internalID: -1971298030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_146
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 152
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8525b9174acc0c44b389a83034a9316
+      internalID: 149527877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_147
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 152
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 663dd6916ead8f84094b2df0897def7f
+      internalID: -1778921024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_148
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 152
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf833f6741e2730419aa61743b06861e
+      internalID: 863180693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_149
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 152
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11673f6c4f6a03c48aeb2c140e7bc531
+      internalID: -247678727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_150
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 152
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d5ad9f6c93b6040acda8ce48e0d417
+      internalID: -400251882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_151
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 152
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9465c270a6b45714b9990bd738625b33
+      internalID: -1248634197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_152
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 152
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6e891468273a54d8cdb74d51b85c8d
+      internalID: -1834898797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_153
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 152
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a8132b96f2ccd54eace0148dc784d96
+      internalID: -1379684123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_154
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 152
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceec21c284df56e4a8949cf06dd5f117
+      internalID: -1827173376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_155
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 152
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e26d84fe19af94fa1cca6b56dada04
+      internalID: -350240092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_156
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 152
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73c55cda76b3bf4bb9105854a2a1741
+      internalID: -1326603825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_157
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 152
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac8188f4f33f006418659997cefcf09f
+      internalID: 1087798932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_158
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 149
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a5bdc0ad72e0442932fa27116d0128
+      internalID: -873058512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_159
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 152
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a5616fc360d7342a325f55d79eb809
+      internalID: -781155081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_160
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 152
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8226830545cfccd4eadd1c563ab90fe8
+      internalID: -2019766855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_161
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 152
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eec1e256c6d7f04683e8c61d0c21d42
+      internalID: -162627151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_162
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 152
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c61ab0593412484cb6d2f365623af92
+      internalID: -1433232827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_163
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 152
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a85d5cba7b00840bb26bbe52d8a697
+      internalID: 1755494372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_164
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 152
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1b6b10464d50145b8bffe787f00dc3
+      internalID: 670010628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_165
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 152
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d365ebb500356334cbebc4f1432324af
+      internalID: -1683297775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B2Spirit_166
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 152
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f0446d907af414cbfe10ebd8edc195
+      internalID: 676454335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      B2Spirit_0: -813505391
+      B2Spirit_1: -144448639
+      B2Spirit_10: -404164541
+      B2Spirit_100: -1768403284
+      B2Spirit_101: -745386202
+      B2Spirit_102: -1207120638
+      B2Spirit_103: -1848813352
+      B2Spirit_104: -1292646388
+      B2Spirit_105: 329729177
+      B2Spirit_106: -902593307
+      B2Spirit_107: -1249225741
+      B2Spirit_108: -402229923
+      B2Spirit_109: -438302586
+      B2Spirit_11: -548513872
+      B2Spirit_110: -449162778
+      B2Spirit_111: 1067523878
+      B2Spirit_112: -2137508701
+      B2Spirit_113: -1562729290
+      B2Spirit_114: 1049431191
+      B2Spirit_115: 310812227
+      B2Spirit_116: -1106439600
+      B2Spirit_117: 1816928739
+      B2Spirit_118: 595426724
+      B2Spirit_119: 493510861
+      B2Spirit_12: -262785470
+      B2Spirit_120: -1154024951
+      B2Spirit_121: 232327914
+      B2Spirit_122: -1268597786
+      B2Spirit_123: -531414234
+      B2Spirit_124: 73101904
+      B2Spirit_125: -1344842947
+      B2Spirit_126: 1846274183
+      B2Spirit_127: 2024390631
+      B2Spirit_128: -819571840
+      B2Spirit_129: 722485928
+      B2Spirit_13: -435719207
+      B2Spirit_130: 2032503149
+      B2Spirit_131: 36652366
+      B2Spirit_132: 2001072943
+      B2Spirit_133: -1448153422
+      B2Spirit_134: 1278353919
+      B2Spirit_135: -981528061
+      B2Spirit_136: 1705395516
+      B2Spirit_137: 1450599142
+      B2Spirit_138: 1584511780
+      B2Spirit_139: 1211198744
+      B2Spirit_14: -674823388
+      B2Spirit_140: 2128557559
+      B2Spirit_141: 711840681
+      B2Spirit_142: 2119158558
+      B2Spirit_143: 306655506
+      B2Spirit_144: -1937094534
+      B2Spirit_145: -1971298030
+      B2Spirit_146: 149527877
+      B2Spirit_147: -1778921024
+      B2Spirit_148: 863180693
+      B2Spirit_149: -247678727
+      B2Spirit_15: 702622498
+      B2Spirit_150: -400251882
+      B2Spirit_151: -1248634197
+      B2Spirit_152: -1834898797
+      B2Spirit_153: -1379684123
+      B2Spirit_154: -1827173376
+      B2Spirit_155: -350240092
+      B2Spirit_156: -1326603825
+      B2Spirit_157: 1087798932
+      B2Spirit_158: -873058512
+      B2Spirit_159: -781155081
+      B2Spirit_16: -2048531191
+      B2Spirit_160: -2019766855
+      B2Spirit_161: -162627151
+      B2Spirit_162: -1433232827
+      B2Spirit_163: 1755494372
+      B2Spirit_164: 670010628
+      B2Spirit_165: -1683297775
+      B2Spirit_166: 676454335
+      B2Spirit_17: 945647976
+      B2Spirit_18: -1956914774
+      B2Spirit_19: 1316036096
+      B2Spirit_2: 1721542751
+      B2Spirit_20: 237776136
+      B2Spirit_21: 33124674
+      B2Spirit_22: 63052265
+      B2Spirit_23: -2145386954
+      B2Spirit_24: 324115496
+      B2Spirit_25: -763392468
+      B2Spirit_26: -2053759867
+      B2Spirit_27: 1220617999
+      B2Spirit_28: 881071126
+      B2Spirit_29: 499161925
+      B2Spirit_3: 1830087819
+      B2Spirit_30: 164139264
+      B2Spirit_31: 171840974
+      B2Spirit_32: 1326652169
+      B2Spirit_33: 2002857965
+      B2Spirit_34: 1869832245
+      B2Spirit_35: -1281524398
+      B2Spirit_36: -236381198
+      B2Spirit_37: 1487126371
+      B2Spirit_38: -1533793083
+      B2Spirit_39: -1992522957
+      B2Spirit_4: -694413250
+      B2Spirit_40: 1594950797
+      B2Spirit_41: 75691017
+      B2Spirit_42: -207734315
+      B2Spirit_43: -1439345032
+      B2Spirit_44: -1297528666
+      B2Spirit_45: 1475234701
+      B2Spirit_46: 1685548821
+      B2Spirit_47: -1107179672
+      B2Spirit_48: 1164565011
+      B2Spirit_49: 1685306278
+      B2Spirit_5: 1646329702
+      B2Spirit_50: 168023907
+      B2Spirit_51: 933940714
+      B2Spirit_52: 908357717
+      B2Spirit_53: 2005510595
+      B2Spirit_54: 1360511743
+      B2Spirit_55: 1172108347
+      B2Spirit_56: 1331314375
+      B2Spirit_57: 533341585
+      B2Spirit_58: -370368009
+      B2Spirit_59: 1893906340
+      B2Spirit_6: -1019322650
+      B2Spirit_60: 1386056508
+      B2Spirit_61: -408552769
+      B2Spirit_62: -653075897
+      B2Spirit_63: -948245796
+      B2Spirit_64: 844582506
+      B2Spirit_65: -599715581
+      B2Spirit_66: 1206270123
+      B2Spirit_67: 885491875
+      B2Spirit_68: 149578872
+      B2Spirit_69: -962479095
+      B2Spirit_7: -257189953
+      B2Spirit_70: 154689734
+      B2Spirit_71: -77945996
+      B2Spirit_72: -169778540
+      B2Spirit_73: -1543547365
+      B2Spirit_74: 1640517566
+      B2Spirit_75: -1992289456
+      B2Spirit_76: 417394671
+      B2Spirit_77: 2101572532
+      B2Spirit_78: 2133744619
+      B2Spirit_79: -447577488
+      B2Spirit_8: -1915620276
+      B2Spirit_80: -1776932588
+      B2Spirit_81: 472584077
+      B2Spirit_82: 136233512
+      B2Spirit_83: 1492254937
+      B2Spirit_84: -1302112245
+      B2Spirit_85: 2145148667
+      B2Spirit_86: -1790344897
+      B2Spirit_87: -576776433
+      B2Spirit_88: 25456898
+      B2Spirit_89: 1402673584
+      B2Spirit_9: 1792475440
+      B2Spirit_90: -231466165
+      B2Spirit_91: 102379910
+      B2Spirit_92: -34199022
+      B2Spirit_93: -908378335
+      B2Spirit_94: 512554446
+      B2Spirit_95: 996933955
+      B2Spirit_96: -1026556381
+      B2Spirit_97: 1350830036
+      B2Spirit_98: 2092941260
+      B2Spirit_99: 749908767
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -113,7 +113,7 @@ TextureImporter:
         width: 13
         height: 3
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,7 +134,7 @@ TextureImporter:
         width: 12
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,6 +142,69 @@ TextureImporter:
       bones: []
       spriteID: 9e2a42550289c644793086d77747fa76
       internalID: -461775911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VulcanCannonSprites_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 182
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e56eb1cdfcaa204cbeee3a32d187f52
+      internalID: 1225740765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VulcanCannonSprites_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 162
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c425739be35ba345b3795b228e4eeec
+      internalID: 2142153429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VulcanCannonSprites_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 141
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eca8e42503535246b9480dd329cc50e
+      internalID: -1442918067
       vertices: []
       indices: 
       edges: []
@@ -159,6 +222,9 @@ TextureImporter:
     nameFileIdTable:
       VulcanCannonSprites_0: -725940661
       VulcanCannonSprites_1: -461775911
+      VulcanCannonSprites_2: 1225740765
+      VulcanCannonSprites_3: 2142153429
+      VulcanCannonSprites_4: -1442918067
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
