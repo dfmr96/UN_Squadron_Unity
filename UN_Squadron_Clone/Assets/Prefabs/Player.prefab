@@ -132,13 +132,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 15
+  _vulkanFireRate: 8
+  _vulkanCounter: 0
+  _currentVulkan: 0
+  _currentVulkanLevel: 0
+  _nextVulkan: 0
+  _vulkanLevels: 00000000020000000900000012000000
   _camera: {fileID: 0}
-  _horizontal: 0
-  _vertical: 0
   _vulkanBullet: {fileID: 1457241944293754282, guid: e795918af96f9ee4ab61cee281a34202, type: 3}
   _vulkanCannon: {fileID: 1991143322647020678}
-  _vulkanFireRate: 8
-  vulkanCounter: 0
 --- !u!61 &8681480448281111403
 BoxCollider2D:
   m_ObjectHideFlags: 0

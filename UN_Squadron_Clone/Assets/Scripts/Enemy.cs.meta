@@ -4,9 +4,9 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - player: {instanceID: 0}
-  - explosionPrefab: {fileID: 3336104701328597698, guid: d207451a5c8262b4d9753a7d39dbe53b, type: 3}
-  - bulletPrefab: {fileID: 1744197573988224712, guid: 62ab3dd4cfe8a314f8625e515a587ace, type: 3}
+  - _player: {instanceID: 0}
+  - _explosionPrefab: {fileID: 3336104701328597698, guid: d207451a5c8262b4d9753a7d39dbe53b, type: 3}
+  - _bulletPrefab: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
