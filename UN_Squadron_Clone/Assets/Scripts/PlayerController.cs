@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float _vulkanFireRate;
     [SerializeField] float _vulkanCounter;
     [SerializeField] int _currentVulkan;
+    [SerializeField] GameObject _currentVulkanBullet;
     [SerializeField] int _pointsToNextVulkan;
     [SerializeField] int _nextVulkanPoints;
     [SerializeField] int _currentVulkanLevel;
@@ -20,7 +21,7 @@ public class PlayerController : MonoBehaviour
     [Header("GameObjects")]
     [Space(10)]
     [SerializeField] GameObject _camera;
-    [SerializeField] GameObject _vulkanBullet;
+    [SerializeField] GameObject[] _vulkanBullets;
     [SerializeField] GameObject _vulkanCannon;
 
     //Privados
@@ -38,6 +39,7 @@ public class PlayerController : MonoBehaviour
         transform.parent = _camera.transform;
 
         _nextVulkanPoints = _vulkanLevels[_currentVulkanLevel + 1] - _currentVulkan;
+        SetVulkanBullet();
     }
 
 
@@ -57,7 +59,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && _vulkanCounter > 1 / _vulkanFireRate)
         {
             //Se crea la bala en la posicion del objeto vulkanCannon
-            Instantiate(_vulkanBullet, _vulkanCannon.transform.position, Quaternion.identity);
+            Instantiate(_currentVulkanBullet, _vulkanCannon.transform.position, Quaternion.identity);
             //Se reinicia el contador para aplicar cooldown
             _vulkanCounter = 0;
         }
@@ -120,9 +122,18 @@ public class PlayerController : MonoBehaviour
             pointsExceed = _currentVulkan - _nextVulkanPoints;
             _currentVulkan = _nextVulkanPoints;
         }
-        if (_currentVulkan == _nextVulkanPoints) _currentVulkanLevel++;
+        if (_currentVulkan == _nextVulkanPoints)
+        {
+            _currentVulkanLevel++;
+            SetVulkanBullet();
+        }
         _currentVulkan += pointsExceed;
         _nextVulkanPoints = _vulkanLevels[_currentVulkanLevel + 1];
         _pointsToNextVulkan = _nextVulkanPoints - _currentVulkan;
+    }
+
+    public void SetVulkanBullet()
+    {
+        _currentVulkanBullet = _vulkanBullets[_currentVulkanLevel];
     }
 }
