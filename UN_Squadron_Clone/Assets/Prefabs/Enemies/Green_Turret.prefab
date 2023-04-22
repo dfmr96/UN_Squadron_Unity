@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1304448410, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -96,13 +96,13 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.66836166}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.6363636, y: 0.84210527}
     oldSize: {x: 2.75, y: 2.375}
     newSize: {x: 2.75, y: 2.375}
     adaptiveTilingThreshold: 0.5
@@ -110,7 +110,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.75, y: 2.375}
+  m_Size: {x: 2.75, y: 2.3007374}
   m_EdgeRadius: 0
 --- !u!114 &7822597874666545457
 MonoBehaviour:
@@ -125,13 +125,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
-  _health: 0
+  _health: 3
   _explosionPrefab: {fileID: 3336104701328597698, guid: d207451a5c8262b4d9753a7d39dbe53b, type: 3}
   _bulletPrefab: {fileID: 1744197573988224712, guid: 62ab3dd4cfe8a314f8625e515a587ace, type: 3}
-  _fireRate: 0
+  _fireRate: 1
   _fireRateCounter: 0
   _canDropPOW: 0
   _type: 0
   _vulkanPOWs:
   - {fileID: 7385918597685355896, guid: 5dddf505456fc404aaa2174f143ef6ff, type: 3}
   - {fileID: 4695770047083689648, guid: eb2df685b715c7346aa2cce08df394e6, type: 3}
+  _enemyType: 1
+  _sprites:
+  - {fileID: -1304448410, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  - {fileID: -863475797, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  - {fileID: -1846284387, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  - {fileID: 498542624, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  - {fileID: -1008377988, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  _spriteRenderer: {fileID: 0}

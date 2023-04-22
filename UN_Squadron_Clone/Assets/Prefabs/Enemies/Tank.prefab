@@ -109,6 +109,18 @@ MonoBehaviour:
   _vulkanPOWs:
   - {fileID: 7385918597685355896, guid: 5dddf505456fc404aaa2174f143ef6ff, type: 3}
   - {fileID: 4695770047083689648, guid: eb2df685b715c7346aa2cce08df394e6, type: 3}
+  _enemyType: 3
+  _sprites:
+  - {fileID: 1756284312, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  - {fileID: -2055221635, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  - {fileID: 392324007, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  - {fileID: -1880721019, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  - {fileID: -2014434484, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  - {fileID: 608165174, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  - {fileID: -1289286664, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  - {fileID: 465517887, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  - {fileID: 145147393, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  _spriteRenderer: {fileID: 0}
 --- !u!61 &2674018841052043698
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -122,10 +134,10 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.84297085, y: 0}
+  m_Offset: {x: 0, y: -0.2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.64102566, y: 0.73333335}
     oldSize: {x: 4.875, y: 1.875}
     newSize: {x: 4.875, y: 1.875}
     adaptiveTilingThreshold: 0.5

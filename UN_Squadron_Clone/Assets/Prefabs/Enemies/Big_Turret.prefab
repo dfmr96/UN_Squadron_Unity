@@ -133,3 +133,6 @@ MonoBehaviour:
   _canDropPOW: 0
   _type: 0
   _vulkanPOWs: []
+  _enemyType: 2
+  _sprites: []
+  _spriteRenderer: {fileID: 0}
