@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
     {
         _vulkanCounter += Time.deltaTime;
 
-        if (Input.GetKey(KeyCode.Space) && _vulkanCounter > 1 / _vulkanFireRate)
+        if (Input.GetKey(KeyCode.Space) && _vulkanCounter > 1 / _vulkanFireRate && _state != PlayerState.exploted)
         {
             Instantiate(_currentVulkanBullet, _vulkanCannon.transform.position, Quaternion.identity);
             _vulkanCounter = 0;

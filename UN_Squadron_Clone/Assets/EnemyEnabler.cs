@@ -18,4 +18,12 @@ public class EnemyEnabler : MonoBehaviour
             collision.gameObject.GetComponent<BoxCollider2D>().enabled = true;
         }
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.GetComponent<EnemyBullet>() != null || collision.GetComponent<Enemy>() != null)
+        {
+            Destroy(collision.gameObject);
+        }
+    }
 }
