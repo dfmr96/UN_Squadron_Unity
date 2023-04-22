@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4878694117287125860}
   - component: {fileID: 4878694117287125863}
+  - component: {fileID: 860281184}
+  - component: {fileID: 860281187}
   m_Layer: 0
   m_Name: CameraBounds
   m_TagString: CameraBounds
@@ -62,6 +64,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 32, y: 25.689968}
   m_EdgeRadius: 0
+--- !u!50 &860281184
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4878694117287125861}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &860281187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4878694117287125861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8beea4a974850c94181c49b4bcc2f84a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cameraBounds: {fileID: 4878694117287125863}
 --- !u!1 &4878694117387375107
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,7 +333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 968b246072ffa1f40849f0407b6fcc66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 3.5
 --- !u!1 &4878694118148235412
 GameObject:
   m_ObjectHideFlags: 0

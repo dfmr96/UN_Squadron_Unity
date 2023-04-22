@@ -18,6 +18,7 @@ public class Enemy : MonoBehaviour
     {
         //Cuando se instancie cualquier objeto con este Script va a saber cual es el jugador
         _player = FindObjectOfType<PlayerController>().gameObject;
+        DeactiveAllComponents();
     }
 
     private void Update()
@@ -72,5 +73,17 @@ public class Enemy : MonoBehaviour
         bullet.GetComponent<EnemyBullet>().SetDirection(aimDir);
         //Se resetea fireRateCounter para aplicar cooldown
         _fireRateCounter = 0;
+    }
+
+    public void DeactiveAllComponents()
+    {
+        GetComponent<SpriteRenderer>().enabled = false;
+        Behaviour[] comps = gameObject.GetComponents<Behaviour>();
+        foreach (Behaviour comp in comps)
+        {
+            Debug.Log(comp);
+            comp.enabled = false;
+        }
+        GetComponent<BoxCollider2D>().enabled = true;
     }
 }

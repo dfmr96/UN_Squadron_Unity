@@ -216,7 +216,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -941549476, guid: efa7bf1c712bbd7448a73efcf6ba7ef1, type: 3}
+  m_Sprite: {fileID: 10529820, guid: efa7bf1c712bbd7448a73efcf6ba7ef1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -239,7 +239,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f81ce14d1c22cc847b8bce2584471171, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 15
+  _state: 0
+  _speed: 18
   _vulkanFireRate: 8
   _vulkanCounter: 0
   _currentVulkan: 0
@@ -248,11 +249,18 @@ MonoBehaviour:
   _nextVulkanPoints: 0
   _currentVulkanLevel: 0
   _vulkanLevels: 00000000020000000900000012000000
+  _recoveryTime: 3
   _camera: {fileID: 0}
   _vulkanBullets:
   - {fileID: 1457241944293754282, guid: e795918af96f9ee4ab61cee281a34202, type: 3}
   - {fileID: 6497947059426979470, guid: cceda420fd7424e42855dc01dce2594e, type: 3}
   _vulkanCannon: {fileID: 1991143322647020678}
+  _damagedFlames: {fileID: 1923305145}
+  _aircraftSprites:
+  - {fileID: -1312131677, guid: efa7bf1c712bbd7448a73efcf6ba7ef1, type: 3}
+  - {fileID: 10529820, guid: efa7bf1c712bbd7448a73efcf6ba7ef1, type: 3}
+  - {fileID: -71723291, guid: efa7bf1c712bbd7448a73efcf6ba7ef1, type: 3}
+  _anim: {fileID: 0}
 --- !u!61 &8681480448281111403
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -310,7 +318,7 @@ Animator:
   m_GameObject: {fileID: 8681480448281111407}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 07cdc17dd10228348a1b2c08421d070d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 45123402358cde14a92eee056cd439b1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

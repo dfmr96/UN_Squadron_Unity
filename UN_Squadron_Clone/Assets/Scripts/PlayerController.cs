@@ -122,7 +122,7 @@ public class PlayerController : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
-        if (collision.gameObject.GetComponent<EnemyBullet>() != null)
+        if (collision.gameObject.GetComponent<EnemyBullet>() != null || collision.gameObject.GetComponent<Enemy>() != null)
         {
             Debug.Log("Impacto contra bala");
             Destroy(collision.gameObject);
