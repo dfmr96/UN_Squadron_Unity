@@ -102,13 +102,16 @@ MonoBehaviour:
   _health: 0
   _explosionPrefab: {fileID: 3336104701328597698, guid: d207451a5c8262b4d9753a7d39dbe53b, type: 3}
   _bulletPrefab: {fileID: 1744197573988224712, guid: 62ab3dd4cfe8a314f8625e515a587ace, type: 3}
-  _fireRate: 0
+  _fireRate: 1
   _fireRateCounter: 0
   _canDropPOW: 0
   _type: 0
   _vulkanPOWs:
   - {fileID: 7385918597685355896, guid: 5dddf505456fc404aaa2174f143ef6ff, type: 3}
   - {fileID: 4695770047083689648, guid: eb2df685b715c7346aa2cce08df394e6, type: 3}
+  _enemyType: 0
+  _sprites: []
+  _spriteRenderer: {fileID: 0}
 --- !u!61 &5122151746184827696
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -12,7 +12,7 @@ public class EnemyEnabler : MonoBehaviour
             Behaviour[] comps = collision.gameObject.GetComponents<Behaviour>();
             foreach (Behaviour comp in comps)
             {
-                Debug.Log(comp);
+                //Debug.Log(comp);
                 comp.enabled = true;
             }
             collision.gameObject.GetComponent<BoxCollider2D>().enabled = true;

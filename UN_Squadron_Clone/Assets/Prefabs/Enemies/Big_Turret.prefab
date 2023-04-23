@@ -102,7 +102,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.516129, y: 0.6896552}
     oldSize: {x: 3.875, y: 3.625}
     newSize: {x: 3.875, y: 3.625}
     adaptiveTilingThreshold: 0.5
@@ -125,14 +125,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
-  _health: 0
+  _health: 50
   _explosionPrefab: {fileID: 3336104701328597698, guid: d207451a5c8262b4d9753a7d39dbe53b, type: 3}
-  _bulletPrefab: {fileID: 0}
-  _fireRate: 0
+  _bulletPrefab: {fileID: 8360477669986712853, guid: 168d12b64f9596a4891d682ecba61d94, type: 3}
+  _fireRate: 0.5
   _fireRateCounter: 0
   _canDropPOW: 0
   _type: 0
   _vulkanPOWs: []
   _enemyType: 2
-  _sprites: []
+  _sprites:
+  - {fileID: -68631571, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  - {fileID: -56074752, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  - {fileID: -1691381268, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  - {fileID: 1486175064, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  - {fileID: -1866387079, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
   _spriteRenderer: {fileID: 0}
+  bulletToShoot: 6
+  timeBetweenBullets: 0.25
