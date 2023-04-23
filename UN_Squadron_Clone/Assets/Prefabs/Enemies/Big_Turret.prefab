@@ -141,5 +141,5 @@ MonoBehaviour:
   - {fileID: 1486175064, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
   - {fileID: -1866387079, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
   _spriteRenderer: {fileID: 0}
-  bulletToShoot: 6
-  timeBetweenBullets: 0.25
+  _bulletToShoot: 6
+  _timeBetweenBullets: 0.2
