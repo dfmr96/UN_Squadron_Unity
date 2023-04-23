@@ -59,6 +59,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log(GetComponent<Rigidbody2D>().velocity.magnitude);
         Movement();
 
         FireVulkan();
@@ -86,7 +87,7 @@ public class PlayerController : MonoBehaviour
         Vector3 _dir = new Vector3(_horizontal, _vertical).normalized;
         transform.Translate(_dir * _speed * Time.deltaTime);
 
-        ChangeSprites();
+        _anim.SetInteger("Vertical", (int)_vertical);
     }
 
     private void CheckCameraBounds()
@@ -140,10 +141,6 @@ public class PlayerController : MonoBehaviour
                     _anim.SetInteger("PlayerState", (int)_state);
                     _damagedFlames.SetActive(false);
                     break;
-                case PlayerState.critical:
-                    break;
-                case PlayerState.exploted:
-                    break;
                 default:
                     break;
             }
@@ -173,30 +170,12 @@ public class PlayerController : MonoBehaviour
         _currentVulkanBullet = _vulkanBullets[_currentVulkanLevel];
     }
 
-    public void ChangeSprites()
-    {
-        _anim.SetInteger("Vertical", (int)_vertical);
-        switch (_vertical)
-        {
-            case -1:
-                _aircraftRenderer.sprite = _aircraftSprites[0];
-                break;
-            case 0:
-                _aircraftRenderer.sprite = _aircraftSprites[1];
-                break;
-            case 1:
-                _aircraftRenderer.sprite = _aircraftSprites[2];
-                break;
-            default:
-                break;
-        }
-    }
-
     public IEnumerator GetRecovery()
     {
         yield return new WaitForSeconds(_recoveryTime);
         _state = PlayerState.alive;
         _damagedFlames.SetActive(false);
         _anim.SetInteger("PlayerState", (int)_state);
+        GetComponent<Rigidbody2D>().velocity = Vector3.zero;
     }
 }

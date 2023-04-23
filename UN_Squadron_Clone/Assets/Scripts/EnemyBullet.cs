@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyBullet : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] int damage;
+    [SerializeField] int knockbackForce;
     private Vector3 shootDir;
 
     private void Start()
@@ -23,5 +25,15 @@ public class EnemyBullet : MonoBehaviour
     public void SetDirection(Vector3 dir)
     {
         shootDir = dir;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<PlayerController>() != null)
+        {
+            Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
+            Vector3 knowBackDir = (Vector3.left + Vector3.down).normalized;
+            rb.AddForce(knowBackDir * knockbackForce, ForceMode2D.Impulse);
+        }
     }
 }

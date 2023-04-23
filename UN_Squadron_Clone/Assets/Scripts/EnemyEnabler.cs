@@ -15,7 +15,6 @@ public class EnemyEnabler : MonoBehaviour
                 //Debug.Log(comp);
                 comp.enabled = true;
             }
-            collision.gameObject.GetComponent<BoxCollider2D>().enabled = true;
         }
     }
 

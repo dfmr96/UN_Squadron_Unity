@@ -83,7 +83,7 @@ public class Enemy : MonoBehaviour
                 case EnemyType.boss:
                     break;
                 default:
-                    FireBullet(_aimDir);
+                    Fire(_aimDir);
                     break;
             }
             //if (_enemyType != EnemyType.bigTurret) FireBullet(_aimDir);
@@ -118,7 +118,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void FireBullet(Vector3 dir)
+    public void Fire(Vector3 dir)
     {
         var angle = Vector3.Angle(transform.right, dir);
         GameObject bullet = null;
@@ -270,7 +270,7 @@ public class Enemy : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, _raycastDir, 20, layerMask);
         if (hit.collider != null)
         {
-            FireBullet(Vector3.zero);
+            Fire(Vector3.zero);
             Debug.Log("Torreta dispara a Jugador");
         }
     }
