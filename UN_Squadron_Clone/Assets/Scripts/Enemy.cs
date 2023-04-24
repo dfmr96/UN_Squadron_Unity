@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public enum EnemyType
@@ -15,6 +16,7 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] private GameObject _player;
     [SerializeField] private int _health;
+    [SerializeField] int _moveSpeed = 3;
     [SerializeField] private GameObject _explosionPrefab;
     [SerializeField] private GameObject _bulletPrefab;
     [SerializeField] private float _fireRate;
@@ -26,9 +28,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Sprite[] _sprites;
     [SerializeField] private SpriteRenderer _spriteRenderer;
     private Vector3 _aimDir = Vector3.zero;
+    [SerializeField] bool CustomAnim = false;
 
-    //Tank Settings
-    private int _moveSpeed = 3;
     //Big Turret Settings
     private float _angleToShoot = 0;
     private Vector3 _raycastDir = Vector3.zero;
@@ -37,6 +38,7 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
+        if (CustomAnim) GetComponent<Animator>().SetBool("CustomAnim", CustomAnim);
         _player = FindObjectOfType<PlayerController>().gameObject;
         _spriteRenderer = GetComponent<SpriteRenderer>();
         DeactiveAllComponents();
@@ -61,6 +63,10 @@ public class Enemy : MonoBehaviour
             case EnemyType.tank:
                 MoveTank(_aimDir);
                 ChangeTankSprite(_aimDir);
+                break;
+            case EnemyType.helo:
+                if (CustomAnim) break;
+                MoveHelo();
                 break;
             default:
                 break;
@@ -114,6 +120,7 @@ public class Enemy : MonoBehaviour
                 }
             }
             Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
+            AudioManager.instance.enemyDestroyedAudio.Play();
             Destroy(gameObject);
         }
     }
@@ -138,7 +145,10 @@ public class Enemy : MonoBehaviour
 
     }
 
-
+    public void MoveHelo()
+    {
+        transform.Translate(transform.right * _moveSpeed * Time.deltaTime);
+    }
     public void DeactiveAllComponents()
     {
         GetComponent<SpriteRenderer>().enabled = false;

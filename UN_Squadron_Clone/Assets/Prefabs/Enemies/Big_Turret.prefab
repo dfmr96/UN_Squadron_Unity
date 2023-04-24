@@ -125,7 +125,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
-  _health: 50
+  _health: 40
+  _moveSpeed: 3
   _explosionPrefab: {fileID: 3336104701328597698, guid: d207451a5c8262b4d9753a7d39dbe53b, type: 3}
   _bulletPrefab: {fileID: 8360477669986712853, guid: 168d12b64f9596a4891d682ecba61d94, type: 3}
   _fireRate: 0.5

@@ -1,15 +1,12 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 
 public enum PlayerState
 {
-    alive,
+    healthy,
     danger,
     critical,
-    exploted
+    destroyed
 }
 public class PlayerController : MonoBehaviour
 {
@@ -69,19 +66,20 @@ public class PlayerController : MonoBehaviour
     {
         _vulkanCounter += Time.deltaTime;
 
-        if (Input.GetKey(KeyCode.Space) && _vulkanCounter > 1 / _vulkanFireRate && _state != PlayerState.exploted)
+        if (Input.GetKey(KeyCode.Space) && _vulkanCounter > 1 / _vulkanFireRate && _state != PlayerState.destroyed)
         {
             Instantiate(_currentVulkanBullet, _vulkanCannon.transform.position, Quaternion.identity);
+            AudioManager.instance.vulkanAudio.Play();
             _vulkanCounter = 0;
         }
     }
 
     private void Movement()
     {
-        if (_state == PlayerState.exploted) return;
+        if (_state == PlayerState.destroyed) return;
         _horizontal = Input.GetAxisRaw("Horizontal");
         _vertical = Input.GetAxisRaw("Vertical");
-        
+
         CheckCameraBounds();
 
         Vector3 _dir = new Vector3(_horizontal, _vertical).normalized;
@@ -118,6 +116,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<VulkanPOW>() != null)
         {
+            AudioManager.instance.vulkanPOW.Play();
             _currentVulkan += collision.GetComponent<VulkanPOW>().IncreaseVulkanPOWPoints();
             CheckVulkanPoints();
             Destroy(collision.gameObject);
@@ -129,17 +128,22 @@ public class PlayerController : MonoBehaviour
             Destroy(collision.gameObject);
             switch (_state)
             {
-                case PlayerState.alive:
+                case PlayerState.healthy:
                     _state = PlayerState.danger;
                     _anim.SetInteger("PlayerState", (int)_state);
                     _damagedFlames.SetActive(true);
+                    AudioManager.instance.playerDamaged.Play();
+
                     StartCoroutine(GetRecovery());
                     break;
                 case PlayerState.danger:
-                    _state = PlayerState.exploted;
+                    _state = PlayerState.destroyed;
                     StopAllCoroutines();
                     _anim.SetInteger("PlayerState", (int)_state);
                     _damagedFlames.SetActive(false);
+                    AudioManager.instance.playerRecovery.Stop();
+                    AudioManager.instance.bgmAudio.Stop();
+                    AudioManager.instance.playerDestroyed.Play();
                     break;
                 default:
                     break;
@@ -172,8 +176,9 @@ public class PlayerController : MonoBehaviour
 
     public IEnumerator GetRecovery()
     {
+        AudioManager.instance.playerRecovery.Play();
         yield return new WaitForSeconds(_recoveryTime);
-        _state = PlayerState.alive;
+        _state = PlayerState.healthy;
         _damagedFlames.SetActive(false);
         _anim.SetInteger("PlayerState", (int)_state);
         GetComponent<Rigidbody2D>().velocity = Vector3.zero;

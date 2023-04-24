@@ -269,15 +269,15 @@ Camera:
   m_FocalLength: 80.03638
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+    x: 0.21340781
+    y: 0.05367793
+    width: 0.572067
+    height: 0.890656
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 108.9
   orthographic: 0
-  orthographic size: 5
+  orthographic size: 14
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 968b246072ffa1f40849f0407b6fcc66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.5
+  speed: 3.7
 --- !u!1 &4878694118148235412
 GameObject:
   m_ObjectHideFlags: 0

@@ -197,7 +197,7 @@ TextureImporter:
         width: 13
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -205,6 +205,195 @@ TextureImporter:
       bones: []
       spriteID: 9eca8e42503535246b9480dd329cc50e
       internalID: -1442918067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rippped_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 111
+        width: 66
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1410eeb66384b7b4eb2c4f772bd02b7f
+      internalID: -1241555521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rippped_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 97
+        width: 66
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b2f21b5de2ba547bd058addfca0126
+      internalID: 2138182362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rippped_2
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 85
+        width: 66
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd23bb251a4c93d49821f54c2c8c7ec3
+      internalID: -8547679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rippped_3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 71
+        width: 66
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a2d96cd58aabb4abf04fcc133b21a3
+      internalID: -1200507984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rippped_4
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 58
+        width: 66
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca849a32371fc04f92596a0fa453fca
+      internalID: -1056395176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rippped_5
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 45
+        width: 66
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f9ccec329957b4cbdc1999867665f8
+      internalID: -1481552166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rippped_6
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 5
+        width: 242
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4784a8beed2ee2f4ab502ce747226ccb
+      internalID: -1919496996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rippped_7
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 48
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35949470ff773754597d956800c2808a
+      internalID: -478656359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rippped_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 46
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eee4f55a86baad4e835f9cb96f4c209
+      internalID: -520282946
       vertices: []
       indices: 
       edges: []
@@ -220,6 +409,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Rippped_0: -1241555521
+      Rippped_1: 2138182362
+      Rippped_2: -8547679
+      Rippped_3: -1200507984
+      Rippped_4: -1056395176
+      Rippped_5: -1481552166
+      Rippped_6: -1919496996
+      Rippped_7: -478656359
+      Rippped_8: -520282946
       VulcanCannonSprites_0: -725940661
       VulcanCannonSprites_1: -461775911
       VulcanCannonSprites_2: 1225740765

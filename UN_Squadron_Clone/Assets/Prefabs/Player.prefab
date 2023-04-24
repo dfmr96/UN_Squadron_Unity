@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 8681480448281111403}
   - component: {fileID: 8681480448281111402}
   - component: {fileID: 1741419779}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,7 +241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _state: 0
   _speed: 18
-  _vulkanFireRate: 8
+  _vulkanFireRate: 6
   _vulkanCounter: 0
   _currentVulkan: 0
   _currentVulkanBullet: {fileID: 0}
@@ -299,7 +299,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
