@@ -122,10 +122,10 @@ public class PlayerController : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
-        if (collision.gameObject.GetComponent<EnemyBullet>() != null || collision.gameObject.GetComponent<Enemy>() != null)
+        if (collision.gameObject.GetComponent<EnemyBullet>() != null || collision.gameObject.GetComponent<Enemy>() != null || collision.gameObject.CompareTag("Obstacles"))
         {
             Debug.Log("Impacto contra bala");
-            Destroy(collision.gameObject);
+            if (!collision.gameObject.CompareTag("Obstacles")) Destroy(collision.gameObject);
             switch (_state)
             {
                 case PlayerState.healthy:

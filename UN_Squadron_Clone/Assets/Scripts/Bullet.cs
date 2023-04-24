@@ -17,6 +17,8 @@ public class Bullet : MonoBehaviour
             collision.GetComponent<Enemy>().TakeDamage(damage);
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.CompareTag("Obstacles")) Destroy(gameObject);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
