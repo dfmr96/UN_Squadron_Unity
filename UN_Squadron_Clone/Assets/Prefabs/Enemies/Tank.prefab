@@ -122,8 +122,11 @@ MonoBehaviour:
   - {fileID: 465517887, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
   - {fileID: 145147393, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
   _spriteRenderer: {fileID: 0}
+  CustomAnim: 0
   _bulletToShoot: 0
   _timeBetweenBullets: 0
+  scorePerKill: 100
+  moneyPerKill: 300
 --- !u!61 &2674018841052043698
 BoxCollider2D:
   m_ObjectHideFlags: 0

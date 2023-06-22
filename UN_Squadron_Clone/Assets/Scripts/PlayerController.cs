@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(GetComponent<Rigidbody2D>().velocity.magnitude);
+        //Debug.Log(GetComponent<Rigidbody2D>().velocity.magnitude);
         Movement();
 
         FireVulkan();

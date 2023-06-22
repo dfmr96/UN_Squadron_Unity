@@ -144,5 +144,8 @@ MonoBehaviour:
   - {fileID: 56226875, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
   - {fileID: -633447150, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
   _spriteRenderer: {fileID: 0}
+  CustomAnim: 0
   _bulletToShoot: 0
   _timeBetweenBullets: 0
+  scorePerKill: 100
+  moneyPerKill: 300

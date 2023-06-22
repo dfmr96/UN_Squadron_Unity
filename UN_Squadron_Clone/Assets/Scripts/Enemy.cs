@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -35,6 +36,9 @@ public class Enemy : MonoBehaviour
     private Vector3 _raycastDir = Vector3.zero;
     [SerializeField] int _bulletToShoot = 0;
     [SerializeField] float _timeBetweenBullets = 0;
+
+    public int scorePerKill = 100;
+    public int moneyPerKill = 300;
 
     private void Start()
     {
@@ -121,7 +125,9 @@ public class Enemy : MonoBehaviour
             }
             Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
             AudioManager.instance.enemyDestroyedAudio.Play();
+            EventBus.instance.EnemyDestroyed(this);
             Destroy(gameObject);
+            Debug.Log("Enemy Destroyed");
         }
     }
 
@@ -155,7 +161,7 @@ public class Enemy : MonoBehaviour
         Behaviour[] comps = gameObject.GetComponents<Behaviour>();
         foreach (Behaviour comp in comps)
         {
-            Debug.Log(comp);
+            //Debug.Log(comp);
             comp.enabled = false;
         }
         GetComponent<BoxCollider2D>().enabled = true;
