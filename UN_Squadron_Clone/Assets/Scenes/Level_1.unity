@@ -8487,6 +8487,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114307287}
   m_CullTransparentMesh: 1
+--- !u!1 &2117767831 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4878694117584995845, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
+  m_PrefabInstance: {fileID: 4878694117351407225}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2117767832 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4878694117584996091, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
+  m_PrefabInstance: {fileID: 4878694117351407225}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117767831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 968b246072ffa1f40849f0407b6fcc66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2117767835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117767831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2243b0746727854dac1cabe91909112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundLayer: {fileID: 1863687754}
+  backgroundSpeed: 3
+  middlegroundLayer: {fileID: 611049366}
+  middlegroundSpeed: 2
+  foregroundLayer: {fileID: 0}
+  foregroundSpeed: 0
+  _camController: {fileID: 2117767832}
 --- !u!1 &2135936926
 GameObject:
   m_ObjectHideFlags: 0
