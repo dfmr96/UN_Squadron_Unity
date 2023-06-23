@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
 {
     [Header("Player Stats")]
     [Space(10)]
+    public float health;
+    public float maxHealth;
     [SerializeField] PlayerState _state;
     [SerializeField] float _speed = 15;
     [SerializeField] float _vulkanFireRate;
@@ -48,6 +50,9 @@ public class PlayerController : MonoBehaviour
         transform.parent = _camera.transform;
         _aircraftRenderer = GetComponent<SpriteRenderer>();
         _anim = GetComponent<Animator>();
+
+        health = maxHealth;
+        EventBus.instance.PlayerSpawned(this);
 
         _nextVulkanPoints = _vulkanLevels[_currentVulkanLevel + 1] - _currentVulkan;
         SetVulkanBullet();
@@ -122,33 +127,28 @@ public class PlayerController : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
-        if (collision.gameObject.GetComponent<EnemyBullet>() != null || collision.gameObject.GetComponent<Enemy>() != null || collision.gameObject.CompareTag("Obstacles"))
-        {
-            Debug.Log("Impacto contra bala");
-            if (!collision.gameObject.CompareTag("Obstacles")) Destroy(collision.gameObject);
-            switch (_state)
-            {
-                case PlayerState.healthy:
-                    _state = PlayerState.danger;
-                    _anim.SetInteger("PlayerState", (int)_state);
-                    _damagedFlames.SetActive(true);
-                    AudioManager.instance.playerDamaged.Play();
+        //if (collision.gameObject.GetComponent<EnemyBullet>() != null || collision.gameObject.GetComponent<Enemy>() != null || collision.gameObject.CompareTag("Obstacles"))
+        //{
+        //    Debug.Log("Impacto contra bala");
+        //    if (!collision.gameObject.CompareTag("Obstacles")) Destroy(collision.gameObject);
+        //    switch (_state)
+        //    {
+        //        case PlayerState.healthy:
 
-                    StartCoroutine(GetRecovery());
-                    break;
-                case PlayerState.danger:
-                    _state = PlayerState.destroyed;
-                    StopAllCoroutines();
-                    _anim.SetInteger("PlayerState", (int)_state);
-                    _damagedFlames.SetActive(false);
-                    AudioManager.instance.playerRecovery.Stop();
-                    AudioManager.instance.bgmAudio.Stop();
-                    AudioManager.instance.playerDestroyed.Play();
-                    break;
-                default:
-                    break;
-            }
-        }
+        //            break;
+        //        case PlayerState.danger:
+        //            _state = PlayerState.destroyed;
+        //            StopAllCoroutines();
+        //            _anim.SetInteger("PlayerState", (int)_state);
+        //            _damagedFlames.SetActive(false);
+        //            AudioManager.instance.playerRecovery.Stop();
+        //            AudioManager.instance.bgmAudio.Stop();
+        //            AudioManager.instance.playerDestroyed.Play();
+        //            break;
+        //        default:
+        //            break;
+        //    }
+        //}
     }
 
     private void CheckVulkanPoints()
@@ -178,9 +178,21 @@ public class PlayerController : MonoBehaviour
     {
         AudioManager.instance.playerRecovery.Play();
         yield return new WaitForSeconds(_recoveryTime);
+        EventBus.instance.PlayerRecovered();
         _state = PlayerState.healthy;
         _damagedFlames.SetActive(false);
         _anim.SetInteger("PlayerState", (int)_state);
         GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+    }
+
+    public void TakeDamage(float damage)
+    {
+        _state = PlayerState.danger;
+        _anim.SetInteger("PlayerState", (int)_state);
+        _damagedFlames.SetActive(true);
+        AudioManager.instance.playerDamaged.Play();
+        health -= damage;
+        EventBus.instance.PlayerDamaged(damage);
+        StartCoroutine(GetRecovery());
     }
 }

@@ -236,7 +236,7 @@ public class Enemy : MonoBehaviour
     public void ChangeTankSprite(Vector3 dir)
     {
         float angle = (int)Vector3.Angle(dir, -transform.right);
-        Debug.Log(angle);
+        //Debug.Log(angle);
         if (angle >= 0 && angle < 20)
         {
             _spriteRenderer.sprite = _sprites[0];

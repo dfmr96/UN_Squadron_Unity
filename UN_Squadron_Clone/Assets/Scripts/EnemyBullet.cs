@@ -31,9 +31,11 @@ public class EnemyBullet : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<PlayerController>() != null)
         {
+            collision.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
             Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
             Vector3 knowBackDir = (Vector3.left + Vector3.down).normalized;
             rb.AddForce(knowBackDir * knockbackForce, ForceMode2D.Impulse);
+            Destroy(gameObject);
         }
     }
 }

@@ -8,6 +8,9 @@ public class EventBus : MonoBehaviour
     public static EventBus instance;
 
     public event Action<Enemy> OnEnemyDestroyed;
+    public event Action<float> OnPlayerDamaged;
+    public event Action OnPlayerRecover;
+    public event Action<PlayerController> OnPlayerSpawned;
 
 
 
@@ -28,5 +31,20 @@ public class EventBus : MonoBehaviour
     public void EnemyDestroyed(Enemy enemy)
     {
         OnEnemyDestroyed?.Invoke(enemy);
+    }
+
+    public void PlayerDamaged(float damage)
+    {
+        OnPlayerDamaged?.Invoke(damage);
+    }
+
+    public void PlayerSpawned(PlayerController player)
+    {
+        OnPlayerSpawned?.Invoke(player);
+    }
+
+    public void PlayerRecovered()
+    {
+        OnPlayerRecover?.Invoke();
     }
 }
