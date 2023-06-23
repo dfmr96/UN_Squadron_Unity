@@ -30,6 +30,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private SpriteRenderer _spriteRenderer;
     private Vector3 _aimDir = Vector3.zero;
     [SerializeField] bool CustomAnim = false;
+    [SerializeField] float collisionDamage;
 
     //Big Turret Settings
     private float _angleToShoot = 0;
@@ -46,6 +47,16 @@ public class Enemy : MonoBehaviour
         _player = FindObjectOfType<PlayerController>().gameObject;
         _spriteRenderer = GetComponent<SpriteRenderer>();
         DeactiveAllComponents();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<PlayerController>() != null)
+        {
+            if (collision.gameObject.GetComponent<PlayerController>().isInvulnerable) return;
+            collision.gameObject.GetComponent<PlayerController>().TakeDamage(collisionDamage);
+            DestroyEnemy();
+        }
     }
 
     private void Update()
@@ -123,12 +134,17 @@ public class Enemy : MonoBehaviour
                         break;
                 }
             }
-            Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
-            AudioManager.instance.enemyDestroyedAudio.Play();
-            EventBus.instance.EnemyDestroyed(this);
-            Destroy(gameObject);
-            Debug.Log("Enemy Destroyed");
+            DestroyEnemy();
         }
+    }
+
+    private void DestroyEnemy()
+    {
+        Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
+        AudioManager.instance.enemyDestroyedAudio.Play();
+        EventBus.instance.EnemyDestroyed(this);
+        Destroy(gameObject);
+        Debug.Log("Enemy Destroyed");
     }
 
     public void Fire(Vector3 dir)

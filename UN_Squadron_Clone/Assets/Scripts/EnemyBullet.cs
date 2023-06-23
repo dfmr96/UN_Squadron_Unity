@@ -31,6 +31,7 @@ public class EnemyBullet : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<PlayerController>() != null)
         {
+            if (collision.gameObject.GetComponent<PlayerController>().isInvulnerable) return;
             collision.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
             Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
             Vector3 knowBackDir = (Vector3.left + Vector3.down).normalized;

@@ -12,6 +12,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource playerDestroyed;
     public AudioSource playerRecovery;
     public AudioSource vulkanPOW;
+    public AudioSource playerUnableToRecover;
 
     private void Awake()
     {
