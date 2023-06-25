@@ -3,7 +3,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [SerializeField] float speed;
-    [SerializeField] int damage;
+    public int damage;
     private void Update()
     {
         transform.Translate(Vector3.right * speed * Time.deltaTime);
