@@ -440,7 +440,7 @@ TextureImporter:
         width: 66
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -448,6 +448,27 @@ TextureImporter:
       bones: []
       spriteID: 522eb49cd0457a646b0d6615a8466813
       internalID: -1543329848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RippedSprites_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 122
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05f7dbfb827ebd4ba8422fb3009b247
+      internalID: 976550692
       vertices: []
       indices: 
       edges: []
@@ -471,6 +492,7 @@ TextureImporter:
       RippedSprites_13: -996571445
       RippedSprites_14: 597950225
       RippedSprites_15: -1543329848
+      RippedSprites_16: 976550692
       RippedSprites_2: -2070774019
       RippedSprites_3: -772023484
       RippedSprites_4: -1413133297

@@ -6,6 +6,6 @@ public class PortraitTrigger : MonoBehaviour
 {
     public void ChangeAnimation()
     {
-        UIManager.instance.PlayPortraitRecovery();
+        UIGameplayManager.instance.PlayPortraitRecovery();
     }
 }

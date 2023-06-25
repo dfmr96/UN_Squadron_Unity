@@ -6,6 +6,6 @@ public class HealthBarTrigger : MonoBehaviour
 {
     public void HealthBarToNormal()
     {
-        UIManager.instance.HealthBarBackToNormal();
+        UIGameplayManager.instance.HealthBarBackToNormal();
     }
 }

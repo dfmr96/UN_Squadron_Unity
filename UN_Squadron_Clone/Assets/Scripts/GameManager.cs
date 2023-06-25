@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,6 +10,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public int score;
     public int money;
+    //public event Action OnGameOver;
 
     private void Awake()
     {
@@ -43,12 +45,18 @@ public class GameManager : MonoBehaviour
     public void UpdateMoney(Enemy enemy)
     {
         money += enemy.moneyPerKill;
-        UIManager.instance.UpdateMoneySprites(money);
+        UIGameplayManager.instance.UpdateMoneySprites(money);
     }
 
     public void UpdateScore(Enemy enemy)
     {
         score += enemy.scorePerKill;
-        UIManager.instance.UpdateScoreSprites(score);
+        UIGameplayManager.instance.UpdateScoreSprites(score);
+    }
+
+    public void GameOver()
+    {
+        //OnGameOver?.Invoke();
+        LoadingManager.Instance.LoadNewScene("GameOver");
     }
 }

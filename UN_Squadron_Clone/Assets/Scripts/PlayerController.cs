@@ -204,11 +204,18 @@ public class PlayerController : MonoBehaviour
     {
         _state = PlayerState.destroyed;
         StopAllCoroutines();
+        StartCoroutine(GameOver());
         _anim.SetInteger("PlayerState", (int)_state);
         _damagedFlames.SetActive(false);
         AudioManager.instance.playerRecovery.Stop();
         AudioManager.instance.bgmAudio.Stop();
         AudioManager.instance.playerDestroyed.Play();
+    }
+
+    public IEnumerator GameOver()
+    {
+        yield return new WaitForSeconds(2f);
+        GameManager.instance.GameOver();
     }
 
     public IEnumerator Invulnerability()
