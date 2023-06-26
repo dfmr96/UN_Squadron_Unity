@@ -44,6 +44,27 @@ public class PlayerController : MonoBehaviour
     float _vertical;
     private BoxCollider2D _cameraCol;
     private BoxCollider2D _playerCol;
+
+    private void OnEnable()
+    {
+        EventBus.instance.OnBossDestroyed += () =>
+        {
+            AudioManager.instance.playerDamaged.Stop();
+            isInvulnerable = true;
+            this.enabled = false;
+        };
+    }
+
+    private void OnDisable()
+    {
+        EventBus.instance.OnBossDestroyed -= () =>
+        {
+            AudioManager.instance.playerDamaged.Stop();
+            isInvulnerable = true;
+            this.enabled = false;
+        };
+    }
+
     private void Start()
     {
         _camera = FindObjectOfType<CameraController>().gameObject;

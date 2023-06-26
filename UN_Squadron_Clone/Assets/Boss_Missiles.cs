@@ -8,6 +8,16 @@ public class Boss_Missiles : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] float damage;
 
+    private void OnEnable()
+    {
+        EventBus.instance.OnBossDestroyed += DestroyMissile;
+    }
+
+    private void OnDisable()
+    {
+        EventBus.instance.OnBossDestroyed -= DestroyMissile;
+
+    }
 
     private void Update()
     {
@@ -18,7 +28,12 @@ public class Boss_Missiles : MonoBehaviour
         if (collision.gameObject.GetComponent<PlayerController>() != null)
         {
             collision.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
-            Destroy(gameObject);
+            DestroyMissile();
         }
+    }
+
+    public void DestroyMissile()
+    {
+        Destroy(gameObject);
     }
 }

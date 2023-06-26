@@ -15,6 +15,7 @@ public class UIGameplayManager : MonoBehaviour
     [SerializeField] float healthRatio;
     [SerializeField] Animator _healthBarAnim;
     [SerializeField] Animator _portraitAnim;
+    public GameObject _victoryPanel;
 
     private void Start()
     {

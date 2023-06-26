@@ -792,10 +792,10 @@ TextureImporter:
       name: Boss_01_32
       rect:
         serializedVersion: 2
-        x: 379
+        x: 378
         y: 208
-        width: 30
-        height: 21
+        width: 31
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1151,8 +1151,8 @@ TextureImporter:
         serializedVersion: 2
         x: 379
         y: 164
-        width: 30
-        height: 15
+        width: 31
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1162,27 +1162,6 @@ TextureImporter:
       bones: []
       spriteID: 1407e42abce0149438741c60defca465
       internalID: 475948548
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Boss_01_50
-      rect:
-        serializedVersion: 2
-        x: 395
-        y: 178
-        width: 15
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d54fa19ca3af58c48b72f2c0c6608b2e
-      internalID: -366170241
       vertices: []
       indices: 
       edges: []

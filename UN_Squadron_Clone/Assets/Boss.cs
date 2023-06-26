@@ -5,7 +5,8 @@ public enum BossStatus
 {
     Healthy,
     Caution,
-    Danger
+    Danger,
+    Destroyed
 }
 public class Boss : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class Boss : MonoBehaviour
     [SerializeField] Animator crystalAnim;
     [SerializeField] GameObject missilesPrefab;
     [SerializeField] GameObject miniMisilesPrefab;
+    [SerializeField] GameObject flames;
     [SerializeField] Transform[] miniMisilesPos;
     [SerializeField] Transform missiles;
     [SerializeField] bool canFire = false;
@@ -42,7 +44,7 @@ public class Boss : MonoBehaviour
             {
                 Instantiate(miniMisilesPrefab, miniMisilesPos[i].position, Quaternion.identity);
             }
-            AudioManager.instance.boosMisiles.Play();
+            AudioManager.instance.bossMisiles.Play();
             fireTimer = 0;
         }
     }
@@ -90,7 +92,7 @@ public class Boss : MonoBehaviour
     {
         canFire = true;
 
-        while (gameObject.activeSelf)
+        while (status != BossStatus.Destroyed)
         {
             speed = -1f;
             yield return new WaitForSeconds(4.5f);
@@ -100,10 +102,26 @@ public class Boss : MonoBehaviour
             yield return new WaitForSeconds(4f);
         }
 
+
+
     }
 
     private void DestroyEnemy()
     {
-        Destroy(gameObject, 0.5f);
+        canFire = false;
+        status = BossStatus.Destroyed;
+        StopCoroutine(MovingLoop() );
+        speed = 0f;
+        bodyAnim.SetBool("Destroyed", true);
+        crystalAnim.gameObject.SetActive(false);
+        flames.SetActive(true);
+        AudioManager.instance.bossDestroyed.Play();
+        //AudioManager.instance.bossBGM.Stop();
+        //Destroy(gameObject, 0.5f);
+        EventBus.instance.BossDestroyed();
+        //Pausar gameplay
+        //Desahablitar InputJugador
+        //Correr video de cuenta atras
+        //Ir a ventana de victoria
     }
 }

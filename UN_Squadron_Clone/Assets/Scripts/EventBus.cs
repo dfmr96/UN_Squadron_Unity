@@ -11,6 +11,7 @@ public class EventBus : MonoBehaviour
     public event Action<float> OnPlayerDamaged;
     public event Action OnPlayerRecover;
     public event Action<PlayerController> OnPlayerSpawned;
+    public event Action OnBossDestroyed;
 
 
 
@@ -46,5 +47,9 @@ public class EventBus : MonoBehaviour
     public void PlayerRecovered()
     {
         OnPlayerRecover?.Invoke();
+    }
+    public void BossDestroyed()
+    {
+        OnBossDestroyed?.Invoke();
     }
 }

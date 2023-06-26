@@ -1,8 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -25,7 +22,7 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        
+
         score = 0;
         money = 0;
     }
@@ -34,12 +31,15 @@ public class GameManager : MonoBehaviour
     {
         EventBus.instance.OnEnemyDestroyed += UpdateMoney;
         EventBus.instance.OnEnemyDestroyed += UpdateScore;
+        EventBus.instance.OnBossDestroyed += BossDefeated;
     }
 
     private void OnDisable()
     {
         EventBus.instance.OnEnemyDestroyed -= UpdateMoney;
         EventBus.instance.OnEnemyDestroyed -= UpdateScore;
+        EventBus.instance.OnBossDestroyed -= BossDefeated;
+
     }
 
     public void UpdateMoney(Enemy enemy)
@@ -58,5 +58,28 @@ public class GameManager : MonoBehaviour
     {
         //OnGameOver?.Invoke();
         LoadingManager.Instance.LoadNewScene("GameOver");
+    }
+
+    public void BossDefeated()
+    {
+        
+        StartCoroutine(GetBossMoney());
+    }
+
+    public IEnumerator GetBossMoney()
+    {
+        yield return new WaitForSeconds(2f);
+        UIGameplayManager.instance._victoryPanel.SetActive(true);
+        AudioManager.instance.bossReward.Play();
+        Time.timeScale = 0f;
+        while (money < 50000)
+        {
+            money += 1000;
+            UIGameplayManager.instance.UpdateMoneySprites(money);
+            yield return new WaitForSecondsRealtime(0.02f);
+        }
+        yield return new WaitForSecondsRealtime(1f);
+        Time.timeScale = 1f;
+        LoadingManager.Instance.LoadNewScene("Victory");
     }
 }

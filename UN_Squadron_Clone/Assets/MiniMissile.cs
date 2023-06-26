@@ -12,6 +12,16 @@ public class MiniMissile : MonoBehaviour
         player = FindAnyObjectByType(typeof(PlayerController)) as PlayerController;
     }
 
+    private void OnEnable()
+    {
+        EventBus.instance.OnBossDestroyed += DestroyMissiles;
+    }
+
+    private void OnDisable()
+    {
+        EventBus.instance.OnBossDestroyed -= DestroyMissiles;
+    }
+
     private void Update()
     {
         var offset = 0f;
@@ -29,12 +39,17 @@ public class MiniMissile : MonoBehaviour
         if (collision.gameObject == player.gameObject)
         {
             player.TakeDamage(damage);
-            Destroy(gameObject);
+            DestroyMissiles();
         }
 
         if (collision.gameObject.GetComponent<Bullet>() != null)
         {
-            Destroy(gameObject);
+            DestroyMissiles();
         }
+    }
+
+    public void DestroyMissiles()
+    {
+        Destroy(gameObject);
     }
 }
