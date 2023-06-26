@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public enum BossStatus
@@ -10,13 +8,21 @@ public enum BossStatus
     Danger
 }
 public class Boss : MonoBehaviour
-{ 
+{
     public float health;
     public float maxHealth;
     public float speed;
+    public float fireRate;
+    public float fireTimer;
+    public GameObject bodyDamaged;
     public BossStatus status;
     [SerializeField] Animator bodyAnim;
     [SerializeField] Animator crystalAnim;
+    [SerializeField] GameObject missilesPrefab;
+    [SerializeField] GameObject miniMisilesPrefab;
+    [SerializeField] Transform[] miniMisilesPos;
+    [SerializeField] Transform missiles;
+    [SerializeField] bool canFire = false;
 
     private void Start()
     {
@@ -28,6 +34,17 @@ public class Boss : MonoBehaviour
     private void Update()
     {
         transform.Translate(Vector3.right * speed * Time.deltaTime);
+        fireTimer += Time.deltaTime;
+        if (fireTimer > 1 / fireRate && canFire)
+        {
+            Instantiate(missilesPrefab, missiles.position, Quaternion.identity);
+            for (int i = 0; i < miniMisilesPos.Length; i++)
+            {
+                Instantiate(miniMisilesPrefab, miniMisilesPos[i].position, Quaternion.identity);
+            }
+            AudioManager.instance.boosMisiles.Play();
+            fireTimer = 0;
+        }
     }
 
     public void TakeDamage(float damage)
@@ -39,14 +56,15 @@ public class Boss : MonoBehaviour
             status = BossStatus.Caution;
             crystalAnim.SetInteger("Status", (int)status);
         }
-        
+
         if (health < maxHealth * 1 / 3)
         {
             status = BossStatus.Danger;
             crystalAnim.SetInteger("Status", (int)status);
+            bodyDamaged.SetActive(true);
         }
 
-        if(health < 0)
+        if (health < 0)
         {
             DestroyEnemy();
         }
@@ -70,10 +88,18 @@ public class Boss : MonoBehaviour
 
     public IEnumerator MovingLoop()
     {
-        speed = -1f;
-        yield return new WaitForSeconds(4f);
-        speed = 3.7f;
-        yield return new WaitForSeconds(5f);
+        canFire = true;
+
+        while (gameObject.activeSelf)
+        {
+            speed = -1f;
+            yield return new WaitForSeconds(4.5f);
+            speed = 3.7f;
+            yield return new WaitForSeconds(5f);
+            speed = 9f;
+            yield return new WaitForSeconds(4f);
+        }
+
     }
 
     private void DestroyEnemy()

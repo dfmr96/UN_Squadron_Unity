@@ -175,6 +175,7 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        if (isInvulnerable) return;
         StartCoroutine(Invulnerability());
         switch (_state)
         {

@@ -14,6 +14,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource vulkanPOW;
     public AudioSource playerUnableToRecover;
     public AudioSource bossBGM;
+    public AudioSource boosMisiles;
 
     private void Awake()
     {

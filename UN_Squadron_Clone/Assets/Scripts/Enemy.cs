@@ -53,7 +53,6 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<PlayerController>() != null)
         {
-            if (collision.gameObject.GetComponent<PlayerController>().isInvulnerable) return;
             collision.gameObject.GetComponent<PlayerController>().TakeDamage(collisionDamage);
             DestroyEnemy();
         }
