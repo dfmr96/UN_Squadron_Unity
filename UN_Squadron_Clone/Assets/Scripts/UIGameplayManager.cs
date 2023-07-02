@@ -11,6 +11,7 @@ public class UIGameplayManager : MonoBehaviour
     [SerializeField] Number_Fonts _numberFonts;
     [SerializeField] Image[] _moneyImages;
     [SerializeField] Image[] _scoreImages;
+    [SerializeField] Image[] _subWeaponRemainingImage;
     [SerializeField] Image healthBar;
     [SerializeField] float healthRatio;
     [SerializeField] Animator _healthBarAnim;
@@ -35,6 +36,17 @@ public class UIGameplayManager : MonoBehaviour
         EventBus.instance.OnPlayerDamaged += UpdateHealthBar;
         EventBus.instance.OnPlayerDamaged += PlayPortraitHurt;
         EventBus.instance.OnPlayerRecover += PlayerRecovered;
+        EventBus.instance.OnSubweaponUsed += UpdateSubWeaponReamining;
+    }
+
+    private void UpdateSubWeaponReamining(float remaining)
+    {
+        int[] remainingDigits = GetIntArray((int)remaining);
+
+        for (int i = 0; i < remainingDigits.Length; i++)
+        {
+            _subWeaponRemainingImage[i].sprite = _numberFonts.sprite[remainingDigits[i]];
+        }
     }
 
     private void OnDisable()

@@ -11,6 +11,7 @@ public class SubWeaponController : MonoBehaviour
         if (playerInventory.slots.Count > 0)
         {
             currentSlot = playerInventory.slots[0];
+            EventBus.instance.SubWeaponUsed(currentSlot.amount);
         }
     }
 
@@ -21,7 +22,7 @@ public class SubWeaponController : MonoBehaviour
             NextWeapon();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             UseWeapon();
         }
@@ -29,9 +30,11 @@ public class SubWeaponController : MonoBehaviour
 
     public void UseWeapon()
     {
+        if (currentSlot == null) return;
         if (currentSlot.amount > 0)
         {
             currentSlot.weaponData.UseWeapon(transform);
+            EventBus.instance.SubWeaponUsed(currentSlot.amount);
             currentSlot.amount -= 1;
         }
 

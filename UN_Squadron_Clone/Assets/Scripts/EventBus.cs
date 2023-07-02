@@ -12,6 +12,7 @@ public class EventBus : MonoBehaviour
     public event Action OnPlayerRecover;
     public event Action<PlayerController> OnPlayerSpawned;
     public event Action OnBossDestroyed;
+    public event Action<float> OnSubweaponUsed;
 
 
 
@@ -27,6 +28,11 @@ public class EventBus : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void SubWeaponUsed(float remaining)
+    {
+        OnSubweaponUsed?.Invoke(remaining);
     }
 
     public void EnemyDestroyed(Enemy enemy)
