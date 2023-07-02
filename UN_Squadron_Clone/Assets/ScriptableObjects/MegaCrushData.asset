@@ -15,5 +15,5 @@ MonoBehaviour:
   weaponName: Mega Crush
   price: 5000
   amount: 1
-  prefab: {fileID: 0}
+  prefab: {fileID: 1717346302284578206, guid: eb4e2ee4388c3e14ebe0646bf47dc1ba, type: 3}
   sprite: {fileID: 1264338694, guid: a6d95d7bea5f00143a8a5f0309601182, type: 3}

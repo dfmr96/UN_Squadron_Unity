@@ -10,4 +10,9 @@ public class WeaponData : ScriptableObject
     public float amount;
     [SerializeField] GameObject prefab;
     public Sprite sprite;
+
+    public void UseWeapon(Transform pTransform)
+    {
+        Instantiate(prefab, pTransform.position, Quaternion.identity);
+    }
 }

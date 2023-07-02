@@ -15,5 +15,5 @@ MonoBehaviour:
   weaponName: Bomb
   price: 2000
   amount: 50
-  prefab: {fileID: 0}
+  prefab: {fileID: 2583331501496310981, guid: c1a0559df5d95754880e5aaf90f68316, type: 3}
   sprite: {fileID: -835668954, guid: a6d95d7bea5f00143a8a5f0309601182, type: 3}

@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 8681480448281111401}
   - component: {fileID: 8681480448281111406}
   - component: {fileID: 8681480448281111400}
+  - component: {fileID: 6703949842448126000}
   - component: {fileID: 8681480448281111403}
   - component: {fileID: 8681480448281111402}
   - component: {fileID: 1741419779}
@@ -265,6 +266,22 @@ MonoBehaviour:
   - {fileID: 10529820, guid: efa7bf1c712bbd7448a73efcf6ba7ef1, type: 3}
   - {fileID: -71723291, guid: efa7bf1c712bbd7448a73efcf6ba7ef1, type: 3}
   _anim: {fileID: 0}
+--- !u!114 &6703949842448126000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8681480448281111407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb75c4a0f217d44fa71bfef9c296e29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInventory: {fileID: 11400000, guid: e4b5f3856548edf4e88ec3c1a41cd91c, type: 2}
+  currentSlot:
+    weaponData: {fileID: 0}
+    amount: 0
 --- !u!61 &8681480448281111403
 BoxCollider2D:
   m_ObjectHideFlags: 0

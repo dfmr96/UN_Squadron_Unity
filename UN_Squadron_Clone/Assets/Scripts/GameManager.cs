@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
 
         score = 0;
         money = 3000;
-        playerInventory.slots.Clear();
+        //playerInventory.slots.Clear();
     }
 
     private void OnEnable()

@@ -15,5 +15,5 @@ MonoBehaviour:
   weaponName: Cluster
   price: 3000
   amount: 3
-  prefab: {fileID: 0}
+  prefab: {fileID: 6107351685174437051, guid: ca3ef6f000f509f4b973e27f8bf625fe, type: 3}
   sprite: {fileID: 1494175864, guid: a6d95d7bea5f00143a8a5f0309601182, type: 3}
