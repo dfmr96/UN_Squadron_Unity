@@ -16,4 +16,4 @@ MonoBehaviour:
   price: 2000
   amount: 50
   prefab: {fileID: 0}
-  sprite: {fileID: 0}
+  sprite: {fileID: -835668954, guid: a6d95d7bea5f00143a8a5f0309601182, type: 3}

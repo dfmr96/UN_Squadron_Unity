@@ -2,23 +2,34 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class SubWeaponSelector : MonoBehaviour
 {
-    public static Action<Transform> OnSubWeaponSelected;
+    private GameObject _selected;
+    private RectTransform _rectTransform;
+    [SerializeField] private float _speed;
 
-    private void OnEnable()
+    private void Awake()
     {
-        OnSubWeaponSelected += SubweaponSelected;
+        _rectTransform = GetComponent<RectTransform>();
     }
-
-    private void OnDisable()
+    void Update()
     {
-        OnSubWeaponSelected -= SubweaponSelected;
-    }
+        var selectedGameObject = EventSystem.current.currentSelectedGameObject;
+        _selected = (selectedGameObject == null) ? _selected : selectedGameObject;
+        EventSystem.current.SetSelectedGameObject(_selected);
+        if (_selected == null) return;
 
-    public void SubweaponSelected(Transform subWeaponTransform)
-    {
-        this.transform.position = subWeaponTransform.position;
+        //transform.position = Vector3.Lerp(transform.position, _selected.transform.position, _speed * Time.deltaTime);
+        transform.position = _selected.transform.position;
+        //var otherRect = _selected.GetComponent<RectTransform>();
+
+        //var horizontalLerp = Mathf.Lerp(_rectTransform.rect.size.x, otherRect.rect.size.x, _speed * Time.deltaTime);
+        //var verticalLerp = Mathf.Lerp(_rectTransform.rect.size.y, otherRect.rect.size.y, _speed * Time.deltaTime);
+
+
+        //_rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, horizontalLerp);
+        //_rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, verticalLerp);
     }
 }

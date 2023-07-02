@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -20,6 +21,5 @@ public class Inventory : ScriptableObject
             this.amount = amount;
         }
     }
-
     public List<InventorySlot> slots;
 }

@@ -6,8 +6,8 @@ using UnityEngine;
 public class WeaponData : ScriptableObject
 {
     [SerializeField] string weaponName;
-    [SerializeField] float price;
+    public int price;
     public float amount;
     [SerializeField] GameObject prefab;
-    [SerializeField] Sprite sprite;
+    public Sprite sprite;
 }

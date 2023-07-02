@@ -1,31 +1,58 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 [RequireComponent((typeof(AudioSource)), typeof(Button))]
-public class ShopButton : MonoBehaviour, ISelectHandler
+public class ShopButton : MonoBehaviour, IDeselectHandler, ISelectHandler, ISubmitHandler
 {
     public WeaponData weaponData;
     public Inventory playerInventory;
     public Button button;
+    public Image subWeaponImage;
+    public GameObject mask;
     public AudioSource audioSource;
     public AudioClip clip;
     public bool isExitBtn = false;
+    public bool isBuyable = true;
 
     private void Start()
     {
         button = GetComponent<Button>();
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = clip;
-        if (!isExitBtn) CheckInventory();
+
+        if (weaponData != null)
+        {
+            subWeaponImage.sprite = weaponData.sprite;
+            if (!isExitBtn) CheckInventory();
+        }
     }
     public void BuyItem()
     {
-        playerInventory.slots.Add(new Inventory.InventorySlot(weaponData, weaponData.amount));
-        button.interactable = false;
+        if (GameManager.instance.money >= weaponData.price)
+        {
+            GameManager.instance.RemoveMoney(weaponData);
+            playerInventory.slots.Add(new Inventory.InventorySlot(weaponData, weaponData.amount));
+            mask.SetActive(true);
+        }
+        else
+        {
+            Debug.Log("No enought money");
+        }
+    }
+
+    public void SellItem()
+    {
+        foreach (Inventory.InventorySlot slot in playerInventory.slots)
+        {
+            if (slot.weaponData == weaponData)
+            {
+                playerInventory.slots.Remove(slot);
+                break;
+            }
+        }
+        GameManager.instance.AddMoney(weaponData);
+        mask.SetActive(false);
     }
 
     public void CheckInventory()
@@ -34,18 +61,61 @@ public class ShopButton : MonoBehaviour, ISelectHandler
         {
             if (slot.weaponData == weaponData)
             {
-                button.interactable = false;
+                mask.SetActive(true);
             }
         }
-    }
-    public void OnSelect(BaseEventData eventData)
-    {
-        SubWeaponSelector.OnSubWeaponSelected?.Invoke(this.transform);
-        audioSource.Play();
     }
 
     public void FinishPurchase()
     {
         Debug.Log("Has salido de la tienda");
+    }
+
+    public void OnDeselect(BaseEventData eventData)
+    {
+        audioSource.Play();
+    }
+
+    public void OnSelect(BaseEventData eventData)
+    {
+
+    }
+
+    public void OnSubmit(BaseEventData eventData)
+    {
+        Debug.Log("Money Cheat " + UIStoreManager.instance.moneyCheat);
+        if (isBuyable)
+        {
+            if (!ItemPurchased())
+            {
+                BuyItem();
+            }
+            else
+            {
+                SellItem();
+            }
+        }
+        else
+        {
+            UIStoreManager.instance.moneyCheat++;
+
+            if (UIStoreManager.instance.moneyCheat == 10) 
+            {
+                GameManager.instance.AddMoney(7000);
+            }
+            Debug.Log("Cant be bought");
+        }
+    }
+
+    public bool ItemPurchased()
+    {
+        foreach (Inventory.InventorySlot slot in playerInventory.slots)
+        {
+            if (slot.weaponData == weaponData)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }

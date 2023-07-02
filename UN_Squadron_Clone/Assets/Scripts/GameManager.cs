@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
@@ -7,6 +6,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public int score;
     public int money;
+    public Inventory playerInventory;
     //public event Action OnGameOver;
 
     private void Awake()
@@ -19,26 +19,30 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-    private void Start()
-    {
 
         score = 0;
-        money = 0;
+        money = 3000;
+        playerInventory.slots.Clear();
     }
 
     private void OnEnable()
     {
-        EventBus.instance.OnEnemyDestroyed += UpdateMoney;
-        EventBus.instance.OnEnemyDestroyed += UpdateScore;
-        EventBus.instance.OnBossDestroyed += BossDefeated;
+        if (EventBus.instance != null)
+        {
+            EventBus.instance.OnEnemyDestroyed += UpdateMoney;
+            EventBus.instance.OnEnemyDestroyed += UpdateScore;
+            EventBus.instance.OnBossDestroyed += BossDefeated;
+        }
     }
 
     private void OnDisable()
     {
-        EventBus.instance.OnEnemyDestroyed -= UpdateMoney;
-        EventBus.instance.OnEnemyDestroyed -= UpdateScore;
-        EventBus.instance.OnBossDestroyed -= BossDefeated;
+        if (EventBus.instance != null)
+        {
+            EventBus.instance.OnEnemyDestroyed -= UpdateMoney;
+            EventBus.instance.OnEnemyDestroyed -= UpdateScore;
+            EventBus.instance.OnBossDestroyed -= BossDefeated;
+        }
 
     }
 
@@ -46,6 +50,24 @@ public class GameManager : MonoBehaviour
     {
         money += enemy.moneyPerKill;
         UIGameplayManager.instance.UpdateMoneySprites(money);
+    }
+
+    public void RemoveMoney(WeaponData weaponData)
+    {
+        money -= weaponData.price;
+        UIStoreManager.instance.UpdateMoneySprites(money);
+    }
+
+    public void AddMoney(WeaponData weaponData)
+    {
+        money += weaponData.price;
+        UIStoreManager.instance.UpdateMoneySprites(money);
+    }
+
+    public void AddMoney(int moneyToAdd)
+    {
+        money += moneyToAdd;
+        UIStoreManager.instance.UpdateMoneySprites(money);
     }
 
     public void UpdateScore(Enemy enemy)
@@ -62,7 +84,7 @@ public class GameManager : MonoBehaviour
 
     public void BossDefeated()
     {
-        
+
         StartCoroutine(GetBossMoney());
     }
 
