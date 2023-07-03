@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,7 +23,9 @@ public class GameManager : MonoBehaviour
 
         score = 0;
         money = 3000;
-        //playerInventory.slots.Clear();
+        
+        
+        if (SceneManager.GetActiveScene().name == "Shop") playerInventory.slots.Clear();
     }
 
     private void OnEnable()
@@ -94,8 +97,10 @@ public class GameManager : MonoBehaviour
         UIGameplayManager.instance._victoryPanel.SetActive(true);
         AudioManager.instance.bossReward.Play();
         Time.timeScale = 0f;
-        while (money < 50000)
+        int moneyGranted = 0;
+        while (moneyGranted < 50000)
         {
+            moneyGranted += 1000;
             money += 1000;
             UIGameplayManager.instance.UpdateMoneySprites(money);
             yield return new WaitForSecondsRealtime(0.02f);

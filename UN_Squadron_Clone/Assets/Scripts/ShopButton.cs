@@ -11,7 +11,7 @@ public class ShopButton : MonoBehaviour, IDeselectHandler, ISelectHandler, ISubm
     public Image subWeaponImage;
     public GameObject mask;
     public AudioSource audioSource;
-    public AudioClip clip;
+    public AudioClip[] clip;
     public bool isExitBtn = false;
     public bool isBuyable = true;
 
@@ -19,7 +19,6 @@ public class ShopButton : MonoBehaviour, IDeselectHandler, ISelectHandler, ISubm
     {
         button = GetComponent<Button>();
         audioSource = GetComponent<AudioSource>();
-        audioSource.clip = clip;
 
         if (weaponData != null)
         {
@@ -32,6 +31,7 @@ public class ShopButton : MonoBehaviour, IDeselectHandler, ISelectHandler, ISubm
         if (GameManager.instance.money >= weaponData.price)
         {
             GameManager.instance.RemoveMoney(weaponData);
+            audioSource.PlayOneShot(clip[1]);
             playerInventory.slots.Add(new Inventory.InventorySlot(weaponData, weaponData.amount));
             mask.SetActive(true);
         }
@@ -73,7 +73,7 @@ public class ShopButton : MonoBehaviour, IDeselectHandler, ISelectHandler, ISubm
 
     public void OnDeselect(BaseEventData eventData)
     {
-        audioSource.Play();
+        audioSource.PlayOneShot(clip[0]);
     }
 
     public void OnSelect(BaseEventData eventData)
@@ -94,6 +94,9 @@ public class ShopButton : MonoBehaviour, IDeselectHandler, ISelectHandler, ISubm
             {
                 SellItem();
             }
+        } else if (isExitBtn)
+        {
+            LoadingManager.Instance.LoadNewScene("Level1");
         }
         else
         {

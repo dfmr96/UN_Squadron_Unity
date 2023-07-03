@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Rendering;
 using UnityEngine;
 
 public class BombLogic : MonoBehaviour
@@ -12,6 +9,7 @@ public class BombLogic : MonoBehaviour
     [SerializeField] int impulseForce;
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip[] audioClip;
+    private bool isDestroyed = false;
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -22,13 +20,26 @@ public class BombLogic : MonoBehaviour
     }
     private void Update()
     {
-//        transform.Translate(Vector3.down * Time.deltaTime * speed);
+        if (transform.position.y < -12 && !isDestroyed) DestroyBomb();
+        
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<Enemy>() != null)
         {
             collision.gameObject.GetComponent<Enemy>().TakeDamage(damage);
+            DestroyBomb();
+        }
+
+        if (collision.GetComponent<Boss>() != null)
+        {
+            collision.GetComponent<Boss>().TakeDamage(damage);
+            DestroyBomb();
+        }
+
+        if (collision.GetComponent<MiniMissile>() != null)
+        {
+            collision.GetComponent<MiniMissile>().DestroyMissiles();
             DestroyBomb();
         }
     }
@@ -39,10 +50,11 @@ public class BombLogic : MonoBehaviour
 
     public void DestroyBomb()
     {
-        animator.SetBool("isDestroyed", true);
+        isDestroyed = true;
+        animator.SetBool("isDestroyed", isDestroyed);
         rb.Sleep();
         GetComponent<Collider2D>().enabled = false;
         PlaySound(audioClip[1]);
-        Destroy(gameObject,0.5f);
+        Destroy(gameObject, 0.5f);
     }
 }

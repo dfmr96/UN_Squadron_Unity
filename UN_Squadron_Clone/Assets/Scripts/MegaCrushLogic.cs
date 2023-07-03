@@ -12,10 +12,14 @@ public class MegaCrushLogic : MonoBehaviour
     public Light2D megaLight;
     public Color whiteLight;
     public Color blueLight;
+    public AudioSource audiosource;
+    public AudioClip[] audioClip;
 
     private void Start()
     {
         megaLight = GetComponent<Light2D>();
+        audiosource = GetComponent<AudioSource>();
+        audiosource.PlayOneShot(audioClip[0]);
     }
 
     private void Update()
@@ -36,6 +40,7 @@ public class MegaCrushLogic : MonoBehaviour
     public IEnumerator CastRays()
     {
         megaLight.enabled = true;
+        audiosource.PlayOneShot(audioClip[1]);
         for (int j = 0; j <= rayBursts; j++)
         {
             Vector3 cameraBoundsCorner = new Vector3(cameraBounds.bounds.max.x, cameraBounds.bounds.max.y, 0);
@@ -45,9 +50,9 @@ public class MegaCrushLogic : MonoBehaviour
                 DealDamage();
             }
             megaLight.color = blueLight;
-            yield return new WaitForSeconds(0.25f);
+            yield return new WaitForSeconds(0.2f);
             megaLight.color = whiteLight;
-            yield return new WaitForSeconds(0.25f);
+            yield return new WaitForSeconds(0.2f);
         }
         Destroy(gameObject);
     }
@@ -56,7 +61,7 @@ public class MegaCrushLogic : MonoBehaviour
 
     public void DealDamage()
     {
-        Vector2 pointA = new Vector2 (cameraBounds.bounds.min.x, cameraBounds.bounds.max.y);
+        Vector2 pointA = new Vector2(cameraBounds.bounds.min.x, cameraBounds.bounds.max.y);
         Vector2 pointB = new Vector2(cameraBounds.bounds.max.x, cameraBounds.bounds.min.y);
         Collider2D[] enemiesInside = Physics2D.OverlapAreaAll(pointA, pointB);
 
@@ -65,6 +70,16 @@ public class MegaCrushLogic : MonoBehaviour
             if (collider.GetComponent<Enemy>() != null)
             {
                 collider.GetComponent<Enemy>().TakeDamage(damage);
+            }
+
+            if (collider.GetComponent<Boss>() != null)
+            {
+                collider.GetComponent<Boss>().TakeDamage(damage);
+            }
+
+            if (collider.GetComponent<MiniMissile>() != null)
+            {
+                collider.GetComponent<MiniMissile>().DestroyMissiles();
             }
         }
     }

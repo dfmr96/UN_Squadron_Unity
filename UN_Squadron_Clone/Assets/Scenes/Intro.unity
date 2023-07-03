@@ -170,9 +170,9 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.21806453
+    x: 0.08510638
     y: 0
-    width: 0.56479263
+    width: 0.8316109
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -1197,7 +1197,7 @@ MonoBehaviour:
   play: {fileID: 476575169}
   audioSource: {fileID: 1411722686}
   fader: {fileID: 1539349868}
-  sceneToLoad: Level_1
+  sceneToLoad: Shop
 --- !u!4 &1411722684
 Transform:
   m_ObjectHideFlags: 0
