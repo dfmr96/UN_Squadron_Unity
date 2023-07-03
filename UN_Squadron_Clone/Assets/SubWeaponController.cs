@@ -12,6 +12,11 @@ public class SubWeaponController : MonoBehaviour
         {
             currentSlot = playerInventory.slots[0];
             EventBus.instance.SubWeaponUsed(currentSlot.amount);
+            EventBus.instance.SubWeaponChanged(currentSlot.weaponData);
+        } else
+        {
+            EventBus.instance.SubWeaponUsed(0);
+            EventBus.instance.SubWeaponChanged(null);
         }
     }
 
@@ -34,23 +39,33 @@ public class SubWeaponController : MonoBehaviour
         if (currentSlot.amount > 0)
         {
             currentSlot.weaponData.UseWeapon(transform);
-            EventBus.instance.SubWeaponUsed(currentSlot.amount);
             currentSlot.amount -= 1;
+            EventBus.instance.SubWeaponUsed(currentSlot.amount);
+            Debug.Log(currentSlot.weaponData.weaponName + " gastó un uso");
         }
 
         if (currentSlot.amount <= 0)
         {
+            Debug.Log(currentSlot.weaponData.weaponName + " ya no tiene usos");
             playerInventory.slots.Remove(currentSlot);
-
+            EventBus.instance.SubWeaponChanged(null);
+            EventBus.instance.SubWeaponUsed(0);
+            Debug.Log(currentSlot.weaponData.weaponName + " ha sido removido del inventario");
+            currentSlot = null;
             if (playerInventory.slots.Count > 0)
             {
                 currentSlot = playerInventory.slots[0];
+                EventBus.instance.SubWeaponChanged(currentSlot.weaponData);
+                EventBus.instance.SubWeaponUsed(currentSlot.amount);
+                Debug.Log(currentSlot.weaponData.weaponName + " es la nueva arma equipada. Hay al menos un tipo en el inventario");
+                //NextWeapon();
             }
             else
             {
                 currentSlot = null;
+                EventBus.instance.SubWeaponChanged(null);
+                Debug.Log("No hay ningun arma en el inventario");
             }
-            //NextWeapon();
         }
     }
 
@@ -70,6 +85,8 @@ public class SubWeaponController : MonoBehaviour
                     currentSlot = playerInventory.slots[0];
                     Debug.Log(currentSlot.weaponData.name + "equipado [else]");
                 }
+                EventBus.instance.SubWeaponChanged(currentSlot.weaponData);
+                EventBus.instance.SubWeaponUsed(currentSlot.amount);
                 return;
             }
         }   

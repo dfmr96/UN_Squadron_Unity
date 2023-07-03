@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
@@ -12,6 +13,8 @@ public class UIGameplayManager : MonoBehaviour
     [SerializeField] Image[] _moneyImages;
     [SerializeField] Image[] _scoreImages;
     [SerializeField] Image[] _subWeaponRemainingImage;
+    [SerializeField] Image _subWeaponImage;
+    [SerializeField] Image _subWeaponNameImage;
     [SerializeField] Image healthBar;
     [SerializeField] float healthRatio;
     [SerializeField] Animator _healthBarAnim;
@@ -37,25 +40,52 @@ public class UIGameplayManager : MonoBehaviour
         EventBus.instance.OnPlayerDamaged += PlayPortraitHurt;
         EventBus.instance.OnPlayerRecover += PlayerRecovered;
         EventBus.instance.OnSubweaponUsed += UpdateSubWeaponReamining;
+        EventBus.instance.OnSubweaponChanged += UpdateSubWeaponSprites;
     }
-
-    private void UpdateSubWeaponReamining(float remaining)
-    {
-        int[] remainingDigits = GetIntArray((int)remaining);
-
-        for (int i = 0; i < remainingDigits.Length; i++)
-        {
-            _subWeaponRemainingImage[i].sprite = _numberFonts.sprite[remainingDigits[i]];
-        }
-    }
-
     private void OnDisable()
     {
         EventBus.instance.OnPlayerSpawned -= SetHealth;
         EventBus.instance.OnPlayerDamaged -= UpdateHealthBar;
         EventBus.instance.OnPlayerDamaged -= PlayPortraitHurt;
         EventBus.instance.OnPlayerRecover -= PlayerRecovered;
+        EventBus.instance.OnSubweaponUsed -= UpdateSubWeaponReamining;
+        EventBus.instance.OnSubweaponChanged -= UpdateSubWeaponSprites;
     }
+
+    private void UpdateSubWeaponReamining(float remaining)
+    {
+        int[] remainingDigits = GetIntArray((int)remaining);
+
+        foreach(Image image in _subWeaponRemainingImage)
+        {
+            image.gameObject.SetActive(false);
+        }
+
+        for (int i = 0; i < remainingDigits.Length; i++)
+        {
+            if (!_subWeaponRemainingImage[i].gameObject.activeSelf) _subWeaponRemainingImage[i].gameObject.SetActive(true);
+            _subWeaponRemainingImage[i].sprite = _numberFonts.sprite[remainingDigits[i]];
+        }
+    }
+
+    private void UpdateSubWeaponSprites(WeaponData weaponData)
+    {
+        if (weaponData == null) 
+        {
+            _subWeaponImage.sprite = null;
+            _subWeaponNameImage.sprite = null;
+            _subWeaponImage.gameObject.SetActive(false);
+            _subWeaponNameImage.gameObject.SetActive(false);
+            return;
+        }
+        _subWeaponImage.gameObject.SetActive(true);
+        _subWeaponNameImage.gameObject.SetActive(true);
+        _subWeaponNameImage.sprite = weaponData.weaponNameSprite;
+        _subWeaponNameImage.SetNativeSize();
+        _subWeaponImage.sprite = weaponData.weaponSelectorSprite;
+        _subWeaponImage.SetNativeSize();
+    }
+
 
     public void UpdateMoneySprites(int money)
     {

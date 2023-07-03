@@ -115,7 +115,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MegaCrushSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 197
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028aee72fa284f540ac8574587a94161
+      internalID: 1497966719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegaCrushSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 193
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e81eb5c3f03c284e831528830fe977b
+      internalID: 1148922081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegaCrushSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 198
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97df5fd30211a9a48886a91479c68185
+      internalID: 1588141602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegaCrushSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 187
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d37270f981761644fb5b09e603189b91
+      internalID: 2008822330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegaCrushSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 176
+        width: 67
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89afb7cffe0c4e64899618b15ad8c0af
+      internalID: 750919154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegaCrushSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 152
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d395824126ce241abcf405a07dbc2c
+      internalID: -947374103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegaCrushSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 153
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04f458a8362a2b438bbebad0a9daae9
+      internalID: 2014899741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegaCrushSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 119
+        width: 47
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366c897aff222be4fb3e484297192f05
+      internalID: -689722494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegaCrushSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 112
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f7c4c11c3f62548b24c437d4db5914
+      internalID: -1710940829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegaCrushSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 109
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052e49400e4f2dc469f52d148aa72307
+      internalID: 662791366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegaCrushSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 64
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a94de831d662c4fab9472eff6f217d
+      internalID: -1188568942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegaCrushSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 30
+        width: 15
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b015849c12a7de48ba2d32d1a26000f
+      internalID: -1366985488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +378,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MegaCrushSpriteSheet_0: 1497966719
+      MegaCrushSpriteSheet_1: 1148922081
+      MegaCrushSpriteSheet_10: -1188568942
+      MegaCrushSpriteSheet_11: -1366985488
+      MegaCrushSpriteSheet_2: 1588141602
+      MegaCrushSpriteSheet_3: 2008822330
+      MegaCrushSpriteSheet_4: 750919154
+      MegaCrushSpriteSheet_5: -947374103
+      MegaCrushSpriteSheet_6: 2014899741
+      MegaCrushSpriteSheet_7: -689722494
+      MegaCrushSpriteSheet_8: -1710940829
+      MegaCrushSpriteSheet_9: 662791366
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1

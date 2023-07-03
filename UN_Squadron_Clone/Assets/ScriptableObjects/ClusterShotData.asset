@@ -17,3 +17,6 @@ MonoBehaviour:
   amount: 3
   prefab: {fileID: 6107351685174437051, guid: ca3ef6f000f509f4b973e27f8bf625fe, type: 3}
   sprite: {fileID: 1494175864, guid: a6d95d7bea5f00143a8a5f0309601182, type: 3}
+  weaponSelectorSprite: {fileID: -274304225, guid: 21e494f6dbfce094193ddf648d0ddfa6, type: 3}
+  weaponNameSprite: {fileID: -1484170450, guid: 21e494f6dbfce094193ddf648d0ddfa6, type: 3}
+  offsetTransform: {x: 0, y: 0, z: 0}
