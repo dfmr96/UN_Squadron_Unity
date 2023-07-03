@@ -44,11 +44,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c13bf978f8d0f054b8a74d8a961a8d11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberFonts: {fileID: 11400000, guid: 9691e44a91fae3e469ceebb4952c064b, type: 2}
-  moneyImages:
+  _numberFonts: {fileID: 11400000, guid: 9691e44a91fae3e469ceebb4952c064b, type: 2}
+  _moneyImages:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  _scoreImages:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _subWeaponRemainingImage:
+  - {fileID: 0}
+  - {fileID: 0}
+  _subWeaponImage: {fileID: 0}
+  _subWeaponNameImage: {fileID: 0}
+  healthBar: {fileID: 0}
+  healthRatio: 0
+  _healthBarAnim: {fileID: 0}
+  _portraitAnim: {fileID: 0}
+  _victoryPanel: {fileID: 0}

@@ -15,7 +15,7 @@ TagManager:
   - Player
   - Water
   - UI
-  - 
+  - IgnoreMegaCrush
   - 
   - 
   - 
@@ -47,4 +47,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: IgnoreMegaCrush
+    uniqueID: 494792043
     locked: 0

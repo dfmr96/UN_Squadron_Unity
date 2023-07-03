@@ -1747,74 +1747,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1001 &510477937
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2539946172309487204, guid: ad608db33a1a4494e940eed359b80935, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539946172309487204, guid: ad608db33a1a4494e940eed359b80935, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539946172309487204, guid: ad608db33a1a4494e940eed359b80935, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539946172309487204, guid: ad608db33a1a4494e940eed359b80935, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539946172309487204, guid: ad608db33a1a4494e940eed359b80935, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539946172309487204, guid: ad608db33a1a4494e940eed359b80935, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539946172309487204, guid: ad608db33a1a4494e940eed359b80935, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539946172309487204, guid: ad608db33a1a4494e940eed359b80935, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539946172309487204, guid: ad608db33a1a4494e940eed359b80935, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539946172309487204, guid: ad608db33a1a4494e940eed359b80935, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539946172309487204, guid: ad608db33a1a4494e940eed359b80935, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2539946172309487206, guid: ad608db33a1a4494e940eed359b80935, type: 3}
-      propertyPath: m_Name
-      value: LoadingManager
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ad608db33a1a4494e940eed359b80935, type: 3}
---- !u!114 &510477938 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2539946172309487207, guid: ad608db33a1a4494e940eed359b80935, type: 3}
-  m_PrefabInstance: {fileID: 510477937}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b924dda019dc694b9cd840517535e2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &548047292
 GameObject:
   m_ObjectHideFlags: 0
@@ -2269,6 +2201,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a756b3e9e8774dc45b44d9a0ceecc4e0, type: 3}
+--- !u!114 &750572333 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 750023756, guid: cc75fb854fc86084582fced3154a32cf, type: 3}
+  m_PrefabInstance: {fileID: 1846510354}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b924dda019dc694b9cd840517535e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &790616925
 GameObject:
   m_ObjectHideFlags: 0
@@ -3876,7 +3819,7 @@ PrefabInstance:
     - target: {fileID: 5612566290528301922, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 510477938}
+      objectReference: {fileID: 750572333}
     - target: {fileID: 5612566290528301922, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -4176,9 +4119,9 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.053191487
+    x: 0.08510638
     y: 0
-    width: 0.89361703
+    width: 0.8316109
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
