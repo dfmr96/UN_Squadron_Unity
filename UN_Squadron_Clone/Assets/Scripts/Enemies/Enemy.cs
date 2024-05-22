@@ -5,7 +5,7 @@ using UnityEngine;
 
 
 [RequireComponent(typeof(BoxCollider2D))]
-public class Enemy : MonoBehaviour, IDamagable, IFire
+public class Enemy : MonoBehaviour, IDamageable, IFire
 {
     protected bool _customAnim;
     protected SpriteRenderer _spriteRenderer;
@@ -59,7 +59,7 @@ public class Enemy : MonoBehaviour, IDamagable, IFire
     {
         Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
         AudioManager.instance.enemyDestroyedAudio.Play();
-        //EventBus.instance.EnemyDestroyed(this);
+        EventBus.instance.EnemyDestroyed(this);
         Destroy(gameObject);
         Debug.Log("Enemy Destroyed");
     }
