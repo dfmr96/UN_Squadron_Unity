@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public float speed;
+    [SerializeField] private float speed;
+    [field: SerializeField] public BoxCollider2D CameraBounds { get; private set; }
 
     private void Start()
     {
@@ -12,6 +13,6 @@ public class CameraController : MonoBehaviour
     }
     private void Update()
     {
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+        transform.Translate(Vector3.right * (speed * Time.deltaTime));
     }
 }

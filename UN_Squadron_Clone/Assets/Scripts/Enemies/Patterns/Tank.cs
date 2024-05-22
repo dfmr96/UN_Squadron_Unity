@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-public class Tank : Enemy
+﻿using 
+public class Tank
 {
     
 } 
