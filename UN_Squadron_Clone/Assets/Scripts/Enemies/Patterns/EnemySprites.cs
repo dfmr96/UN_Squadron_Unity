@@ -1,10 +1,8 @@
 ﻿using UnityEngine;
 
-namespace Enemies.Patterns
+
+[CreateAssetMenu(fileName = "EnemySprites", menuName = "Enemy/Sprite", order = 0)]
+public class EnemySprites : ScriptableObject
 {
-    [CreateAssetMenu(fileName = "FILENAME", menuName = "MENUNAME", order = 0)]
-    public class EnemySprites : ScriptableObject
-    {
-        public Sprite[] enemySprites;
-    }
+    public Sprite[] enemySprites;
 }

@@ -4,9 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - _player: {instanceID: 0}
-  - _explosionPrefab: {fileID: 3336104701328597698, guid: d207451a5c8262b4d9753a7d39dbe53b, type: 3}
-  - _bulletPrefab: {instanceID: 0}
+  - _vulkanPOWsGO: {fileID: 11400000, guid: 68f6019a60be4fd469da8f41f1e56031, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

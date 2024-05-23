@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
 using System.Collections.Generic;
-using Enemies.Patterns;
 public class DefaultTurret: Turret
 {
     [SerializeField] private EnemyData _enemyData;
@@ -16,7 +15,7 @@ public class DefaultTurret: Turret
         _health = _enemyData._health;
         _canDropPOW = _canDrop;
         _type = _dropType;
-        _sprites = _defaultTurretSprites;
+        _sprites = _defaultTurretSprites.enemySprites;
     }
 
 
@@ -33,7 +32,7 @@ public class DefaultTurret: Turret
         ChangeTurretSprite(AimDirection());
         if (_fireRateCounter > 1 / _fireRate)
         {
-           Fire(AimDirection());
+           Fire();
         }
     }
 }

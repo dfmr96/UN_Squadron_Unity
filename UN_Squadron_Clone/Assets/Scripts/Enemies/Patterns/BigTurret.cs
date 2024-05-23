@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
 using System.Collections.Generic;
-using Enemies.Patterns;
 
 public class BigTurret: Turret
 {
@@ -21,7 +20,7 @@ public class BigTurret: Turret
         _health = _enemyData._health;
         _canDropPOW = _canDrop;
         _type = _dropType;
-        _sprites = _bigTurretSprite;
+        _sprites = _bigTurretSprite.enemySprites;
     }
 
 
@@ -52,12 +51,12 @@ public class BigTurret: Turret
         RaycastHit2D hit = Physics2D.Raycast(transform.position, _raycastDir, 20, layerMask);
         if (hit.collider != null)
         {
-            Fire(Vector3.zero);
+            Fire();
             Debug.Log("Torreta dispara a Jugador");
         }
     }
 
-    protected override void Fire(Vector3 dir)
+    public override void Fire()
     {
         StartCoroutine(BigTurretBurst(_bulletPrefab));
     }

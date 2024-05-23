@@ -35,7 +35,7 @@ public class Tank : Enemy
         }
         if (_fireRateCounter > 1 / _fireRate)
         {
-            Fire(AimDirection());
+            Fire();
         }
     }
 

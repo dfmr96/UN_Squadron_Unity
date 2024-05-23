@@ -8,7 +8,7 @@ public enum BossStatus
     Danger,
     Destroyed
 }
-public class Boss : MonoBehaviour
+public class Boss : MonoBehaviour, IDamageable
 {
     public float health;
     public float maxHealth;
@@ -102,8 +102,6 @@ public class Boss : MonoBehaviour
             yield return new WaitForSeconds(4f);
         }
 
-
-
     }
 
     private void DestroyEnemy()
@@ -123,5 +121,11 @@ public class Boss : MonoBehaviour
         //Desahablitar InputJugador
         //Correr video de cuenta atras
         //Ir a ventana de victoria
+    }
+
+
+    public void Fire(Vector3 direction)
+    {
+        throw new System.NotImplementedException();
     }
 }

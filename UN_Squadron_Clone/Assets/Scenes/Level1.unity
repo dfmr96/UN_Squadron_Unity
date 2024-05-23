@@ -563,6 +563,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 645075486967933856, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
   m_PrefabInstance: {fileID: 245541466}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &264092705 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8681480448281111407, guid: ae03959642eebb146992fd4ad935abab, type: 3}
+  m_PrefabInstance: {fileID: 2135784263020640395}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &289483203
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -636,6 +641,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 645075486967933856, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
   m_PrefabInstance: {fileID: 289483203}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &335306410 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 645075486967933858, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
+  m_PrefabInstance: {fileID: 512076641}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &392213076
 PrefabInstance:
@@ -1288,8 +1298,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -6.5963, y: -11.35355, z: 0}
-    m_Extent: {x: 16.788, y: 4.69985, z: 0}
+    m_Center: {x: -6.5955997, y: -11.365601, z: 0}
+    m_Extent: {x: 16.796, y: 4.7003, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1316,8 +1326,12 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 645075486967933856, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0234
+      objectReference: {fileID: 0}
+    - target: {fileID: 645075486967933856, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -133.74
+      value: -133.7824
       objectReference: {fileID: 0}
     - target: {fileID: 645075486967933856, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1359,13 +1373,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green_Helicopter (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 645075486967933858, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 645075486967933854, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
 --- !u!4 &512076642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 645075486967933856, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
   m_PrefabInstance: {fileID: 512076641}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &512076643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335306410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1cd41c0b3e04a618e2c22ca3a2ccbac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _vulkanPOWsGO: {fileID: 11400000, guid: 68f6019a60be4fd469da8f41f1e56031, type: 2}
+  scorePerKill: 100
+  moneyPerKill: 300
+  _enemyData: {fileID: 11400000, guid: b3d27dd5728b86343a29912ce1788bf0, type: 2}
+  _canDrop: 1
+  _dropType: 0
+  _heloSprite: {fileID: 11400000, guid: b2f1b0ad608210f40addf86dd52e4d55, type: 2}
+  player: {fileID: 264092705}
 --- !u!1001 &513239617
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6623,7 +6662,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4878694117584995846, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.2601626
+      value: 0.23620309
       objectReference: {fileID: 0}
     - target: {fileID: 4878694117584995846, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -6631,7 +6670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4878694117584995846, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.48037168
+      value: 0.52853996
       objectReference: {fileID: 0}
     - target: {fileID: 4878694117584995846, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
