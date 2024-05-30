@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78e697f246874795819190156436055c, type: 3}
-  m_Name: HeloSprites
+  m_Script: {fileID: 11500000, guid: 2b4d6be27a264046ba2f3f9e7810a57d, type: 3}
+  m_Name: EnemyCommandFactory
   m_EditorClassIdentifier: 
-  enemySprites:
-  - {fileID: -1476713656, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  enemyFactoryInitializer: {fileID: 11400000, guid: 55691bcab47fe414799f3fbb5ffa181f, type: 2}

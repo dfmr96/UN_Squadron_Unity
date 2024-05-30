@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 730511088}
     m_Modifications:
+    - target: {fileID: 512076643, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 264092705}
     - target: {fileID: 645075486967933854, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
       propertyPath: _health
       value: 1
@@ -642,11 +646,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 645075486967933856, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
   m_PrefabInstance: {fileID: 289483203}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &335306410 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 645075486967933858, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
-  m_PrefabInstance: {fileID: 512076641}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &392213076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -728,6 +727,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 730511088}
     m_Modifications:
+    - target: {fileID: 512076643, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 264092705}
     - target: {fileID: 645075486967933854, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
       propertyPath: _fireRate
       value: 0.5
@@ -1298,8 +1301,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -6.5955997, y: -11.365601, z: 0}
-    m_Extent: {x: 16.796, y: 4.7003, z: 0}
+    m_Center: {x: -6.5937004, y: -11.354799, z: 0}
+    m_Extent: {x: 16.7957, y: 4.6987, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1321,13 +1324,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 730511088}
     m_Modifications:
+    - target: {fileID: 512076643, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 264092705}
     - target: {fileID: 645075486967933856, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
       propertyPath: m_RootOrder
       value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 645075486967933856, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.0234
       objectReference: {fileID: 0}
     - target: {fileID: 645075486967933856, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1373,38 +1376,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green_Helicopter (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 645075486967933858, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 645075486967933854, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
 --- !u!4 &512076642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 645075486967933856, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
   m_PrefabInstance: {fileID: 512076641}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &512076643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 335306410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1cd41c0b3e04a618e2c22ca3a2ccbac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _vulkanPOWsGO: {fileID: 11400000, guid: 68f6019a60be4fd469da8f41f1e56031, type: 2}
-  scorePerKill: 100
-  moneyPerKill: 300
-  _enemyData: {fileID: 11400000, guid: b3d27dd5728b86343a29912ce1788bf0, type: 2}
-  _canDrop: 1
-  _dropType: 0
-  _heloSprite: {fileID: 11400000, guid: b2f1b0ad608210f40addf86dd52e4d55, type: 2}
-  player: {fileID: 264092705}
 --- !u!1001 &513239617
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1596,6 +1574,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 730511088}
     m_Modifications:
+    - target: {fileID: 512076643, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 264092705}
     - target: {fileID: 645075486967933854, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
       propertyPath: _health
       value: 1
@@ -1626,11 +1608,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 645075486967933856, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0.008822803
       objectReference: {fileID: 0}
     - target: {fileID: 645075486967933856, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0.9999611
       objectReference: {fileID: 0}
     - target: {fileID: 645075486967933856, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1646,7 +1628,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 645075486967933856, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 1.011
       objectReference: {fileID: 0}
     - target: {fileID: 645075486967933858, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
       propertyPath: m_Name
@@ -1722,7 +1704,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5122151746184827697, guid: c2df880df372e944ba5dd733fe9ab3a5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c2df880df372e944ba5dd733fe9ab3a5, type: 3}
 --- !u!4 &607393640 stripped
 Transform:
@@ -4408,6 +4391,31 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 645075486967933856, guid: ff5760ef6400cb64d89041689033b6d3, type: 3}
   m_PrefabInstance: {fileID: 1267307902}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1295338877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5122151746184827661, guid: c2df880df372e944ba5dd733fe9ab3a5, type: 3}
+  m_PrefabInstance: {fileID: 607393639}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1295338878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295338877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1cd41c0b3e04a618e2c22ca3a2ccbac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _vulkanPOWsGO: {fileID: 0}
+  scorePerKill: 100
+  moneyPerKill: 300
+  _enemyData: {fileID: 11400000, guid: b3d27dd5728b86343a29912ce1788bf0, type: 2}
+  _canDrop: 0
+  _dropType: 0
+  _heloSprite: {fileID: 11400000, guid: b2f1b0ad608210f40addf86dd52e4d55, type: 2}
+  player: {fileID: 264092705}
 --- !u!1001 &1302767042
 PrefabInstance:
   m_ObjectHideFlags: 0

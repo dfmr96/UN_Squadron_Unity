@@ -13,11 +13,11 @@ public class BigTurret: Turret
     private Vector3 _raycastDir = Vector3.zero;
     public void Awake()
     {
-        _health = _enemyData._health;
-        _customAnim = _enemyData._customAnim;
-        _fireRate = _enemyData._fireRate;
-        _collisionDamage = _enemyData._collisionDamage;
-        _health = _enemyData._health;
+        _health = _enemyData.health;
+        _customAnim = _enemyData.customAnim;
+        _fireRate = _enemyData.fireRate;
+        _collisionDamage = _enemyData.collisionDamage;
+        _health = _enemyData.health;
         _canDropPOW = _canDrop;
         _type = _dropType;
         _sprites = _bigTurretSprite.enemySprites;

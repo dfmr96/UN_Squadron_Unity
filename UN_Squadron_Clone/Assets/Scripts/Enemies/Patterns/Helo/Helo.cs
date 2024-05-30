@@ -1,27 +1,47 @@
 ﻿using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
+
 
 public class Helo : Enemy
 {
     [SerializeField] private EnemyData _enemyData;
-
-    [SerializeField] private bool _canDrop;
+    
     [SerializeField] private VulkanPOWType _dropType;
     [SerializeField] private EnemySprites _heloSprite;
-    [SerializeField] private GameObject player;
+    //[SerializeField] public GameObject player;
     private Vector3 aimdir;
     private void Awake()
     {
-        _health = _enemyData._health;
-        _customAnim = _enemyData._customAnim;
-        _fireRate = _enemyData._fireRate;
-        _collisionDamage = _enemyData._collisionDamage;
-        _canDropPOW = _canDrop;
-        _type = _dropType;
-        _sprites = _heloSprite.enemySprites;
-        _player = player;
+        _health = _enemyData.health;
+        _moveSpeed = _enemyData.moveSpeed;
+        
+        _collisionDamage = _enemyData.collisionDamage;
         _explosionPrefab = _enemyData.explosionPrefab;
+        
+        
+        _type = _dropType;
+        
+        if ( Random.value >= 0.5)
+        {
+            _canDropPOW = true;
+        }
+        else
+        {
+            _canDropPOW = false;
+        }
+        
+        
+        _sprites = _heloSprite.enemySprites;
+        _customAnim = _enemyData.customAnim;
+        
+        
+        
+        
+        _fireRate = _enemyData.fireRate;
         _bulletPrefab = _enemyData.bulletPrefab;
+        
+        
     }
     
     private void Start()

@@ -13,12 +13,12 @@ public class Enemy : MonoBehaviour, IDamageable
     
     
     protected float _health;
-    protected int _moveSpeed = 3;
+    protected int _moveSpeed;
     
     protected bool _canDropPOW;
     protected VulkanPOWType _type;
     [SerializeField] VulkanPOWs _vulkanPOWsGO;
-    protected GameObject _player;
+    public GameObject _player;
 
     protected float _fireRateCounter = 0;
     protected float _fireRate;
@@ -95,7 +95,7 @@ public class Enemy : MonoBehaviour, IDamageable
 
     private void DropItem()
     {
-        if (_canDropPOW)
+        if (_canDropPOW && _vulkanPOWsGO != null)
         {
             switch (_type)
             {
