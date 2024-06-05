@@ -4,11 +4,11 @@ using UnityEngine;
 namespace Pickupables
 {
     [RequireComponent(typeof(BoxCollider2D))]
-    public class VulkanUpgrade : MonoBehaviour, IPickupable
+    public class VulkanUpgrade : Item
     {
         [SerializeField] int points;
 
-        public void PickUp(PlayerController playerController)
+        public override void PickUp(PlayerController playerController)
         {
             playerController.FrontVulkan.AddPoints(points);
             AudioManager.instance.vulkanPOW.Play();

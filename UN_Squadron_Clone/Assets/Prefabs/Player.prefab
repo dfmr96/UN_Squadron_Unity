@@ -247,7 +247,7 @@ MonoBehaviour:
   invulnerabilityTime: 2
   isInvulnerable: 0
   _recoveryTime: 3
-  _camera: {fileID: 0}
+  sideScroll: {fileID: 0}
   _damagedFlames: {fileID: 1923305145}
   _aircraftSprites:
   - {fileID: -1312131677, guid: efa7bf1c712bbd7448a73efcf6ba7ef1, type: 3}

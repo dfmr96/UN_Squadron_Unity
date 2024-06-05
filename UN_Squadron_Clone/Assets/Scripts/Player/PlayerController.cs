@@ -26,10 +26,11 @@ public class PlayerController : MonoBehaviour
     public bool isInvulnerable;
     
     [SerializeField] int _recoveryTime;
+    [FormerlySerializedAs("_camera")]
     [Space(20)]
     [Header("GameObjects")]
     [Space(10)]
-    [SerializeField] CameraController _camera;
+    [SerializeField] SideScrollController sideScroll;
     [SerializeField] GameObject _damagedFlames;
 
     [SerializeField] Sprite[] _aircraftSprites;
@@ -68,8 +69,8 @@ public class PlayerController : MonoBehaviour
     }
     private void GetReferences()
     {
-        _cameraCol = _camera.CameraBounds;
-        transform.parent = _camera.transform;
+        _cameraCol = sideScroll.Bounds;
+        transform.parent = sideScroll.transform;
         _playerCol = GetComponent<BoxCollider2D>();
         _aircraftRenderer = GetComponent<SpriteRenderer>();
         _anim = GetComponent<Animator>();
@@ -87,12 +88,12 @@ public class PlayerController : MonoBehaviour
         _vertical = Input.GetAxisRaw("Vertical");
         
         Vector3 dir = new Vector3(_horizontal, _vertical).normalized;
-        CheckCameraBounds();
+        CheckBounds();
         transform.Translate(dir * (_speed * Time.deltaTime));
 
         _anim.SetInteger("Vertical", (int)_vertical);
     }
-    private void CheckCameraBounds()
+    private void CheckBounds()
     {
         //Chequeo de colisiones, si el jugador intenta atravesar la pantalla no podra
         if (_playerCol.bounds.min.x < _cameraCol.bounds.min.x && _horizontal == -1)

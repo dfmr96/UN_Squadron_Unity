@@ -1,9 +1,9 @@
 ﻿using DefaultNamespace;
 using UnityEngine;
 
-namespace PowerUps
+namespace Pickupables
 {
-    public abstract class PowerUp : MonoBehaviour, IPickupable
+    public abstract class Item : MonoBehaviour, IPickupable
     {
         public abstract void PickUp(PlayerController playerController);
     }

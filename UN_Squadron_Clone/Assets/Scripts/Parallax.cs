@@ -10,11 +10,11 @@ public class Parallax : MonoBehaviour
     [SerializeField] float middlegroundSpeed;
     [SerializeField] SpriteRenderer foregroundLayer;
     [SerializeField] float foregroundSpeed;
-    [SerializeField] CameraController _camController;
+    [SerializeField] SideScrollController _camController;
 
     private void LateUpdate()
     {
-        backgroundLayer.gameObject.transform.Translate(Vector3.right * backgroundSpeed * Time.deltaTime);
-        middlegroundLayer.gameObject.transform.Translate(Vector3.right * middlegroundSpeed * Time.deltaTime);
+        backgroundLayer.gameObject.transform.Translate(Vector3.right * (backgroundSpeed * Time.deltaTime));
+        middlegroundLayer.gameObject.transform.Translate(Vector3.right * (middlegroundSpeed * Time.deltaTime));
     }
 }

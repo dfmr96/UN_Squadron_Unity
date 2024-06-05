@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class SideScrollController : MonoBehaviour
 {
     [SerializeField] private float speed;
-    [field: SerializeField] public BoxCollider2D CameraBounds { get; private set; }
+    [field: SerializeField] public BoxCollider2D Bounds { get; private set; }
 
     private void Start()
     {
