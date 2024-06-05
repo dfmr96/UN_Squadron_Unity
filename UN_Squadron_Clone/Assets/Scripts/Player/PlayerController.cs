@@ -1,5 +1,9 @@
 using System.Collections;
+using DefaultNamespace;
+using Pickupables;
+using Player;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public enum PlayerState
 {
@@ -8,6 +12,8 @@ public enum PlayerState
     critical,
     destroyed
 }
+
+[RequireComponent(typeof(BoxCollider2D))]
 public class PlayerController : MonoBehaviour
 {
     [Header("Player Stats")]
@@ -18,105 +24,78 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float _speed = 15;
     [SerializeField] float invulnerabilityTime;
     public bool isInvulnerable;
-    [SerializeField] float _vulkanFireRate;
-    [SerializeField] float _vulkanCounter;
-    [SerializeField] int _currentVulkan;
-    [SerializeField] GameObject _currentVulkanBullet;
-    [SerializeField] int _pointsToNextVulkan;
-    [SerializeField] int _nextVulkanPoints;
-    [SerializeField] int _currentVulkanLevel;
-    [SerializeField] int[] _vulkanLevels = { 0, 2, 9, 18 };
+    
     [SerializeField] int _recoveryTime;
+    [FormerlySerializedAs("_camera")]
     [Space(20)]
     [Header("GameObjects")]
     [Space(10)]
-    [SerializeField] GameObject _camera;
-    [SerializeField] GameObject[] _vulkanBullets;
-    [SerializeField] GameObject _vulkanCannon;
+    [SerializeField] SideScrollController sideScroll;
     [SerializeField] GameObject _damagedFlames;
 
     [SerializeField] Sprite[] _aircraftSprites;
-    SpriteRenderer _aircraftRenderer;
+    private SpriteRenderer _aircraftRenderer;
     [SerializeField] Animator _anim;
+    
+    
 
     //Privados
-    float _horizontal;
-    float _vertical;
+    private float _horizontal;
+    private float _vertical;
     private BoxCollider2D _cameraCol;
     private BoxCollider2D _playerCol;
 
+    [field: SerializeField] public Vulkan FrontVulkan { get; private set; }
+
     private void OnEnable()
     {
-        EventBus.instance.OnBossDestroyed += () =>
-        {
-            AudioManager.instance.playerDamaged.Stop();
-            isInvulnerable = true;
-            this.enabled = false;
-        };
+        EventBus.instance.OnBossDestroyed += OnBossDestroyed;
     }
-
+    private void OnBossDestroyed()
+    {
+        AudioManager.instance.playerDamaged.Stop();
+        isInvulnerable = true;
+        enabled = false;
+    }
     private void OnDisable()
     {
-        EventBus.instance.OnBossDestroyed -= () =>
-        {
-            AudioManager.instance.playerDamaged.Stop();
-            isInvulnerable = true;
-            this.enabled = false;
-        };
+        EventBus.instance.OnBossDestroyed -= OnBossDestroyed;
     }
-
     private void Start()
     {
-        _camera = FindObjectOfType<CameraController>().gameObject;
-        _cameraCol = _camera.GetComponentInChildren<BoxCollider2D>();
-        _playerCol = GetComponent<BoxCollider2D>();
-        transform.parent = _camera.transform;
-        _aircraftRenderer = GetComponent<SpriteRenderer>();
-        _anim = GetComponent<Animator>();
+        FrontVulkan.InitVulkan();
+        GetReferences();
         isInvulnerable = false;
         health = maxHealth;
         EventBus.instance.PlayerSpawned(this);
-
-        _nextVulkanPoints = _vulkanLevels[_currentVulkanLevel + 1] - _currentVulkan;
-        SetVulkanBullet();
     }
-
-
+    private void GetReferences()
+    {
+        _cameraCol = sideScroll.Bounds;
+        transform.parent = sideScroll.transform;
+        _playerCol = GetComponent<BoxCollider2D>();
+        _aircraftRenderer = GetComponent<SpriteRenderer>();
+        _anim = GetComponent<Animator>();
+    }
     private void Update()
     {
-        //Debug.Log(GetComponent<Rigidbody2D>().velocity.magnitude);
+        FrontVulkan.Update();
         Movement();
-
-        FireVulkan();
+        if (Input.GetKey(KeyCode.Space)) FrontVulkan.TryFire();
     }
-
-    private void FireVulkan()
-    {
-        _vulkanCounter += Time.deltaTime;
-
-        if (Input.GetKey(KeyCode.Space) && _vulkanCounter > 1 / _vulkanFireRate && _state != PlayerState.destroyed)
-        {
-            Instantiate(_currentVulkanBullet, _vulkanCannon.transform.position, Quaternion.identity);
-            AudioManager.instance.vulkanAudio.Play();
-            _vulkanCounter = 0;
-        }
-    }
-
     private void Movement()
     {
         if (_state == PlayerState.destroyed) return;
         _horizontal = Input.GetAxisRaw("Horizontal");
         _vertical = Input.GetAxisRaw("Vertical");
-
-        CheckCameraBounds();
-
-        Vector3 _dir = new Vector3(_horizontal, _vertical).normalized;
-        transform.Translate(_dir * _speed * Time.deltaTime);
+        
+        Vector3 dir = new Vector3(_horizontal, _vertical).normalized;
+        CheckBounds();
+        transform.Translate(dir * (_speed * Time.deltaTime));
 
         _anim.SetInteger("Vertical", (int)_vertical);
     }
-
-    private void CheckCameraBounds()
+    private void CheckBounds()
     {
         //Chequeo de colisiones, si el jugador intenta atravesar la pantalla no podra
         if (_playerCol.bounds.min.x < _cameraCol.bounds.min.x && _horizontal == -1)
@@ -139,14 +118,11 @@ public class PlayerController : MonoBehaviour
             _vertical = 0;
         }
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<VulkanPOW>() != null)
+        if (collision.gameObject.TryGetComponent(out IPickupable pickupable))
         {
-            AudioManager.instance.vulkanPOW.Play();
-            _currentVulkan += collision.GetComponent<VulkanPOW>().IncreaseVulkanPOWPoints();
-            CheckVulkanPoints();
+            pickupable.PickUp(this);
             Destroy(collision.gameObject);
         }
 
@@ -159,31 +135,7 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-
-    private void CheckVulkanPoints()
-    {
-        int pointsExceed = 0;
-        if (_currentVulkan > _nextVulkanPoints)
-        {
-            pointsExceed = _currentVulkan - _nextVulkanPoints;
-            _currentVulkan = _nextVulkanPoints;
-        }
-        if (_currentVulkan == _nextVulkanPoints)
-        {
-            _currentVulkanLevel++;
-            SetVulkanBullet();
-        }
-        _currentVulkan += pointsExceed;
-        _nextVulkanPoints = _vulkanLevels[_currentVulkanLevel + 1];
-        _pointsToNextVulkan = _nextVulkanPoints - _currentVulkan;
-    }
-
-    public void SetVulkanBullet()
-    {
-        _currentVulkanBullet = _vulkanBullets[_currentVulkanLevel];
-    }
-
-    public IEnumerator GetRecovery()
+    private IEnumerator GetRecovery()
     {
         AudioManager.instance.playerRecovery.Play();
         yield return new WaitForSeconds(_recoveryTime);
@@ -222,7 +174,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void DestroyPlayer()
+    private void DestroyPlayer()
     {
         _state = PlayerState.destroyed;
         StopAllCoroutines();
@@ -234,13 +186,13 @@ public class PlayerController : MonoBehaviour
         AudioManager.instance.playerDestroyed.Play();
     }
 
-    public IEnumerator GameOver()
+    private IEnumerator GameOver()
     {
         yield return new WaitForSeconds(2f);
         GameManager.instance.GameOver();
     }
 
-    public IEnumerator Invulnerability()
+    private IEnumerator Invulnerability()
     {
         isInvulnerable = true;
         yield return new WaitForSeconds(invulnerabilityTime);
