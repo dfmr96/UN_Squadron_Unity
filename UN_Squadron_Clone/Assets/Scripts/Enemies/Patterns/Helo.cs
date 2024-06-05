@@ -6,7 +6,7 @@ public class Helo : Enemy
     [SerializeField] private EnemyData _enemyData;
 
     [SerializeField] private bool _canDrop;
-    [SerializeField] private VulkanPOWType _dropType;
+    //[SerializeField] private VulkanPOWType _dropType; TODO
     [SerializeField] private Sprite[] _heloSprite;
     private void Awake()
     {
@@ -16,7 +16,7 @@ public class Helo : Enemy
         _collisionDamage = _enemyData._collisionDamage;
         _health = _enemyData._health;
         _canDropPOW = _canDrop;
-        _type = _dropType;
+        //_type = _dropType; TODO
         _sprites = _heloSprite;
     }
     

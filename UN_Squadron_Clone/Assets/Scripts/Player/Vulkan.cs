@@ -1,46 +1,41 @@
 ﻿using System;
+using UnityEditor.Rendering;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace Player
 {
-    public class Vulkan : MonoBehaviour
-    {
+    [Serializable]
+    public class Vulkan
+    { 
         [SerializeField] private VulkanData vulkanData;
+        [SerializeField] private Transform vulkanPosition;
         
         private GameObject currentVulkanBullet => vulkanData.VulkanBullets[currentVulkanLevel];
         private float vulkanFireRate;
         private float vulkanCounter;
-        private int currentVulkan;
-        
+        private int currentVulkanPoints;
         private int pointsToNextVulkan;
         private int nextVulkanPoints;
         private int currentVulkanLevel;
         private int[] vulkanLevels;
-
-        private void Start()
-        {
-            InitVulkan();
-        }
-
+        
         public void InitVulkan()
         {
             vulkanFireRate = vulkanData.VulkanFireRate;
             vulkanLevels = vulkanData.VulkanLevels;
-            
-            
-            
+            vulkanCounter = 0;
             nextVulkanPoints = CalculateNextVulkanPoints();
-            
         }
 
         private int CalculateNextVulkanPoints()
         {
-            return vulkanLevels[currentVulkanLevel + 1] - currentVulkan;
+            return vulkanLevels[currentVulkanLevel + 1] - currentVulkanPoints;
         }
         
         private void FireVulkan()
         {
-            Instantiate(currentVulkanBullet, transform.position, Quaternion.identity);
+            Object.Instantiate(currentVulkanBullet, vulkanPosition.position, Quaternion.identity);
             AudioManager.instance.vulkanAudio.Play();
             vulkanCounter = 0;
         }
@@ -58,7 +53,7 @@ namespace Player
             vulkanCounter += Time.deltaTime;
         }
 
-        private void Update()
+        public void Update()
         {
             UpdateVulkanCounter();
         }
@@ -66,18 +61,25 @@ namespace Player
         private void CheckVulkanPoints()
         {
             int pointsExceed = 0;
-            if (currentVulkan > nextVulkanPoints)
+            if (currentVulkanPoints > nextVulkanPoints)
             {
-                pointsExceed = currentVulkan - nextVulkanPoints;
-                currentVulkan = nextVulkanPoints;
+                pointsExceed = currentVulkanPoints - nextVulkanPoints;
+                currentVulkanPoints = nextVulkanPoints;
             }
-            if (currentVulkan == nextVulkanPoints)
+            if (currentVulkanPoints == nextVulkanPoints)
             {
                 currentVulkanLevel++;
             }
-            currentVulkan += pointsExceed;
+            currentVulkanPoints += pointsExceed;
             nextVulkanPoints = vulkanLevels[currentVulkanLevel + 1];
-            pointsToNextVulkan = nextVulkanPoints - currentVulkan;
+            pointsToNextVulkan = nextVulkanPoints - currentVulkanPoints;
+            Debug.Log(pointsToNextVulkan);
+        }
+
+        public void AddPoints(int pointToAdd)
+        {
+            currentVulkanPoints += pointToAdd;
+            CheckVulkanPoints();
         }
     }
 }

@@ -116,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6625094233032496614}
   m_Layer: 0
-  m_Name: VulcanCannon
+  m_Name: Front Vulkan
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -246,26 +246,17 @@ MonoBehaviour:
   _speed: 18
   invulnerabilityTime: 2
   isInvulnerable: 0
-  _vulkanFireRate: 6
-  _vulkanCounter: 0
-  _currentVulkan: 0
-  _currentVulkanBullet: {fileID: 0}
-  _pointsToNextVulkan: 0
-  _nextVulkanPoints: 0
-  _currentVulkanLevel: 0
-  _vulkanLevels: 00000000020000000900000012000000
   _recoveryTime: 3
   _camera: {fileID: 0}
-  _vulkanBullets:
-  - {fileID: 1457241944293754282, guid: e795918af96f9ee4ab61cee281a34202, type: 3}
-  - {fileID: 6497947059426979470, guid: cceda420fd7424e42855dc01dce2594e, type: 3}
-  _vulkanCannon: {fileID: 1991143322647020678}
   _damagedFlames: {fileID: 1923305145}
   _aircraftSprites:
   - {fileID: -1312131677, guid: efa7bf1c712bbd7448a73efcf6ba7ef1, type: 3}
   - {fileID: 10529820, guid: efa7bf1c712bbd7448a73efcf6ba7ef1, type: 3}
   - {fileID: -71723291, guid: efa7bf1c712bbd7448a73efcf6ba7ef1, type: 3}
   _anim: {fileID: 0}
+  <FrontVulkan>k__BackingField:
+    vulkanData: {fileID: 11400000, guid: 910fd50834c9b2d44aefe8864bb8cacd, type: 2}
+    vulkanPosition: {fileID: 6625094233032496614}
 --- !u!114 &6703949842448126000
 MonoBehaviour:
   m_ObjectHideFlags: 0

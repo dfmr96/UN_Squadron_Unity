@@ -6,7 +6,7 @@ public class DefaultTurret: Turret
 {
     [SerializeField] private EnemyData _enemyData;
     [SerializeField] private bool _canDrop;
-    [SerializeField] private VulkanPOWType _dropType;
+    //[SerializeField] private VulkanPOWType _dropType; TODO
     [SerializeField] private EnemySprites _defaultTurretSprites;
     public void Awake()
     {
@@ -15,7 +15,7 @@ public class DefaultTurret: Turret
         _collisionDamage = _enemyData._collisionDamage;
         _health = _enemyData._health;
         _canDropPOW = _canDrop;
-        _type = _dropType;
+        //_type = _dropType; TODO
         _sprites = _defaultTurretSprites;
     }
 

@@ -4,7 +4,7 @@ public class Tank : Enemy
 {
     [SerializeField] private EnemyData enemyData;
     [SerializeField] private bool canDrop;
-    [SerializeField] private VulkanPOWType dropType;
+    //[SerializeField] private VulkanPOWType dropType; //TODO
     [SerializeField] private Sprite[] tankSprite;
     
     private void Awake()
@@ -15,7 +15,7 @@ public class Tank : Enemy
         _collisionDamage = enemyData._collisionDamage;
         _health = enemyData._health;
         _canDropPOW = canDrop;
-        _type = dropType;
+        //_type = dropType; TODO
         _sprites = tankSprite;
     }
     

@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour, IDamageable, IFire
     protected int _moveSpeed = 3;
     
     protected bool _canDropPOW;
-    protected VulkanPOWType _type;
+    //protected VulkanPOWType _type; TODO
     [SerializeField] VulkanPOWs _vulkanPOWsGO;
     [SerializeField] protected PlayerGO _player;
 
@@ -94,7 +94,7 @@ public class Enemy : MonoBehaviour, IDamageable, IFire
     {
         if (_canDropPOW)
         {
-            switch (_type)
+            /*switch (_type)
             {
                 case VulkanPOWType.Orange:
                     Instantiate(_vulkanPOWsGO.vulkanPOWsGO[0], transform.position, Quaternion.identity);
@@ -104,7 +104,7 @@ public class Enemy : MonoBehaviour, IDamageable, IFire
                     break;
                 default:
                     break;
-            }
+            }*/
         }  
     }
     #region TankLogics

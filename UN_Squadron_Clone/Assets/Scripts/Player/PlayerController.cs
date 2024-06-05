@@ -1,6 +1,9 @@
 using System.Collections;
+using DefaultNamespace;
+using Pickupables;
 using Player;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public enum PlayerState
 {
@@ -30,7 +33,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject _damagedFlames;
 
     [SerializeField] Sprite[] _aircraftSprites;
-    SpriteRenderer _aircraftRenderer;
+    private SpriteRenderer _aircraftRenderer;
     [SerializeField] Animator _anim;
 
     //Privados
@@ -39,7 +42,8 @@ public class PlayerController : MonoBehaviour
     private BoxCollider2D _cameraCol;
     private BoxCollider2D _playerCol;
 
-    [SerializeField] private Vulkan vulkan;
+    [field: SerializeField] public Vulkan FrontVulkan { get; private set; }
+
     private void OnEnable()
     {
         EventBus.instance.OnBossDestroyed += OnBossDestroyed;
@@ -56,6 +60,7 @@ public class PlayerController : MonoBehaviour
     }
     private void Start()
     {
+        FrontVulkan.InitVulkan();
         GetReferences();
         isInvulnerable = false;
         health = maxHealth;
@@ -71,8 +76,9 @@ public class PlayerController : MonoBehaviour
     }
     private void Update()
     {
+        FrontVulkan.Update();
         Movement();
-        if (Input.GetKey(KeyCode.Space)) vulkan.TryFire();
+        if (Input.GetKey(KeyCode.Space)) FrontVulkan.TryFire();
     }
     private void Movement()
     {
@@ -111,11 +117,9 @@ public class PlayerController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<VulkanPOW>() != null)
+        if (collision.gameObject.TryGetComponent(out IPickupable pickupable))
         {
-            AudioManager.instance.vulkanPOW.Play();
-            //_currentVulkan += collision.GetComponent<VulkanPOW>().IncreaseVulkanPOWPoints(); TODO
-            //CheckVulkanPoints(); TODO
+            pickupable.PickUp(this);
             Destroy(collision.gameObject);
         }
 
