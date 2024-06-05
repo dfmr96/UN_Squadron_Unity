@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -8,7 +9,7 @@ public enum BossStatus
     Danger,
     Destroyed
 }
-public class Boss : MonoBehaviour, IDamageable
+public class Boss : Enemy
 {
     public float health;
     public float maxHealth;
@@ -25,6 +26,13 @@ public class Boss : MonoBehaviour, IDamageable
     [SerializeField] Transform[] miniMisilesPos;
     [SerializeField] Transform missiles;
     [SerializeField] bool canFire = false;
+
+    [SerializeField] private EnemyData _enemyData;
+
+    private void Awake()
+    {
+        _explosionPrefab = _enemyData.explosionPrefab;
+    }
 
     private void Start()
     {

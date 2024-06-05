@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f0b726596a5409f85946c3df3b35fdf, type: 3}
-  m_Name: Tank
+  m_Name: DefaultGreenTurretData
   m_EditorClassIdentifier: 
-  <ID>k__BackingField: Tank
-  <prefab>k__BackingField: {fileID: 5830056127727285571, guid: fe14905ff54f9fe449dc62a7808449e6, type: 3}
+  <ID>k__BackingField: Default Green Turret
+  <prefab>k__BackingField: {fileID: 8038570968513324231, guid: 741c0c44d1701924dad22d2ec276d0fe, type: 3}
   <customAnim>k__BackingField: 0
   <fireRate>k__BackingField: 1
   <collisionDamage>k__BackingField: 25
   <health>k__BackingField: 1
-  <EnemySprites>k__BackingField: {fileID: 11400000, guid: a4be33513c76af946a6637e7090755c9, type: 2}
+  <EnemySprites>k__BackingField: {fileID: 11400000, guid: f2295124f2876534c9afa3860d54821c, type: 2}
   <bulletPrefab>k__BackingField: {fileID: 1744197573988224712, guid: 62ab3dd4cfe8a314f8625e515a587ace, type: 3}
   <explosionPrefab>k__BackingField: {fileID: 3336104701328597698, guid: d207451a5c8262b4d9753a7d39dbe53b, type: 3}
-  <moveSpeed>k__BackingField: 2
+  <moveSpeed>k__BackingField: 0

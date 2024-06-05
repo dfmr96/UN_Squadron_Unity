@@ -79,7 +79,7 @@ public class Enemy : MonoBehaviour, IDamageable
         
     }
 
-    public virtual void Fire()
+    protected virtual void Fire()
     {
         GameObject bullet = null;
         bullet = Instantiate(_bulletPrefab, transform.position, Quaternion.identity);

@@ -21,6 +21,7 @@ public class BigTurret: Turret
         _canDropPOW = _canDrop;
         _type = _dropType;
         _sprites = _bigTurretSprite.enemySprites;
+        _bulletPrefab = _enemyData.bulletPrefab;
     }
 
 
@@ -56,7 +57,7 @@ public class BigTurret: Turret
         }
     }
 
-    public override void Fire()
+    protected override void Fire()
     {
         StartCoroutine(BigTurretBurst(_bulletPrefab));
     }

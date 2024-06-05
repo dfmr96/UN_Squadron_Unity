@@ -6,7 +6,7 @@ public class Spawner : MonoBehaviour
 {
     [SerializeField] public Transform[] spawnPoints;
 
-    [SerializeField] public Enemy[] enemyPrefab;
+    //[SerializeField] public Enemy[] enemyPrefab;
 
     [SerializeField] public int amountToSpawn;
     [SerializeField] public float xOffSet;
@@ -24,7 +24,9 @@ public class Spawner : MonoBehaviour
         GreenHelo,
         OrangeHelo,
         Tank,
-        DefaultTurret
+        DefaultGreenTurret,
+        DefaultOrangeTurret,
+        BigTurret
     }
     
     [SerializeField] private EnemyType EnemyID;
@@ -41,8 +43,14 @@ public class Spawner : MonoBehaviour
             case EnemyType.Tank:
                 enemyType = "Tank";
                 break;
-            case EnemyType.DefaultTurret:
-                enemyType = "Default Turret";
+            case EnemyType.DefaultGreenTurret:
+                enemyType = "Default Green Turret";
+                break;
+            case EnemyType.DefaultOrangeTurret:
+                enemyType = "Default Orange Turret";
+                break;
+            case EnemyType.BigTurret:
+                enemyType = "Big Turret";
                 break;
             default:
                 enemyType = "Green Helo";

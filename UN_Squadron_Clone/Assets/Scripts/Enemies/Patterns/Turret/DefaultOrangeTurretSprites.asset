@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78e697f246874795819190156436055c, type: 3}
-  m_Name: DefaultTurretSprites
+  m_Name: DefaultOrangeTurretSprites
   m_EditorClassIdentifier: 
   enemySprites:
   - {fileID: -1304448410, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
