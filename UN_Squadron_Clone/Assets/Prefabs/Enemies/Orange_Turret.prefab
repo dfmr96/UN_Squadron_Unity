@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2714562735774306162}
   - component: {fileID: 2714562735774305421}
   - component: {fileID: 2714562735774305420}
-  - component: {fileID: 2714562735774305423}
-  m_Layer: 0
+  - component: {fileID: 5331777224688624191}
+  m_Layer: 8
   m_Name: Orange_Turret
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.75, y: 2.375}
   m_EdgeRadius: 0
---- !u!114 &2714562735774305423
+--- !u!114 &5331777224688624191
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,32 +121,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2714562735774305422}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56291e49b391f394192584c219daad7a, type: 3}
+  m_Script: {fileID: 11500000, guid: 676096b6fdbe4b1281a651bab8af5010, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _vulkanPOWsGO: {fileID: 11400000, guid: 68f6019a60be4fd469da8f41f1e56031, type: 2}
   _player: {fileID: 0}
-  _health: 4
-  _moveSpeed: 3
-  _explosionPrefab: {fileID: 3336104701328597698, guid: d207451a5c8262b4d9753a7d39dbe53b, type: 3}
-  _bulletPrefab: {fileID: 1744197573988224712, guid: 62ab3dd4cfe8a314f8625e515a587ace, type: 3}
-  _fireRate: 1
-  _fireRateCounter: 0
-  _canDropPOW: 1
-  _type: 0
-  _vulkanPOWs:
-  - {fileID: 7385918597685355896, guid: 5dddf505456fc404aaa2174f143ef6ff, type: 3}
-  - {fileID: 4695770047083689648, guid: eb2df685b715c7346aa2cce08df394e6, type: 3}
-  _enemyType: 1
-  _sprites:
-  - {fileID: 1325724536, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  - {fileID: 299077185, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  - {fileID: -251203786, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  - {fileID: 56226875, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  - {fileID: -633447150, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  _spriteRenderer: {fileID: 0}
-  CustomAnim: 0
-  collisionDamage: 3
-  _bulletToShoot: 0
-  _timeBetweenBullets: 0
   scorePerKill: 100
   moneyPerKill: 300
+  enemyData: {fileID: 11400000, guid: 3b9af35f0a51a3242817ded763df462e, type: 2}
+  _canDrop: 0
+  _dropType: 0
+  _defaultTurretSprites: {fileID: 11400000, guid: 0eb6954f29289794099d7a4a5bc1a334, type: 2}
+  player: {fileID: 0}

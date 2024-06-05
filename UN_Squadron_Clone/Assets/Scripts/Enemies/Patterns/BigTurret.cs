@@ -1,27 +1,27 @@
 ﻿using System.Collections;
 using UnityEngine;
 using System.Collections.Generic;
-using Enemies.Patterns;
 
 public class BigTurret: Turret
 {
     [SerializeField] private EnemyData _enemyData;
     [SerializeField] private bool _canDrop;
-    //[SerializeField] private VulkanPOWType _dropType; //TODO
+    [SerializeField] private VulkanPOWType _dropType;
     [SerializeField] private int _bulletToShoot;
     [SerializeField] private float _timeBetweenBullets;
     [SerializeField] private EnemySprites _bigTurretSprite;
     private Vector3 _raycastDir = Vector3.zero;
     public void Awake()
     {
-        _health = _enemyData._health;
-        _customAnim = _enemyData._customAnim;
-        _fireRate = _enemyData._fireRate;
-        _collisionDamage = _enemyData._collisionDamage;
-        _health = _enemyData._health;
+        _health = _enemyData.health;
+        _customAnim = _enemyData.customAnim;
+        _fireRate = _enemyData.fireRate;
+        _collisionDamage = _enemyData.collisionDamage;
+        _health = _enemyData.health;
         _canDropPOW = _canDrop;
-        //_type = _dropType; //TODO
-        _sprites = _bigTurretSprite;
+        _type = _dropType;
+        _sprites = _bigTurretSprite.enemySprites;
+        _bulletPrefab = _enemyData.bulletPrefab;
     }
 
 
@@ -52,12 +52,12 @@ public class BigTurret: Turret
         RaycastHit2D hit = Physics2D.Raycast(transform.position, _raycastDir, 20, layerMask);
         if (hit.collider != null)
         {
-            Fire(Vector3.zero);
+            Fire();
             Debug.Log("Torreta dispara a Jugador");
         }
     }
 
-    protected override void Fire(Vector3 dir)
+    protected override void Fire()
     {
         StartCoroutine(BigTurretBurst(_bulletPrefab));
     }

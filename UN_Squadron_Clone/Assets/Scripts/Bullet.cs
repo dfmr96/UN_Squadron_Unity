@@ -12,9 +12,11 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy")) //TODO
         {
-            collision.GetComponent<Enemy>().TakeDamage(damage);
+            collision.gameObject.TryGetComponent(out IDamageable enemy);
+            enemy.TakeDamage(damage);
+            Debug.Log("Bala colisiono con enemigo");
             Destroy(gameObject);
         }
 

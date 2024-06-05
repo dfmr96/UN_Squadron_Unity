@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2746975305903890238}
   - component: {fileID: 2746975305903890237}
   - component: {fileID: 2746975305903890236}
-  - component: {fileID: 2746975305903890235}
-  m_Layer: 0
+  - component: {fileID: 5302166515397939536}
+  m_Layer: 8
   m_Name: Big_Turret
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.875, y: 4.3781624}
   m_EdgeRadius: 0
---- !u!114 &2746975305903890235
+--- !u!114 &5302166515397939536
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,30 +121,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2746975305903890234}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56291e49b391f394192584c219daad7a, type: 3}
+  m_Script: {fileID: 11500000, guid: 66e6136db1094571900b10c1f1b827b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _vulkanPOWsGO: {fileID: 11400000, guid: 68f6019a60be4fd469da8f41f1e56031, type: 2}
   _player: {fileID: 0}
-  _health: 40
-  _moveSpeed: 3
-  _explosionPrefab: {fileID: 3336104701328597698, guid: d207451a5c8262b4d9753a7d39dbe53b, type: 3}
-  _bulletPrefab: {fileID: 8360477669986712853, guid: 168d12b64f9596a4891d682ecba61d94, type: 3}
-  _fireRate: 0.5
-  _fireRateCounter: 0
-  _canDropPOW: 0
-  _type: 0
-  _vulkanPOWs: []
-  _enemyType: 2
-  _sprites:
-  - {fileID: -68631571, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  - {fileID: -56074752, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  - {fileID: -1691381268, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  - {fileID: 1486175064, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  - {fileID: -1866387079, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  _spriteRenderer: {fileID: 0}
-  CustomAnim: 0
-  collisionDamage: 3
-  _bulletToShoot: 6
-  _timeBetweenBullets: 0.2
   scorePerKill: 100
   moneyPerKill: 300
+  _enemyData: {fileID: 11400000, guid: 46601f1007458cc40b82b2463aa9beec, type: 2}
+  _canDrop: 0
+  _dropType: 0
+  _bulletToShoot: 4
+  _timeBetweenBullets: 0.25
+  _bigTurretSprite: {fileID: 11400000, guid: 12400e5e996dfd74abdad8a2cd052117, type: 2}
