@@ -36,6 +36,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Sprite[] _aircraftSprites;
     private SpriteRenderer _aircraftRenderer;
     [SerializeField] Animator _anim;
+    
+    
 
     //Privados
     private float _horizontal;
