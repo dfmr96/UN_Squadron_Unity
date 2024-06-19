@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    public int score;
-    public int money;
-    public Inventory playerInventory;
+    [field: SerializeField] public int Score { get; private set; }
+    [field: SerializeField] public int Money { get; private set; }
+    
+    [field: SerializeField] public int VulkanPoints { get; private set; }
+
+    [SerializeField] private Inventory playerInventory;
     //public event Action OnGameOver;
 
     private void Awake()
@@ -21,9 +24,9 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        score = 0;
-        money = 3000;
-        
+        Score = 0;
+        Money = 3000;
+        DontDestroyOnLoad(gameObject);
         
         if (SceneManager.GetActiveScene().name == "Shop") playerInventory.slots.Clear();
     }
@@ -51,32 +54,32 @@ public class GameManager : MonoBehaviour
 
     public void UpdateMoney(Enemy enemy)
     {
-        money += enemy.moneyPerKill;
-        UIGameplayManager.instance.UpdateMoneySprites(money);
+        Money += enemy.moneyPerKill;
+        UIGameplayManager.instance.UpdateMoneySprites(Money);
     }
 
     public void RemoveMoney(WeaponData weaponData)
     {
-        money -= weaponData.price;
-        UIStoreManager.instance.UpdateMoneySprites(money);
+        Money -= weaponData.price;
+        UIStoreManager.instance.UpdateMoneySprites(Money);
     }
 
     public void AddMoney(WeaponData weaponData)
     {
-        money += weaponData.price;
-        UIStoreManager.instance.UpdateMoneySprites(money);
+        Money += weaponData.price;
+        UIStoreManager.instance.UpdateMoneySprites(Money);
     }
 
     public void AddMoney(int moneyToAdd)
     {
-        money += moneyToAdd;
-        UIStoreManager.instance.UpdateMoneySprites(money);
+        Money += moneyToAdd;
+        UIStoreManager.instance.UpdateMoneySprites(Money);
     }
 
     public void UpdateScore(Enemy enemy)
     {
-        score += enemy.scorePerKill;
-        UIGameplayManager.instance.UpdateScoreSprites(score);
+        Score += enemy.scorePerKill;
+        UIGameplayManager.instance.UpdateScoreSprites(Score);
     }
 
     public void GameOver()
@@ -101,12 +104,17 @@ public class GameManager : MonoBehaviour
         while (moneyGranted < 50000)
         {
             moneyGranted += 1000;
-            money += 1000;
-            UIGameplayManager.instance.UpdateMoneySprites(money);
+            Money += 1000;
+            UIGameplayManager.instance.UpdateMoneySprites(Money);
             yield return new WaitForSecondsRealtime(0.02f);
         }
         yield return new WaitForSecondsRealtime(1f);
         Time.timeScale = 1f;
         LoadingManager.Instance.LoadNewScene("Victory");
+    }
+
+    public void SaveVulkanPoints(int points)
+    {
+        VulkanPoints = points;
     }
 }
