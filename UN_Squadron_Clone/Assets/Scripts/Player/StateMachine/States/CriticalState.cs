@@ -4,6 +4,12 @@ namespace Player
 {
     public class CriticalState : StateBase
     {
+        private PlayerStateMachine playerStateMachine;
+        public CriticalState(PlayerStateMachine stateMachine)
+        {
+            playerStateMachine = stateMachine;
+        }
+        
         public override void Enter()
         {
             throw new NotImplementedException();

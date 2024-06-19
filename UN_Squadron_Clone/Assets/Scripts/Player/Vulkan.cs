@@ -24,8 +24,9 @@ namespace Player
             vulkanFireRate = vulkanData.VulkanFireRate;
             vulkanLevels = vulkanData.VulkanLevels;
             vulkanCounter = 0;
-            nextVulkanPoints = CalculateNextVulkanPoints();
             currentVulkanPoints = GameManager.instance.VulkanPoints;
+            nextVulkanPoints = CalculateNextVulkanPoints();
+            CheckVulkanPoints();
         }
 
         private int CalculateNextVulkanPoints()

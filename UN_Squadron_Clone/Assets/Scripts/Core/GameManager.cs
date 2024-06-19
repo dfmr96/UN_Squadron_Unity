@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -84,7 +85,6 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        //OnGameOver?.Invoke();
         LoadingManager.Instance.LoadNewScene("GameOver");
     }
 

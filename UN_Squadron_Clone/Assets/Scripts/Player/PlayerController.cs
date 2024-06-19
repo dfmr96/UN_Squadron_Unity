@@ -1,201 +1,167 @@
-using System.Collections;
 using DefaultNamespace;
-using Pickupables;
-using Player;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public enum PlayerState
+namespace Player
 {
-    healthy,
-    danger,
-    critical,
-    destroyed
-}
+    [RequireComponent(typeof(BoxCollider2D))]
+    public class PlayerController : MonoBehaviour
+    {
 
-[RequireComponent(typeof(BoxCollider2D))]
-public class PlayerController : MonoBehaviour
-{
-    [Header("Player Stats")]
-    [Space(10)]
-    public float health;
-    public float maxHealth;
-    [SerializeField] PlayerState _state;
-    [SerializeField] float _speed = 15;
-    [SerializeField] float invulnerabilityTime;
-    public bool isInvulnerable;
-    
-    [SerializeField] int _recoveryTime;
-    [FormerlySerializedAs("_camera")]
-    [Space(20)]
-    [Header("GameObjects")]
-    [Space(10)]
-    [SerializeField] SideScrollController sideScroll;
-    [SerializeField] GameObject _damagedFlames;
+        [field: SerializeField] public float Health { get; private set; }
 
-    [SerializeField] Sprite[] _aircraftSprites;
-    private SpriteRenderer _aircraftRenderer;
-    [SerializeField] Animator _anim;
-    
-    
+        [field: SerializeField] public float Speed { get; } = 15;
+        [field: SerializeField] public float InvulnerabilityTime { get; private set; }
 
-    //Privados
-    private float _horizontal;
-    private float _vertical;
-    private BoxCollider2D _cameraCol;
-    private BoxCollider2D _playerCol;
 
-    [field: SerializeField] public Vulkan FrontVulkan { get; private set; }
+        [field: SerializeField] public int RecoveryTime { get; private set;}
 
-    private void OnEnable()
-    {
-        EventBus.instance.OnBossDestroyed += OnBossDestroyed;
-    }
-    private void OnBossDestroyed()
-    {
-        AudioManager.instance.playerDamaged.Stop();
-        isInvulnerable = true;
-        enabled = false;
-    }
-    private void OnDisable()
-    {
-        EventBus.instance.OnBossDestroyed -= OnBossDestroyed;
-    }
-    private void Start()
-    {
-        FrontVulkan.InitVulkan();
-        GetReferences();
-        isInvulnerable = false;
-        health = maxHealth;
-        EventBus.instance.PlayerSpawned(this);
-    }
-    private void GetReferences()
-    {
-        _cameraCol = sideScroll.Bounds;
-        transform.parent = sideScroll.transform;
-        _playerCol = GetComponent<BoxCollider2D>();
-        _aircraftRenderer = GetComponent<SpriteRenderer>();
-        _anim = GetComponent<Animator>();
-    }
-    private void Update()
-    {
-        FrontVulkan.Update();
-        Movement();
-        if (Input.GetKey(KeyCode.Space)) FrontVulkan.TryFire();
-    }
-    private void Movement()
-    {
-        if (_state == PlayerState.destroyed) return;
-        _horizontal = Input.GetAxisRaw("Horizontal");
-        _vertical = Input.GetAxisRaw("Vertical");
-        
-        Vector3 dir = new Vector3(_horizontal, _vertical).normalized;
-        CheckBounds();
-        transform.Translate(dir * (_speed * Time.deltaTime));
+        [SerializeField] private SideScrollController sideScroll;
 
-        _anim.SetInteger("Vertical", (int)_vertical);
-    }
-    private void CheckBounds()
-    {
-        //Chequeo de colisiones, si el jugador intenta atravesar la pantalla no podra
-        if (_playerCol.bounds.min.x < _cameraCol.bounds.min.x && _horizontal == -1)
+        [field: SerializeField] public GameObject DamagedFlames { get; private set;}
+
+        [SerializeField] private Sprite[] aircraftSprites;
+        [field: SerializeField] public Animator Anim { get; private set; }
+        [field: SerializeField] public Rigidbody2D Rb { get; private set; }
+
+        [field: SerializeField] public Vulkan FrontVulkan { get; private set; }
+        private PlayerStateMachine _playerStateMachine;
+
+        //Privados
+        private float _horizontal;
+        private SpriteRenderer _aircraftRenderer;
+        private float _vertical;
+        private BoxCollider2D _cameraCol;
+        private BoxCollider2D _playerCol;
+        [field: SerializeField] public float MaxHealth { get;  private set;}
+
+
+        private void OnEnable()
         {
-            _horizontal = 0;
+            EventBus.instance.OnBossDestroyed += OnBossDestroyed;
         }
 
-        if (_playerCol.bounds.max.x > _cameraCol.bounds.max.x && _horizontal == 1)
+        private void OnBossDestroyed()
         {
-            _horizontal = 0;
+            AudioManager.instance.playerDamaged.Stop();
+            enabled = false;
         }
 
-        if (_playerCol.bounds.min.y < _cameraCol.bounds.min.y && _vertical == -1)
+        private void OnDisable()
         {
-            _vertical = 0;
+            EventBus.instance.OnBossDestroyed -= OnBossDestroyed;
         }
 
-        if (_playerCol.bounds.max.y > _cameraCol.bounds.max.y && _vertical == 1)
+        private void Start()
         {
-            _vertical = 0;
-        }
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.TryGetComponent(out IPickupable pickupable))
-        {
-            pickupable.PickUp(this);
-            Destroy(collision.gameObject);
+            FrontVulkan.InitVulkan();
+            _playerStateMachine = new PlayerStateMachine(this);
+            GetReferences();
+            Health = MaxHealth;
+            EventBus.instance.PlayerSpawned(this);
         }
 
-        if (collision.gameObject.CompareTag("Obstacles"))
+        private void GetReferences()
         {
-            Debug.Log("Impacto contra bala");
-            if (collision.gameObject.CompareTag("Obstacles"))
+            _cameraCol = sideScroll.Bounds;
+            transform.parent = sideScroll.transform;
+            _playerCol = GetComponent<BoxCollider2D>();
+            _aircraftRenderer = GetComponent<SpriteRenderer>();
+            Rb = GetComponent<Rigidbody2D>();
+            Anim = GetComponent<Animator>();
+        }
+
+        private void Update()
+        {
+            FrontVulkan.Update();
+            _playerStateMachine.Update();
+            Movement();
+            if (Input.GetKey(KeyCode.Space)) FrontVulkan.TryFire();
+
+
+            if (Input.GetKey(KeyCode.Alpha0))
             {
-                TakeDamage(2);
+                LoadingManager.Instance.LoadNewScene("TEST_Level1");
             }
         }
-    }
-    private IEnumerator GetRecovery()
-    {
-        AudioManager.instance.playerRecovery.Play();
-        yield return new WaitForSeconds(_recoveryTime);
-        EventBus.instance.PlayerRecovered();
-        _state = PlayerState.healthy;
-        _damagedFlames.SetActive(false);
-        _anim.SetInteger("PlayerState", (int)_state);
-        GetComponent<Rigidbody2D>().velocity = Vector3.zero;
-    }
 
-    public void TakeDamage(float damage)
-    {
-        if (isInvulnerable) return;
-        StartCoroutine(Invulnerability());
-        switch (_state)
+        private void Movement()
         {
-            case PlayerState.healthy:
-                health -= damage;
-                _state = PlayerState.danger;
-                _anim.SetInteger("PlayerState", (int)_state);
-                _damagedFlames.SetActive(true);
-                AudioManager.instance.playerDamaged.Play();
-                EventBus.instance.PlayerDamaged(damage);
-                if (health <= 0)
-                {
-                    AudioManager.instance.playerUnableToRecover.Play();
-                    return;
-                }
-                StartCoroutine(GetRecovery());
-                break;
-            case PlayerState.danger:
-                DestroyPlayer();
-                break;
-            default:
-                break;
+            _horizontal = Input.GetAxisRaw("Horizontal");
+            _vertical = Input.GetAxisRaw("Vertical");
+
+            Vector3 dir = new Vector3(_horizontal, _vertical).normalized;
+            transform.Translate(dir * (Speed * Time.deltaTime));
+            Anim.SetInteger("Vertical", (int)_vertical);
+
+            CheckBounds();
         }
-    }
 
-    private void DestroyPlayer()
-    {
-        _state = PlayerState.destroyed;
-        StopAllCoroutines();
-        StartCoroutine(GameOver());
-        _anim.SetInteger("PlayerState", (int)_state);
-        _damagedFlames.SetActive(false);
-        AudioManager.instance.playerRecovery.Stop();
-        AudioManager.instance.bgmAudio.Stop();
-        AudioManager.instance.playerDestroyed.Play();
-    }
+        private void CheckBounds()
+        {
+            //Chequeo de colisiones, si el jugador intenta atravesar la pantalla no podra
+            if (_playerCol.bounds.min.x < _cameraCol.bounds.min.x && _horizontal == -1)
+            {
+                _horizontal = 0;
+            }
 
-    private IEnumerator GameOver()
-    {
-        yield return new WaitForSeconds(2f);
-        GameManager.instance.GameOver();
-    }
+            if (_playerCol.bounds.max.x > _cameraCol.bounds.max.x && _horizontal == 1)
+            {
+                _horizontal = 0;
+            }
 
-    private IEnumerator Invulnerability()
-    {
-        isInvulnerable = true;
-        yield return new WaitForSeconds(invulnerabilityTime);
-        isInvulnerable = false;
+            if (_playerCol.bounds.min.y < _cameraCol.bounds.min.y && _vertical == -1)
+            {
+                _vertical = 0;
+            }
+
+            if (_playerCol.bounds.max.y > _cameraCol.bounds.max.y && _vertical == 1)
+            {
+                _vertical = 0;
+            }
+        }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.gameObject.TryGetComponent(out IPickupable pickupable))
+            {
+                pickupable.PickUp(this);
+                Destroy(collision.gameObject);
+            }
+
+            if (collision.gameObject.CompareTag("Obstacles"))
+            {
+                Debug.Log("Impacto contra bala");
+                if (collision.gameObject.CompareTag("Obstacles"))
+                {
+                    TakeDamage(2);
+                }
+            }
+        }
+
+        public void TakeDamage(float damage)
+        {
+            Health -= damage;
+            EventBus.instance.PlayerDamaged(damage);
+
+            if (_playerStateMachine.CurrentState == _playerStateMachine.HealthyState)
+            {
+                _playerStateMachine.ChangeStateTo(_playerStateMachine.DangerState);
+                return;
+            }
+
+            if (_playerStateMachine.CurrentState == _playerStateMachine.DangerState 
+                || _playerStateMachine.CurrentState == _playerStateMachine.CriticalState)
+            {
+                _playerStateMachine.ChangeStateTo(_playerStateMachine.DestroyedState);
+                return;
+            }
+            
+            if (Health <= 0)
+            {
+                _playerStateMachine.ChangeStateTo(_playerStateMachine.CriticalState);
+                AudioManager.instance.playerUnableToRecover.Play();
+            }
+        }
     }
 }
