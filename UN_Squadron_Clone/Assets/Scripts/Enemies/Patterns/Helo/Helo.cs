@@ -7,7 +7,7 @@ public class Helo : Enemy
 {
     [SerializeField] private EnemyData _enemyData;
     
-    [SerializeField] private VulkanPOWType _dropType;
+    //[SerializeField] private VulkanPOWType _dropType;
     [SerializeField] private EnemySprites _heloSprite;
     //[SerializeField] public GameObject player;
     private Vector3 aimdir;
@@ -20,7 +20,7 @@ public class Helo : Enemy
         _explosionPrefab = _enemyData.explosionPrefab;
         
         
-        _type = _dropType;
+        //_type = _dropType;
         
         if ( Random.value >= 0.5)
         {

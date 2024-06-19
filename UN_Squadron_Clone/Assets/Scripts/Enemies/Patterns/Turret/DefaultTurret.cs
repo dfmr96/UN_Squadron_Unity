@@ -5,8 +5,8 @@ public class DefaultTurret: Turret
 {
     [SerializeField] private EnemyData enemyData;
     [SerializeField] private bool _canDrop;
-    [SerializeField] private VulkanPOWType _dropType;
-    [SerializeField] private EnemySprites _defaultTurretSprites;
+  //  [SerializeField] private VulkanPOWType _dropType;
+   // [SerializeField] private EnemySprites _defaultTurretSprites;
     [SerializeField] private GameObject player;
     public void Awake()
     {
@@ -17,7 +17,7 @@ public class DefaultTurret: Turret
         _explosionPrefab = enemyData.explosionPrefab;
         
         
-        _type = _dropType;
+    //    _type = _dropType;
         
         if (Random.value >= 0.5)
         {
@@ -28,7 +28,7 @@ public class DefaultTurret: Turret
             _canDropPOW = false;
         }
         
-        _sprites = _defaultTurretSprites.enemySprites;
+        _sprites = enemyData.EnemySprites.enemySprites;
         _customAnim = enemyData.customAnim;
         
         _fireRate = enemyData.fireRate;
