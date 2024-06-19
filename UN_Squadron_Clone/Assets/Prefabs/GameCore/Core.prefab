@@ -357,7 +357,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4567490189875452393}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.882212, y: -1.2635779, z: -0.34493637}
+  m_LocalPosition: {x: -10.882214, y: -1.2635779, z: -0.34493637}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -557,19 +557,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 510745042, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
-      value: -6.5963497
+      value: -6.5905504
       objectReference: {fileID: 0}
     - target: {fileID: 510745042, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_LocalBounds.m_Center.y
-      value: -11.36195
+      value: -11.3589
       objectReference: {fileID: 0}
     - target: {fileID: 510745042, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_LocalBounds.m_Extent.x
-      value: 16.80045
+      value: 16.79115
       objectReference: {fileID: 0}
     - target: {fileID: 510745042, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_LocalBounds.m_Extent.y
-      value: 4.69985
+      value: 4.7052994
       objectReference: {fileID: 0}
     - target: {fileID: 627895556, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_Follow
@@ -605,7 +605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4878694117584995846, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.28072917
+      value: 0.17864585
       objectReference: {fileID: 0}
     - target: {fileID: 4878694117584995846, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -613,11 +613,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4878694117584995846, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.22619049
+      value: 0.6428572
       objectReference: {fileID: 0}
     - target: {fileID: 4878694117584995846, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.35185185
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4878694117584996089, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_RootOrder
@@ -625,7 +625,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4878694117584996089, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.882212
+      value: -10.882214
       objectReference: {fileID: 0}
     - target: {fileID: 4878694117584996089, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_LocalPosition.y
