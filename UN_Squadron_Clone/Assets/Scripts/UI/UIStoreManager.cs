@@ -24,7 +24,7 @@ public class UIStoreManager : MonoBehaviour
     }
     void Start()
     {
-        UpdateMoneySprites(GameManager.instance.money);
+        UpdateMoneySprites(GameManager.instance.Money);
         EventSystem.current.SetSelectedGameObject(firstAvalaible);
     }
 

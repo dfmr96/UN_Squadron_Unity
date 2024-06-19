@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Player;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
@@ -145,8 +146,8 @@ public class UIGameplayManager : MonoBehaviour
 
     public void SetHealth(PlayerController player)
     {
-        healthRatio = 1 / player.maxHealth;
-        healthBar.fillAmount = player.health / player.maxHealth;
+        healthRatio = 1 / player.MaxHealth;
+        healthBar.fillAmount = player.Health / player.MaxHealth;
     }
 
     public void PlayerRecovered()
@@ -168,7 +169,7 @@ public class UIGameplayManager : MonoBehaviour
         healthBar.fillAmount = 0;
         for (int i = 0; i < currentHealth; i++)
         {
-            Debug.Log(healthBar.fillAmount);
+            //Debug.Log(healthBar.fillAmount);
             healthBar.fillAmount = i * healthRatio;
             yield return new WaitForSeconds(0.1f);
         }

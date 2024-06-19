@@ -1,4 +1,5 @@
 ﻿using DefaultNamespace;
+using Player;
 using UnityEngine;
 
 namespace Pickupables

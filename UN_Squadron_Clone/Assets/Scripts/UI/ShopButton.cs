@@ -28,7 +28,7 @@ public class ShopButton : MonoBehaviour, IDeselectHandler, ISelectHandler, ISubm
     }
     public void BuyItem()
     {
-        if (GameManager.instance.money >= weaponData.price)
+        if (GameManager.instance.Money >= weaponData.price)
         {
             GameManager.instance.RemoveMoney(weaponData);
             audioSource.PlayOneShot(clip[1]);

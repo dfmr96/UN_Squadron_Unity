@@ -1,4 +1,6 @@
-﻿namespace Pickupables
+﻿using Player;
+
+namespace Pickupables
 {
     public class Windmill : Item
     {
