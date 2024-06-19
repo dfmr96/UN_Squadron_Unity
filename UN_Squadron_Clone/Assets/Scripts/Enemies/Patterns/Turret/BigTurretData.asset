@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: BigTurretData
   m_EditorClassIdentifier: 
   <ID>k__BackingField: Big Turret
-  <prefab>k__BackingField: {fileID: 0}
+  <prefab>k__BackingField: {fileID: 5302166515397939536, guid: 92349ab69acc51648965031d9fe3ba8a, type: 3}
   <customAnim>k__BackingField: 0
   <fireRate>k__BackingField: 0.5
   <collisionDamage>k__BackingField: 1
   <health>k__BackingField: 2
   <EnemySprites>k__BackingField: {fileID: 11400000, guid: 12400e5e996dfd74abdad8a2cd052117, type: 2}
-  <bulletPrefab>k__BackingField: {fileID: 1744197573988224712, guid: 62ab3dd4cfe8a314f8625e515a587ace, type: 3}
+  <bulletPrefab>k__BackingField: {fileID: 8360477669986712853, guid: 168d12b64f9596a4891d682ecba61d94, type: 3}
   <explosionPrefab>k__BackingField: {fileID: 3336104701328597698, guid: d207451a5c8262b4d9753a7d39dbe53b, type: 3}
   <moveSpeed>k__BackingField: 0

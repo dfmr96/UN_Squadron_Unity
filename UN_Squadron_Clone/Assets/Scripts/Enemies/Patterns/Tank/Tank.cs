@@ -5,7 +5,9 @@ public class Tank : Enemy
 {
     [SerializeField] private EnemyData enemyData;
     [SerializeField] private bool canDrop;
-    //[SerializeField] private VulkanPOWType dropType;
+
+   // [SerializeField] private VulkanPOWType dropType;
+
     [SerializeField] private EnemySprites tankSprite;
     
     private void Awake()
@@ -17,7 +19,9 @@ public class Tank : Enemy
         _explosionPrefab = enemyData.explosionPrefab;
         
         
-       // _type = dropType;
+
+        //_type = dropType;
+
         
         if (Random.value >= 0.5)
         {
