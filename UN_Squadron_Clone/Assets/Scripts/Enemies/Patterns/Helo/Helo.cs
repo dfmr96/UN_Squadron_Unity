@@ -20,7 +20,9 @@ public class Helo : Enemy
         _explosionPrefab = _enemyData.explosionPrefab;
         
         
+
       //  _type = _dropType;
+
         
         if ( Random.value >= 0.5)
         {

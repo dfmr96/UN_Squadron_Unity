@@ -6,7 +6,9 @@ public class BigTurret: Turret
 {
     [SerializeField] private EnemyData _enemyData;
     [SerializeField] private bool _canDrop;
+
    // [SerializeField] private VulkanPOWType _dropType;
+
     [SerializeField] private int _bulletToShoot;
     [SerializeField] private float _timeBetweenBullets;
     [SerializeField] private EnemySprites _bigTurretSprite;
@@ -19,7 +21,9 @@ public class BigTurret: Turret
         _collisionDamage = _enemyData.collisionDamage;
         _health = _enemyData.health;
         _canDropPOW = _canDrop;
+
        // _type = _dropType;
+
         _sprites = _bigTurretSprite.enemySprites;
         _bulletPrefab = _enemyData.bulletPrefab;
     }
