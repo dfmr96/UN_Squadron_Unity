@@ -1,0 +1,1751 @@
+fileFormatVersion: 2
+guid: 358f3bee84f87314c8060942ed679dad
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_0
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 156
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3471df1b8962682439b2defee25e7c6b
+      internalID: -209281330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 156
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa9baa5e1c44774dbc6aa9099025346
+      internalID: 1611120451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_2
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 156
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1770eef78a092644aa434c1fd53f7668
+      internalID: -339822174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_3
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 156
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37fc8f425e73b634180c7e5ca936aff2
+      internalID: 1966607893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_4
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 156
+        width: 9
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc47987699a1ff4bacb9d38b78885c6
+      internalID: 1865113273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_5
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 156
+        width: 12
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 566c3b2940b569d48b6c53894af81c83
+      internalID: 698954657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_6
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 156
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f799b0ae63cbcdc46895b1ff26b980a0
+      internalID: 1129550521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_7
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 156
+        width: 12
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e27f6b9efae7fc4b9105df8a03a4e09
+      internalID: 96084312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_8
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 156
+        width: 9
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d530a49b4d85c4f92756e048fc4377
+      internalID: 1185992680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_9
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 156
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b96bf1ccb57c3b49a7bc14cbb394c99
+      internalID: 993082887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_10
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 156
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4de6f68e19c5a34ca44c69f4a6f3f90
+      internalID: 1063131737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_11
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 156
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbb176e023b2a7448cdc1b8f1a032a0
+      internalID: -550600109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_12
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 156
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 574b004a2ca49804f9639982006b1b87
+      internalID: -7190424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_13
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 119
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a8719fbde30fc43a43a415018057c4
+      internalID: 223314323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_14
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 119
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9094bb354478ce449e3a1d310f9cf98
+      internalID: 1833116172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_15
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 119
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e4997a92fc2ba4a80a0d5122dbbf9a
+      internalID: 1807877316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_16
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 119
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29747c693d3db6e43b4f0dab39508d93
+      internalID: 736690381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_17
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 119
+        width: 9
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02382762e864da4daf4d8728d8c107a
+      internalID: -1162179699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_18
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 119
+        width: 12
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40bbc97bd9212ff48a6122a825baae43
+      internalID: -817591477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_19
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 119
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c2ed29287ac7c43b21fe3e0d3e4974
+      internalID: -37261857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_20
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 119
+        width: 12
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 083336087884f5d4c9e60096578ab7f4
+      internalID: 1880782702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_21
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 119
+        width: 9
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a6e0d11688841499e0e78c9ebcd9f1
+      internalID: 1694730443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_22
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 119
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90535d362c3ece44e80b6d5e76a00453
+      internalID: -578560538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_23
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 119
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de61708f58bf13e41ae26ff17aa32128
+      internalID: -1305559490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_24
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 119
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ae43fb912a0be45916ba51962a9eb6
+      internalID: -1512551933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_25
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 119
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac42480e977ca74983490404f11cd9f
+      internalID: 403184053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_26
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 90
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a2114ba9ce1f14e92c6d414d42b0ae
+      internalID: 259638231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_27
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 90
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852158e53e15bd946bc485c8ddee7056
+      internalID: 889112200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_28
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 90
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f8c04d372d5a448bccaf5b47118c6e
+      internalID: 876093401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_29
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 90
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3759b82a79276d249965a28b1b3ce6d1
+      internalID: -1202226764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_30
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 90
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086a095ef52ea3a40a2bd95cc31b6de2
+      internalID: -1612692885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_31
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 90
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916dacbcc5684b248b5ad08c486631da
+      internalID: -761256739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_32
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 90
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5647fbb33996c44289b0feb23d3cbdd
+      internalID: 396455279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_33
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 90
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca18be8c2dcea1468b9f59464e6476a
+      internalID: -763509785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_34
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 90
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da091c791f3be734c87626da329f4601
+      internalID: 264813287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_35
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 90
+        width: 30
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5351cd8d7a69d9c4d8f0075ed16fd848
+      internalID: 633441642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_36
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 90
+        width: 30
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab390ecf4644946479b5bf4b9d34544f
+      internalID: -1807733332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_37
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 90
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d84c5e3bd471dd469796cb4e4a65580
+      internalID: -1397970644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_38
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 90
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625e5e6a9a6cb8d449e2146c47fda7ce
+      internalID: 783895991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_39
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 90
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db376bc2b19b5d94fb766443ff085e67
+      internalID: -139622882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_40
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 90
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef77b09e163f4c7458d799fedafca9a6
+      internalID: 1027562219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_41
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 90
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8474c8b7d5377784fa9b430b5a9901ba
+      internalID: -671101085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_42
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 90
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295aa5b9ac83b254c9724b5399005c60
+      internalID: -970329323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_43
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 90
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a3117735021a6468969b196a393bc1
+      internalID: -1764103765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_44
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 90
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb139b702726b846a0233fa0e977c3d
+      internalID: -78948879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_45
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 90
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d28a7568559c3045a2046e5e5efd84f
+      internalID: 1726025725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_46
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 73
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c728f69b6e9b6340905f517d5b233e0
+      internalID: 1847406487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_47
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 70
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbb47a2e0cbbce4385ae877a69d204d
+      internalID: 231929711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_48
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 70
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288740b3f88333e44850093feb642171
+      internalID: -1523644881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_49
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 69
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a00fe2674c21f041af74d1993391c41
+      internalID: -685979426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_50
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 68
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baab4c9ea147a794a8e8ee2d34b6fa4d
+      internalID: -180327492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_51
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 69
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3592a94202b62c04da07e5bc1c903f74
+      internalID: -79206897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_52
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 70
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7656a1672205cf44f9aa6f42b9f7b659
+      internalID: 540639881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_53
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 70
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cefdc44ed2f79a947aaf63bf38cce105
+      internalID: -440039951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_54
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 72
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a174d84c91615e3459c9323bf9d36e0b
+      internalID: -1606620531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_55
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 75
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2518da12544208546b5e268e81ec7015
+      internalID: -2101163511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_56
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 75
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515d7075c252f6649896ed59a9fad971
+      internalID: -2034077494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_57
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 72
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f902d6bce8fbbdf458ace608ee280266
+      internalID: 99503522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_58
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 70
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d2087b72d12424da4fd86029f930d2
+      internalID: -724156611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_59
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 70
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61efb22927a4ad24a814475fa3bc1bd6
+      internalID: 1342666308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_60
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 69
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0471a0dc2b1764f9dff91178ee2fda
+      internalID: -759747818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_61
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 68
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6834fe5923e157a42918fe0471ea21d4
+      internalID: -1290274095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_62
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 69
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58359b4d512adff4b8aae960f5fe0bca
+      internalID: 117031772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_63
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 70
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e6d1f7219dc614589b1d1343a58fdd
+      internalID: 2062229107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_64
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 70
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb993b2ec981aee48bb53c5b708dc76f
+      internalID: -923387451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_65
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 73
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d115ff4263c95842a8df4c7ca5479f4
+      internalID: 571723002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_66
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 53
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011ed5e7a00cf22488d20e9303b87518
+      internalID: -910008350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_67
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 55
+        width: 30
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852ebaa3dab71cb42b706a2d47a8a0b6
+      internalID: 430219891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_68
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 50
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00cc59d4b89681e4790b94594f18fc5b
+      internalID: 1911160012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_69
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 50
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713a2701f4fff054da1c1264cc6aef38
+      internalID: 195348905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_70
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 55
+        width: 30
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef172a9335c1f874e9061c5a02dedb81
+      internalID: 1931077571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_71
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 53
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab16a9172471dea46a975e3bd7008e27
+      internalID: 1740893347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_72
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 5
+        width: 107
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49a338b80fc6cb45b6c12f4829bed80
+      internalID: 1129136931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UNSquadron_Level2E_73
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 5
+        width: 107
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18a10d0bea7d584db8357c81d7d3ab4
+      internalID: 1293252116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      UNSquadron_Level2E_0: -209281330
+      UNSquadron_Level2E_1: 1611120451
+      UNSquadron_Level2E_10: 1063131737
+      UNSquadron_Level2E_11: -550600109
+      UNSquadron_Level2E_12: -7190424
+      UNSquadron_Level2E_13: 223314323
+      UNSquadron_Level2E_14: 1833116172
+      UNSquadron_Level2E_15: 1807877316
+      UNSquadron_Level2E_16: 736690381
+      UNSquadron_Level2E_17: -1162179699
+      UNSquadron_Level2E_18: -817591477
+      UNSquadron_Level2E_19: -37261857
+      UNSquadron_Level2E_2: -339822174
+      UNSquadron_Level2E_20: 1880782702
+      UNSquadron_Level2E_21: 1694730443
+      UNSquadron_Level2E_22: -578560538
+      UNSquadron_Level2E_23: -1305559490
+      UNSquadron_Level2E_24: -1512551933
+      UNSquadron_Level2E_25: 403184053
+      UNSquadron_Level2E_26: 259638231
+      UNSquadron_Level2E_27: 889112200
+      UNSquadron_Level2E_28: 876093401
+      UNSquadron_Level2E_29: -1202226764
+      UNSquadron_Level2E_3: 1966607893
+      UNSquadron_Level2E_30: -1612692885
+      UNSquadron_Level2E_31: -761256739
+      UNSquadron_Level2E_32: 396455279
+      UNSquadron_Level2E_33: -763509785
+      UNSquadron_Level2E_34: 264813287
+      UNSquadron_Level2E_35: 633441642
+      UNSquadron_Level2E_36: -1807733332
+      UNSquadron_Level2E_37: -1397970644
+      UNSquadron_Level2E_38: 783895991
+      UNSquadron_Level2E_39: -139622882
+      UNSquadron_Level2E_4: 1865113273
+      UNSquadron_Level2E_40: 1027562219
+      UNSquadron_Level2E_41: -671101085
+      UNSquadron_Level2E_42: -970329323
+      UNSquadron_Level2E_43: -1764103765
+      UNSquadron_Level2E_44: -78948879
+      UNSquadron_Level2E_45: 1726025725
+      UNSquadron_Level2E_46: 1847406487
+      UNSquadron_Level2E_47: 231929711
+      UNSquadron_Level2E_48: -1523644881
+      UNSquadron_Level2E_49: -685979426
+      UNSquadron_Level2E_5: 698954657
+      UNSquadron_Level2E_50: -180327492
+      UNSquadron_Level2E_51: -79206897
+      UNSquadron_Level2E_52: 540639881
+      UNSquadron_Level2E_53: -440039951
+      UNSquadron_Level2E_54: -1606620531
+      UNSquadron_Level2E_55: -2101163511
+      UNSquadron_Level2E_56: -2034077494
+      UNSquadron_Level2E_57: 99503522
+      UNSquadron_Level2E_58: -724156611
+      UNSquadron_Level2E_59: 1342666308
+      UNSquadron_Level2E_6: 1129550521
+      UNSquadron_Level2E_60: -759747818
+      UNSquadron_Level2E_61: -1290274095
+      UNSquadron_Level2E_62: 117031772
+      UNSquadron_Level2E_63: 2062229107
+      UNSquadron_Level2E_64: -923387451
+      UNSquadron_Level2E_65: 571723002
+      UNSquadron_Level2E_66: -910008350
+      UNSquadron_Level2E_67: 430219891
+      UNSquadron_Level2E_68: 1911160012
+      UNSquadron_Level2E_69: 195348905
+      UNSquadron_Level2E_7: 96084312
+      UNSquadron_Level2E_70: 1931077571
+      UNSquadron_Level2E_71: 1740893347
+      UNSquadron_Level2E_72: 1129136931
+      UNSquadron_Level2E_73: 1293252116
+      UNSquadron_Level2E_8: 1185992680
+      UNSquadron_Level2E_9: 993082887
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
