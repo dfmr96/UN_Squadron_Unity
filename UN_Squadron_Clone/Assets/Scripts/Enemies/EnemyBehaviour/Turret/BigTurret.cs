@@ -22,9 +22,7 @@ public class BigTurret: Turret
         _collisionDamage = _enemyData.collisionDamage;
         _health = _enemyData.health;
         _canDropPOW = _canDrop;
-
-       // _type = _dropType;
-
+        _explosionPrefab = _enemyData.explosionPrefab;
         _sprites = _bigTurretSprite.enemySprites;
         _bulletPrefab = _enemyData.bulletPrefab;
     }
