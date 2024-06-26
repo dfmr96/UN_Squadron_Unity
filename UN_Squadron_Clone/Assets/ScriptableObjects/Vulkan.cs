@@ -37,7 +37,7 @@ namespace Player
         
         private void FireVulkan()
         {
-            Object.Instantiate(currentVulkanBullet, vulkanPosition.position, Quaternion.identity);
+            Object.Instantiate(currentVulkanBullet, vulkanPosition.position, vulkanPosition.rotation);
             AudioManager.instance.vulkanAudio.Play();
             vulkanCounter = 0;
         }

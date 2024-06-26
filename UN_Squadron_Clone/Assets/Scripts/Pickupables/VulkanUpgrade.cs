@@ -11,7 +11,11 @@ namespace Pickupables
 
         public override void PickUp(PlayerController playerController)
         {
-            playerController.FrontVulkan.AddPoints(points);
+            for (int i = 0; i < playerController.Vulkans.Length; i++)
+            {
+                playerController.Vulkans[i].AddPoints(points);
+            }
+            
             AudioManager.instance.vulkanPOW.Play();
         }
     }

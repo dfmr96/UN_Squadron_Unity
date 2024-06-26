@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
     public int damage;
     private void Update()
     {
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+        transform.Translate(Vector3.right * (speed * Time.deltaTime));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -24,7 +24,7 @@ namespace Player
         [field: SerializeField] public Animator Anim { get; private set; }
         [field: SerializeField] public Rigidbody2D Rb { get; private set; }
 
-        [field: SerializeField] public Vulkan FrontVulkan { get; private set; }
+        [field: SerializeField] public Vulkan[] Vulkans { get; private set; }
         private PlayerStateMachine _playerStateMachine;
 
         //Privados
@@ -55,11 +55,35 @@ namespace Player
         private void Start()
         {
             Time.timeScale = 1; 
-            FrontVulkan.InitVulkan();
+            InitVulkans();
             _playerStateMachine = new PlayerStateMachine(this);
             GetReferences();
             Health = MaxHealth;
             EventBus.instance.PlayerSpawned(this);
+        }
+
+        public void InitVulkans()
+        {
+            foreach (Vulkan vulkan in Vulkans)
+            {
+                vulkan.InitVulkan();
+            }
+        }
+
+        public void UpdateVulkans()
+        {
+            foreach (Vulkan vulkan in Vulkans)
+            {
+                vulkan.Update();
+            }
+        }
+
+        public void TryFireVulkans()
+        {
+            foreach (Vulkan vulkan in Vulkans)
+            {
+                vulkan.TryFire();
+            }
         }
 
         private void GetReferences()
@@ -74,14 +98,14 @@ namespace Player
 
         private void Update()
         {
-            FrontVulkan.Update();
+            UpdateVulkans();
             _playerStateMachine.Update();
             
             if (_playerStateMachine.CurrentState == _playerStateMachine.DestroyedState) return;
             Movement();
             if (Input.GetKey(KeyCode.Space))
             {
-                FrontVulkan.TryFire();
+                TryFireVulkans();
             }
 
 
