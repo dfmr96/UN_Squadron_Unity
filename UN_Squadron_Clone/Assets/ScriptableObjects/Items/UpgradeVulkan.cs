@@ -9,7 +9,11 @@ namespace ScriptableObjects.Items
         public int points;
         public override void Use(PlayerController playerController)
         {
-            playerController.FrontVulkan.AddPoints(points);
+            foreach (var t in playerController.Vulkans)
+            {
+                t.AddPoints(points);
+            }
+
             AudioManager.instance.vulkanPOW.Play();
         }
     }
