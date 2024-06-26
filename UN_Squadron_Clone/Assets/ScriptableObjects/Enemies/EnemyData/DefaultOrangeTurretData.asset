@@ -22,3 +22,4 @@ MonoBehaviour:
   <bulletPrefab>k__BackingField: {fileID: 1744197573988224712, guid: 62ab3dd4cfe8a314f8625e515a587ace, type: 3}
   <explosionPrefab>k__BackingField: {fileID: 3336104701328597698, guid: d207451a5c8262b4d9753a7d39dbe53b, type: 3}
   <moveSpeed>k__BackingField: 0
+  <canDrop>k__BackingField: 1

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: DefaultOrangeTurretSprites
   m_EditorClassIdentifier: 
   enemySprites:
-  - {fileID: -1304448410, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  - {fileID: -863475797, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  - {fileID: -1846284387, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  - {fileID: 498542624, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  - {fileID: -1008377988, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  - {fileID: 1325724536, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  - {fileID: 299077185, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  - {fileID: -251203786, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  - {fileID: 56226875, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  - {fileID: -633447150, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
