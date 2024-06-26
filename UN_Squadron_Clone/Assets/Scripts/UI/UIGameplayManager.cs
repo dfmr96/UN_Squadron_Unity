@@ -94,7 +94,7 @@ public class UIGameplayManager : MonoBehaviour
 
         for (int i = 0; i < moneyDigits.Length; i++)
         {
-            Debug.Log(moneyDigits[i]);
+            //Debug.Log(moneyDigits[i]);
 
             if (!_moneyImages[i].gameObject.activeSelf) _moneyImages[i].gameObject.SetActive(true);
             _moneyImages[i].sprite = _numberFonts.sprite[moneyDigits[i]];

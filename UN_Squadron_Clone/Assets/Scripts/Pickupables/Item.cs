@@ -1,11 +1,21 @@
 ﻿using DefaultNamespace;
 using Player;
+using ScriptableObjects.Items;
 using UnityEngine;
 
 namespace Pickupables
 {
-    public abstract class Item : MonoBehaviour, IPickupable
+    public class Item : MonoBehaviour, IPickupable
     {
-        public abstract void PickUp(PlayerController playerController);
+        [SerializeField] private ItemBehavior[] itemBehaviors;
+
+        public virtual void PickUp(PlayerController playerController)
+        {
+            foreach (ItemBehavior itemBehavior in itemBehaviors)
+            {
+                Debug.Log("Item used");
+                itemBehavior.Use(playerController);
+            }
+        }
     }
 }

@@ -16,7 +16,7 @@ namespace Player
 
         [field: SerializeField] public int RecoveryTime { get; private set;}
 
-        [SerializeField] private SideScrollController sideScroll;
+        [field: SerializeField] public SideScrollController SideScroll { get; private set; }
 
         [field: SerializeField] public GameObject DamagedFlames { get; private set;}
 
@@ -63,8 +63,8 @@ namespace Player
 
         private void GetReferences()
         {
-            _cameraCol = sideScroll.Bounds;
-            transform.parent = sideScroll.transform;
+            _cameraCol = SideScroll.Col;
+            transform.parent = SideScroll.transform;
             _playerCol = GetComponent<BoxCollider2D>();
             _aircraftRenderer = GetComponent<SpriteRenderer>();
             Rb = GetComponent<Rigidbody2D>();
@@ -89,25 +89,29 @@ namespace Player
         {
             _horizontal = Input.GetAxisRaw("Horizontal");
             _vertical = Input.GetAxisRaw("Vertical");
+            CheckBounds();
 
             Vector3 dir = new Vector3(_horizontal, _vertical).normalized;
             transform.Translate(dir * (Speed * Time.deltaTime));
             Anim.SetInteger("Vertical", (int)_vertical);
 
-            CheckBounds();
         }
 
         private void CheckBounds()
         {
+            var bounds = _playerCol.bounds;
+            float playerwidth = (bounds.max.x - bounds.min.x)/2;
             //Chequeo de colisiones, si el jugador intenta atravesar la pantalla no podra
             if (_playerCol.bounds.min.x < _cameraCol.bounds.min.x && _horizontal == -1)
             {
+                transform.position = new Vector3(_cameraCol.bounds.min.x + playerwidth,transform.position.y,0);
                 _horizontal = 0;
             }
 
-            if (_playerCol.bounds.max.x > _cameraCol.bounds.max.x && _horizontal == 1)
+            if (_playerCol.bounds.max.x > _cameraCol.bounds.max.x - 1 && _horizontal == 1)
             {
                 _horizontal = 0;
+                //transform.position = new Vector3(_cameraCol.bounds.max.x - playerwidth,transform.position.y,0); Causa Jitter si se descomenta
             }
 
             if (_playerCol.bounds.min.y < _cameraCol.bounds.min.y && _vertical == -1)
@@ -126,7 +130,7 @@ namespace Player
             if (collision.gameObject.TryGetComponent(out IPickupable pickupable))
             {
                 pickupable.PickUp(this);
-                Destroy(collision.gameObject);
+                Destroy(collision.gameObject, 0.1f);
             }
 
             if (collision.gameObject.CompareTag("Obstacles"))

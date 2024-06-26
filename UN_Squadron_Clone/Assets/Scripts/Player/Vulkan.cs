@@ -75,7 +75,7 @@ namespace Player
             GameManager.instance.SaveVulkanPoints(currentVulkanPoints);
             nextVulkanPoints = vulkanLevels[currentVulkanLevel + 1];
             pointsToNextVulkan = nextVulkanPoints - currentVulkanPoints;
-            Debug.Log(pointsToNextVulkan);
+            //Debug.Log(pointsToNextVulkan);
         }
 
         public void AddPoints(int pointToAdd)
