@@ -104,8 +104,8 @@ namespace Player
             //Chequeo de colisiones, si el jugador intenta atravesar la pantalla no podra
             if (_playerCol.bounds.min.x < _cameraCol.bounds.min.x && _horizontal == -1)
             {
-                transform.position = new Vector3(_cameraCol.bounds.min.x + playerwidth,transform.position.y,0);
                 _horizontal = 0;
+                transform.position = new Vector3(_cameraCol.bounds.min.x + playerwidth,transform.position.y,0);
             }
 
             if (_playerCol.bounds.max.x > _cameraCol.bounds.max.x - 1 && _horizontal == 1)

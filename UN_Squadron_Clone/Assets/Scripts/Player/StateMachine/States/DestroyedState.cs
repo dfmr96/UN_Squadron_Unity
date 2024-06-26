@@ -19,6 +19,7 @@ namespace Player
             //StopAllCoroutines();
             playerStateMachine.Controller.Anim.SetInteger("PlayerState", 3); //TODO Magic number
             playerStateMachine.Controller.DamagedFlames.SetActive(false); //TODO Extraer sprite y animaciones
+            EventBus.instance.PlayerDestroyed();
             AudioManager.instance.playerRecovery.Stop();
             AudioManager.instance.bgmAudio.Stop();
             AudioManager.instance.playerDestroyed.Play();

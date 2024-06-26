@@ -10,6 +10,7 @@ public class EventBus : MonoBehaviour
 
     public event Action<Enemy> OnEnemyDestroyed;
     public event Action<float> OnPlayerDamaged;
+    public event Action OnPlayerDestroyed;
     public event Action OnPlayerRecover;
     public event Action<PlayerController> OnPlayerSpawned;
     public event Action OnBossDestroyed;
@@ -50,6 +51,11 @@ public class EventBus : MonoBehaviour
     public void PlayerDamaged(float damage)
     {
         OnPlayerDamaged?.Invoke(damage);
+    }
+
+    public void PlayerDestroyed()
+    {
+        OnPlayerDestroyed?.Invoke();
     }
 
     public void PlayerSpawned(PlayerController player)

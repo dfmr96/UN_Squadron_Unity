@@ -1,10 +1,6 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using Player;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
 public class UIGameplayManager : MonoBehaviour
@@ -40,8 +36,9 @@ public class UIGameplayManager : MonoBehaviour
         EventBus.instance.OnPlayerDamaged += UpdateHealthBar;
         EventBus.instance.OnPlayerDamaged += PlayPortraitHurt;
         EventBus.instance.OnPlayerRecover += PlayerRecovered;
-        EventBus.instance.OnSubweaponUsed += UpdateSubWeaponReamining;
+        EventBus.instance.OnSubweaponUsed += UpdateSubWeaponRemaining;
         EventBus.instance.OnSubweaponChanged += UpdateSubWeaponSprites;
+        EventBus.instance.OnPlayerDestroyed += PlayPortraitDestroyed;
     }
     private void OnDisable()
     {
@@ -49,11 +46,12 @@ public class UIGameplayManager : MonoBehaviour
         EventBus.instance.OnPlayerDamaged -= UpdateHealthBar;
         EventBus.instance.OnPlayerDamaged -= PlayPortraitHurt;
         EventBus.instance.OnPlayerRecover -= PlayerRecovered;
-        EventBus.instance.OnSubweaponUsed -= UpdateSubWeaponReamining;
+        EventBus.instance.OnSubweaponUsed -= UpdateSubWeaponRemaining;
         EventBus.instance.OnSubweaponChanged -= UpdateSubWeaponSprites;
+        EventBus.instance.OnPlayerDestroyed -= PlayPortraitDestroyed;
     }
 
-    private void UpdateSubWeaponReamining(float remaining)
+    private void UpdateSubWeaponRemaining(float remaining)
     {
         int[] remainingDigits = GetIntArray((int)remaining);
 
@@ -144,6 +142,13 @@ public class UIGameplayManager : MonoBehaviour
         _portraitAnim.SetBool("OnRecovery", true);
     }
 
+    public void PlayPortraitDestroyed()
+    {
+        _portraitAnim.SetBool("OnDamaged", false);
+        _portraitAnim.SetBool("OnRecovery", false);
+        _portraitAnim.SetBool("OnDestroyed", true);
+    }
+
     public void SetHealth(PlayerController player)
     {
         healthRatio = 1 / player.MaxHealth;
@@ -160,10 +165,10 @@ public class UIGameplayManager : MonoBehaviour
     {
         _healthBarAnim.SetBool("Recovered", false);
         healthBar.gameObject.SetActive(true);
-        StartCoroutine(RaiseHealth());
+        RaiseHealth();
     }
 
-    public IEnumerator RaiseHealth()
+    public void RaiseHealth()
     {
         float currentHealth = healthBar.fillAmount/ healthRatio;
         healthBar.fillAmount = 0;
@@ -171,7 +176,6 @@ public class UIGameplayManager : MonoBehaviour
         {
             //Debug.Log(healthBar.fillAmount);
             healthBar.fillAmount = i * healthRatio;
-            yield return new WaitForSeconds(0.1f);
         }
     }
 }
