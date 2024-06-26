@@ -6,16 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6fb987ce-2f2d-4ce1-ac22-85f547a8a0f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UN_Squadron_Clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UN_Squadron_Clone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/CharacterPortrait.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/CharacterPortrait.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/EventBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/EventBus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/StateMachine/States/DestroyedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/StateMachine/States/DestroyedState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Vulkan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Vulkan.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIGameplayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIGameplayManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/26363.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/26363.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1719376086833</updated>
       <workItem from="1719376092822" duration="667000" />
-      <workItem from="1719419420195" duration="2866000" />
+      <workItem from="1719419420195" duration="3657000" />
     </task>
     <servers />
   </component>

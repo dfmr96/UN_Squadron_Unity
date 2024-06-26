@@ -27,6 +27,7 @@ namespace Player
             currentVulkanPoints = GameManager.instance.VulkanPoints;
             nextVulkanPoints = CalculateNextVulkanPoints();
             CheckVulkanPoints();
+            //EventBus.instance.PowTaken(pointsToNextVulkan,currentVulkanPoints);
         }
 
         private int CalculateNextVulkanPoints()
@@ -75,6 +76,7 @@ namespace Player
             GameManager.instance.SaveVulkanPoints(currentVulkanPoints);
             nextVulkanPoints = vulkanLevels[currentVulkanLevel + 1];
             pointsToNextVulkan = nextVulkanPoints - currentVulkanPoints;
+            EventBus.instance.PowTaken(pointsToNextVulkan,currentVulkanPoints);
             //Debug.Log(pointsToNextVulkan);
         }
 

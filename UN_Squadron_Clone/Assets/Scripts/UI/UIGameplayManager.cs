@@ -6,16 +6,18 @@ using UnityEngine.UI;
 public class UIGameplayManager : MonoBehaviour
 {
     public static UIGameplayManager instance;
-    [SerializeField] Number_Fonts _numberFonts;
-    [SerializeField] Image[] _moneyImages;
-    [SerializeField] Image[] _scoreImages;
-    [SerializeField] Image[] _subWeaponRemainingImage;
-    [SerializeField] Image _subWeaponImage;
-    [SerializeField] Image _subWeaponNameImage;
-    [SerializeField] Image healthBar;
-    [SerializeField] float healthRatio;
-    [SerializeField] Animator _healthBarAnim;
-    [SerializeField] Animator _portraitAnim;
+    [SerializeField] private Number_Fonts _numberFonts;
+    [SerializeField] private Image[] _moneyImages;
+    [SerializeField] private Image[] _scoreImages;
+    [SerializeField] private Image[] _subWeaponRemainingImage;
+    [SerializeField] private Image[] _powImages;
+    [SerializeField] private Image[] _totalPowImages;
+    [SerializeField] private Image _subWeaponImage;
+    [SerializeField] private Image _subWeaponNameImage;
+    [SerializeField] private Image healthBar;
+    [SerializeField] private float healthRatio;
+    [SerializeField] private Animator _healthBarAnim;
+    [SerializeField] private Animator _portraitAnim;
     public GameObject _victoryPanel;
 
     private void Start()
@@ -34,6 +36,7 @@ public class UIGameplayManager : MonoBehaviour
     {
         EventBus.instance.OnPlayerSpawned += SetHealth;
         EventBus.instance.OnPlayerDamaged += UpdateHealthBar;
+        EventBus.instance.OnPOWTaken += UpdatePowSprites;
         EventBus.instance.OnPlayerDamaged += PlayPortraitHurt;
         EventBus.instance.OnPlayerRecover += PlayerRecovered;
         EventBus.instance.OnSubweaponUsed += UpdateSubWeaponRemaining;
@@ -45,6 +48,7 @@ public class UIGameplayManager : MonoBehaviour
         EventBus.instance.OnPlayerSpawned -= SetHealth;
         EventBus.instance.OnPlayerDamaged -= UpdateHealthBar;
         EventBus.instance.OnPlayerDamaged -= PlayPortraitHurt;
+        EventBus.instance.OnPOWTaken += UpdatePowSprites;
         EventBus.instance.OnPlayerRecover -= PlayerRecovered;
         EventBus.instance.OnSubweaponUsed -= UpdateSubWeaponRemaining;
         EventBus.instance.OnSubweaponChanged -= UpdateSubWeaponSprites;
@@ -96,6 +100,24 @@ public class UIGameplayManager : MonoBehaviour
 
             if (!_moneyImages[i].gameObject.activeSelf) _moneyImages[i].gameObject.SetActive(true);
             _moneyImages[i].sprite = _numberFonts.sprite[moneyDigits[i]];
+        }
+    }
+
+    public void UpdatePowSprites(int remainingPoints, int total)
+    {
+        int[] remainingPointDigits = GetIntArray(remainingPoints);
+        int[] totalPointsDigits = GetIntArray(total);
+
+        for (int i = 0; i < remainingPointDigits.Length; i++)
+        {
+            if (!_powImages[i].gameObject.activeSelf) _powImages[i].gameObject.SetActive(true);
+            _powImages[i].sprite = _numberFonts.sprite[remainingPointDigits[i]];
+        }
+        
+        for (int i = 0; i < totalPointsDigits.Length; i++)
+        {
+            if (!_totalPowImages[i].gameObject.activeSelf) _totalPowImages[i].gameObject.SetActive(true);
+            _totalPowImages[i].sprite = _numberFonts.sprite[totalPointsDigits[i]];
         }
     }
 

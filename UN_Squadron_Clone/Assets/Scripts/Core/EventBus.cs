@@ -7,6 +7,7 @@ using UnityEngine;
 public class EventBus : MonoBehaviour
 {
     public static EventBus instance;
+    public event Action<int, int> OnPOWTaken;
 
     public event Action<Enemy> OnEnemyDestroyed;
     public event Action<float> OnPlayerDamaged;
@@ -31,6 +32,11 @@ public class EventBus : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void PowTaken(int remaining, int total)
+    {
+        OnPOWTaken?.Invoke(remaining, total);
     }
 
     public void SubWeaponChanged(WeaponData weaponData)
