@@ -21,7 +21,7 @@ namespace Enemies.Patterns
                 {
                     OffsetX = 4;
                 }
-                positions[i] = new Vector3((i + OffsetX) * offsetXMultiplier, y * OffsetY,0f);
+                positions[i] = new Vector3((i * OffsetX) * offsetXMultiplier, y * OffsetY,0f);
             }
 
             return positions;

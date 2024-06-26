@@ -7,9 +7,7 @@ public class Helo : Enemy
 {
     [SerializeField] private EnemyData _enemyData;
     
-    //[SerializeField] private VulkanPOWType _dropType;
     [SerializeField] private EnemySprites _heloSprite;
-    //[SerializeField] public GameObject player;
     private Vector3 aimdir;
     private void Awake()
     {
@@ -65,7 +63,9 @@ public class Helo : Enemy
         }
         if (_fireRateCounter > 1 / _fireRate)
         {
+
             Fire();
+            
         }
     }
 

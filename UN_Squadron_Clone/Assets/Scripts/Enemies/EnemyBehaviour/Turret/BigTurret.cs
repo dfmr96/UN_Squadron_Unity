@@ -15,6 +15,7 @@ public class BigTurret: Turret
     private Vector3 _raycastDir = Vector3.zero;
     public void Awake()
     {
+        enemyDataParent = _enemyData;
         _health = _enemyData.health;
         _customAnim = _enemyData.customAnim;
         _fireRate = _enemyData.fireRate;

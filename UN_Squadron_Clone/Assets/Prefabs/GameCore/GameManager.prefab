@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6472233641969189629}
   - component: {fileID: 6472233641969189628}
   - component: {fileID: 750023756}
+  - component: {fileID: 6939892001348540503}
+  - component: {fileID: 3463531970313218630}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -45,8 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8ee49221b699ba448aacb37b476170f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
-  money: 0
+  <Score>k__BackingField: 0
+  <Money>k__BackingField: 0
+  <VulkanPoints>k__BackingField: 0
   playerInventory: {fileID: 11400000, guid: e4b5f3856548edf4e88ec3c1a41cd91c, type: 2}
 --- !u!114 &750023756
 MonoBehaviour:
@@ -61,3 +64,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingSceneName: LoadingScene
+--- !u!114 &6939892001348540503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6472233641969189631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd14d0cd0ee48fe9e1b00c438fd46c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3463531970313218630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6472233641969189631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bf1a0ed2a73992409a98cf49fdbb55c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  enemyCommandGenerator: {fileID: 11400000, guid: edf3554a2ca0edc40af1aa74dc345f1b, type: 2}

@@ -74,7 +74,9 @@ public class Enemy : MonoBehaviour, IDamageable
         if (_health <= 0f)
         {            
             DropItem();
-            DestroyEnemy();
+           // EnemyPool.EnemyDestroyed(this);
+           // DestroyEnemy();
+           EnemyPool.EnemyDeactivated(this);
             Debug.Log("Enemy Destroy");
         }
         
@@ -82,16 +84,25 @@ public class Enemy : MonoBehaviour, IDamageable
 
     protected virtual void Fire()
     {
-        GameObject bullet = null;
-        bullet = Instantiate(_bulletPrefab, transform.position, Quaternion.identity);
-        bullet.GetComponent<EnemyBullet>().SetDirection(AimDirection());
-        _fireRateCounter = 0;
+        if (_player != null && _player.GetComponent<SpriteRenderer>().isVisible)
+        {
+            
+            GameObject bullet = null;
+            bullet = Instantiate(_bulletPrefab, transform.position, Quaternion.identity);
+            bullet.GetComponent<EnemyBullet>().SetDirection(AimDirection());
+            _fireRateCounter = 0;
+        }
 
     }
 
     protected Vector3 AimDirection()
     {
-        return (_player.transform.position - transform.position).normalized;
+        if (_player != null)
+        {
+            return (_player.transform.position - transform.position).normalized;    
+        }
+
+        return new Vector3(0,0,0);
     }
 
     private void DropItem()

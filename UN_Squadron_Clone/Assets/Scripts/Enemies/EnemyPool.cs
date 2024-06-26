@@ -14,7 +14,7 @@ public static class EnemyPool
         {
             foreach (Enemy notActiveEnemy in notActiveList)
             {
-                if (true)
+                if (notActiveEnemy.enemyDataParent.ID == enemyType)
                 {
                     Enemy enemy = notActiveEnemy;
                     notActiveList.Remove(notActiveEnemy);
@@ -54,5 +54,16 @@ public static class EnemyPool
     {
         activeList.Clear();
         notActiveList.Clear();
+    }
+
+    public static void EnemyDestroyed(Enemy destroyedEnemy)
+    {
+        if (activeList.Contains(destroyedEnemy))
+        {
+            activeList.Remove(destroyedEnemy);
+        }else if (notActiveList.Contains(destroyedEnemy))
+        {
+            notActiveList.Remove(destroyedEnemy);
+        }
     }
 }

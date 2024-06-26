@@ -5,6 +5,7 @@ namespace Enemies.Patterns
     [CreateAssetMenu(fileName = "DiagonalPattern", menuName = "Pattern/Diagonal", order = 1)]
     public class DiagonalPattern : EnemyPattern
     {
+        [SerializeField] private float slope;
         public override Vector3[] GetPattern(int enemyCount)
         {
             Vector3[] positions = new Vector3[enemyCount];

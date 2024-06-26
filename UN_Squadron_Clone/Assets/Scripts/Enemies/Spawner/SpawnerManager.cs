@@ -25,8 +25,11 @@ public class SpawnerManager : MonoBehaviour
         if (EnemyPool.ExistEnemyType(enemyType))
         {
             var enemy = EnemyPool.GetEnemy(enemyType);
+            if (enemy != null)
+            {
             enemy.gameObject.transform.position = spawnPointPosition;
             enemy.gameObject.SetActive(true);
+            }
         }
         else
         {
