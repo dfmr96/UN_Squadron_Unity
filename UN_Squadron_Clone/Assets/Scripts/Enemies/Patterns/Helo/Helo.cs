@@ -18,8 +18,9 @@ public class Helo : Enemy
         
         _collisionDamage = _enemyData.collisionDamage;
         _explosionPrefab = _enemyData.explosionPrefab;
-        
-        
+
+
+        enemyDataParent = _enemyData;
 
       //  _type = _dropType;
 
@@ -71,5 +72,10 @@ public class Helo : Enemy
     private void MoveHelo()
     {
         transform.Translate(transform.right * _moveSpeed * Time.deltaTime);
+    }
+
+    private void OnEnable()
+    {
+        Awake();
     }
 }

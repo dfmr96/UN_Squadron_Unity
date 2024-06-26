@@ -9,7 +9,7 @@
         
         foreach (var enemyData in enemyDataArray)
         {
-            if (enemyData.ID == enemyID)
+            if (enemyID == enemyData.ID)
             {
                 return enemyData.prefab;
             }

@@ -28,8 +28,8 @@ public class Enemy : MonoBehaviour, IDamageable
 
     
     protected float _collisionDamage;
-   
-    
+
+    public EnemyData enemyDataParent;
     
     public int scorePerKill = 100;
     public int moneyPerKill = 300;
@@ -48,7 +48,7 @@ public class Enemy : MonoBehaviour, IDamageable
 
 
 
-    protected void OnTriggerEnter2D(Collider2D collision)
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<PlayerController>() != null)
         {
@@ -111,4 +111,5 @@ public class Enemy : MonoBehaviour, IDamageable
             }*/
         }  
     }
+    
 }

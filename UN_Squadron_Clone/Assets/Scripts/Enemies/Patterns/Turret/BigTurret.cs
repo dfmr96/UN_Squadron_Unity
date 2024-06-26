@@ -77,4 +77,9 @@ public class BigTurret: Turret
             yield return new WaitForSeconds(_timeBetweenBullets);
         }
     }
+    
+    private void OnEnable()
+    {
+        Awake();
+    }
 }

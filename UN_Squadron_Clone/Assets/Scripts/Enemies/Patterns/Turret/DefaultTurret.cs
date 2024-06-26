@@ -58,4 +58,9 @@ public class DefaultTurret: Turret
            Fire();
         }
     }
+    
+    private void OnEnable()
+    {
+        Awake();
+    }
 }
