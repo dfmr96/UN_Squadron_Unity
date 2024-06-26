@@ -19,27 +19,37 @@ public class SpawnerManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public void GenerateEnemy(string enemyType, Vector3 spawnPointPosition,GameObject player)
+    public void GenerateEnemy(string enemyType, Vector3 spawnPointPosition,GameObject player,bool canDrop)
     {
 
         if (EnemyPool.ExistEnemyType(enemyType))
         {
-            var enemy = EnemyPool.GetEnemy(enemyType);
+            Enemy enemy = EnemyPool.GetEnemy(enemyType);
             if (enemy != null)
             {
-            enemy.gameObject.transform.position = spawnPointPosition;
-            enemy.gameObject.SetActive(true);
+                enemy.gameObject.transform.position = spawnPointPosition;
+                enemy.gameObject.SetActive(true);
             }
+
+            if (canDrop)
+            {
+                enemy.CanDrop();
+            }
+            else
+            {
+                enemy.CannotDrop();
+            }
+
         }
         else
         {
             if (!enemyCommandGenerator.TryGenerateEnemyCreationCommand(enemyType,
-                    spawnPointPosition, new Quaternion(0,180f,0,0),player, out var enemyCommand))
+                    spawnPointPosition, new Quaternion(0,180f,0,0),player,canDrop, out var enemyCommand))
             {
                 Debug.Log("crea enemigo");
-                return;
             }
             EventQueue.Instance.EnqueueCommand(enemyCommand);
+
         }
     }
 
