@@ -6,12 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="6fb987ce-2f2d-4ce1-ac22-85f547a8a0f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UN_Squadron_Clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UN_Squadron_Clone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameCore/Core.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameCore/Core.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet_2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Orange_Turret.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Orange_Turret.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Items/UpgradeVulkan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Items/UpgradeVulkan.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pickupables/VulkanUpgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pickupables/VulkanUpgrade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Vulkan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Vulkan.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Vulkan_01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Vulkan_01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Vulkan_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Vulkan_02.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Pickupables;
 using Player;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -19,6 +20,7 @@ public class Enemy : MonoBehaviour, IDamageable
     protected bool _canDropPOW;
     //protected VulkanPOWType _type; TODO
     [SerializeField] VulkanPOWs _vulkanPOWsGO;
+    [SerializeField] private GameObject itemDropped;
     public GameObject _player;
 
     protected float _fireRateCounter = 0;
@@ -107,20 +109,8 @@ public class Enemy : MonoBehaviour, IDamageable
 
     private void DropItem()
     {
-        if (_canDropPOW && _vulkanPOWsGO != null)
-        {
-            /*switch (_type)
-            {
-                case VulkanPOWType.Orange:
-                    Instantiate(_vulkanPOWsGO.vulkanPOWsGO[0], transform.position, Quaternion.identity);
-                    break;
-                case VulkanPOWType.Blue:
-                    Instantiate(_vulkanPOWsGO.vulkanPOWsGO[1], transform.position, Quaternion.identity);
-                    break;
-                default:
-                    break;
-            }*/
-        }  
+        if (itemDropped == null) return;
+        Instantiate(itemDropped, transform.position, Quaternion.identity);
     }
     
 }
