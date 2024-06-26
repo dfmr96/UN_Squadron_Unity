@@ -9,6 +9,7 @@ using UnityEngine;
 public class Inventory : ScriptableObject
 
 {
+    
     [Serializable]
     public class InventorySlot
     {

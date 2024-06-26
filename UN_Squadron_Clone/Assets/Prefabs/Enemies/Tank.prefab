@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2674018841052043697}
   - component: {fileID: 2674018841052043696}
-  - component: {fileID: 2674018841052043663}
   - component: {fileID: 2674018841052043698}
-  m_Layer: 0
+  - component: {fileID: 5830056127727285571}
+  m_Layer: 8
   m_Name: Tank
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -86,48 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2674018841052043663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2674018841052043662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56291e49b391f394192584c219daad7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _player: {fileID: 0}
-  _health: 2
-  _moveSpeed: 3
-  _explosionPrefab: {fileID: 3336104701328597698, guid: d207451a5c8262b4d9753a7d39dbe53b, type: 3}
-  _bulletPrefab: {fileID: 1744197573988224712, guid: 62ab3dd4cfe8a314f8625e515a587ace, type: 3}
-  _fireRate: 0.75
-  _fireRateCounter: 0
-  _canDropPOW: 0
-  _type: 0
-  _vulkanPOWs:
-  - {fileID: 7385918597685355896, guid: 5dddf505456fc404aaa2174f143ef6ff, type: 3}
-  - {fileID: 4695770047083689648, guid: eb2df685b715c7346aa2cce08df394e6, type: 3}
-  _enemyType: 3
-  _sprites:
-  - {fileID: 1756284312, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  - {fileID: -2055221635, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  - {fileID: 392324007, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  - {fileID: -1880721019, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  - {fileID: -2014434484, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  - {fileID: 608165174, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  - {fileID: -1289286664, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  - {fileID: 465517887, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  - {fileID: 145147393, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
-  _spriteRenderer: {fileID: 0}
-  CustomAnim: 0
-  collisionDamage: 3
-  _bulletToShoot: 0
-  _timeBetweenBullets: 0
-  scorePerKill: 100
-  moneyPerKill: 300
 --- !u!61 &2674018841052043698
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -154,3 +112,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.1890583, y: 1.875}
   m_EdgeRadius: 0
+--- !u!114 &5830056127727285571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2674018841052043662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca39c07f842d407799db55b462d34945, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _vulkanPOWsGO: {fileID: 11400000, guid: 68f6019a60be4fd469da8f41f1e56031, type: 2}
+  _player: {fileID: 0}
+  scorePerKill: 100
+  moneyPerKill: 300
+  enemyData: {fileID: 11400000, guid: 7c73d67ebd93ffe4fa7a8fb60d37c48f, type: 2}
+  canDrop: 0
+  dropType: 0
+  tankSprite: {fileID: 11400000, guid: a4be33513c76af946a6637e7090755c9, type: 2}
