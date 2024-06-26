@@ -82,6 +82,12 @@ public class GameManager : MonoBehaviour
         Score += enemy.scorePerKill;
         UIGameplayManager.instance.UpdateScoreSprites(Score);
     }
+    
+    public void UpdateScore(int score)
+    {
+        Score += score;
+        UIGameplayManager.instance.UpdateScoreSprites(Score);
+    }
 
     public void GameOver()
     {

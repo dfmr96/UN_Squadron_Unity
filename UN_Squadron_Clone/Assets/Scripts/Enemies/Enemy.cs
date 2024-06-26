@@ -57,7 +57,7 @@ public class Enemy : MonoBehaviour, IDamageable
         }
     }
     
-    protected void DestroyEnemy()
+    public void DestroyEnemy()
     {
         Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
         AudioManager.instance.enemyDestroyedAudio.Play();
