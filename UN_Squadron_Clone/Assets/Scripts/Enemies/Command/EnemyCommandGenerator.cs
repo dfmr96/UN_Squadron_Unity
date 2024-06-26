@@ -3,7 +3,7 @@
 [CreateAssetMenu(fileName = "EnemyCommandFactory", menuName = "EnemyCommandFactory", order = 0)]
 public class EnemyCommandGenerator : ScriptableObject
 {
-    [SerializeField] private EnemyFactoryInitializer enemyFactoryInitializer;
+    [SerializeField] public EnemyFactoryInitializer enemyFactoryInitializer;
 
     public bool TryGenerateEnemyCreationCommand(string enemyType, Vector3 position,Quaternion rotation,GameObject player, out ICommand command)
     {

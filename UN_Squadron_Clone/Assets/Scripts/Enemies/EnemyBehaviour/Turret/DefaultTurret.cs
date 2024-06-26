@@ -12,6 +12,8 @@ public class DefaultTurret: Turret
     [SerializeField] private GameObject player;
     public void Awake()
     {
+
+        enemyDataParent = enemyData;
         _health = enemyData.health;
         _moveSpeed = enemyData.moveSpeed;
         
@@ -57,5 +59,10 @@ public class DefaultTurret: Turret
         {
            Fire();
         }
+    }
+    
+    private void OnEnable()
+    {
+        Awake();
     }
 }

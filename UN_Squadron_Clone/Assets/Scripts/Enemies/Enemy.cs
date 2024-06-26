@@ -28,8 +28,8 @@ public class Enemy : MonoBehaviour, IDamageable
 
     
     protected float _collisionDamage;
-   
-    
+
+    public EnemyData enemyDataParent;
     
     public int scorePerKill = 100;
     public int moneyPerKill = 300;
@@ -48,7 +48,7 @@ public class Enemy : MonoBehaviour, IDamageable
 
 
 
-    protected void OnTriggerEnter2D(Collider2D collision)
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<PlayerController>() != null)
         {
@@ -62,7 +62,8 @@ public class Enemy : MonoBehaviour, IDamageable
         Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
         AudioManager.instance.enemyDestroyedAudio.Play();
         EventBus.instance.EnemyDestroyed(this);
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        EnemyPool.EnemyDeactivated(this);
         Debug.Log("Enemy Destroyed");
     }
     
@@ -74,6 +75,7 @@ public class Enemy : MonoBehaviour, IDamageable
         if (_health <= 0f)
         {            
             DropItem();
+           // EnemyPool.EnemyDestroyed(this);
             DestroyEnemy();
             Debug.Log("Enemy Destroy");
         }
@@ -82,16 +84,25 @@ public class Enemy : MonoBehaviour, IDamageable
 
     protected virtual void Fire()
     {
-        GameObject bullet = null;
-        bullet = Instantiate(_bulletPrefab, transform.position, Quaternion.identity);
-        bullet.GetComponent<EnemyBullet>().SetDirection(AimDirection());
-        _fireRateCounter = 0;
+        if (_player != null && _player.GetComponent<SpriteRenderer>().isVisible)
+        {
+            
+            GameObject bullet = null;
+            bullet = Instantiate(_bulletPrefab, transform.position, Quaternion.identity);
+            bullet.GetComponent<EnemyBullet>().SetDirection(AimDirection());
+            _fireRateCounter = 0;
+        }
 
     }
 
     protected Vector3 AimDirection()
     {
-        return (_player.transform.position - transform.position).normalized;
+        if (_player != null)
+        {
+            return (_player.transform.position - transform.position).normalized;    
+        }
+
+        return new Vector3(0,0,0);
     }
 
     private void DropItem()
@@ -111,4 +122,5 @@ public class Enemy : MonoBehaviour, IDamageable
             }*/
         }  
     }
+    
 }

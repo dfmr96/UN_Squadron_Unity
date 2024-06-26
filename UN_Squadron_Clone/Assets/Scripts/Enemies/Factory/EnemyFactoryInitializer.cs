@@ -14,11 +14,11 @@ public class EnemyFactoryInitializer : ScriptableObject
         {
             foreach (var enemyData in availableEnemiesData.availableEnemies)
             {
-                if (enemyID == enemyData.ID)
-                {
+                //if (enemyID == enemyData.ID)
+                //{
                     enemyFactory.Initialize(availableEnemiesData.availableEnemies);
-                    break;
-                }
+                    //break;
+                //}
             }
         }
 

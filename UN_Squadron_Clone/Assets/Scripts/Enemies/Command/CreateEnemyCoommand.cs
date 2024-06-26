@@ -20,5 +20,6 @@ public class CreateEnemyCoommand : ICommand
     {
         instance = Object.Instantiate(enemyPrefab, position, rotation);
         instance.GetComponent<Enemy>()._player = player;
+        EnemyPool.EnemyActivated(instance);
     }
 }

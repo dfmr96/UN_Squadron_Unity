@@ -12,6 +12,7 @@ public class Tank : Enemy
     
     private void Awake()
     {
+        enemyDataParent = enemyData;
         _health = enemyData.health;
         _moveSpeed = enemyData.moveSpeed;
         
@@ -75,5 +76,10 @@ public class Tank : Enemy
         int spriteIndex = Mathf.Clamp((int)(angle / angleStep), 0, _sprites.Length - 1);
     
         _spriteRenderer.sprite = _sprites[spriteIndex];
+    }
+    
+    private void OnEnable()
+    {
+        Awake();
     }
 } 

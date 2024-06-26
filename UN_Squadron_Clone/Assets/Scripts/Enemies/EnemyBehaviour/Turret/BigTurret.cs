@@ -15,6 +15,7 @@ public class BigTurret: Turret
     private Vector3 _raycastDir = Vector3.zero;
     public void Awake()
     {
+        enemyDataParent = _enemyData;
         _health = _enemyData.health;
         _customAnim = _enemyData.customAnim;
         _fireRate = _enemyData.fireRate;
@@ -76,5 +77,10 @@ public class BigTurret: Turret
             bullet.GetComponent<EnemyBullet>().SetDirection(Vector3.right);
             yield return new WaitForSeconds(_timeBetweenBullets);
         }
+    }
+    
+    private void OnEnable()
+    {
+        Awake();
     }
 }

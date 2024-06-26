@@ -20,9 +20,13 @@ public class EnemyEnabler : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.GetComponent<EnemyBullet>() != null || collision.GetComponent<Enemy>() != null)
+        if (collision.GetComponent<EnemyBullet>() != null)
         {
             Destroy(collision.gameObject);
+        }
+        else if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
+        {
+            EnemyPool.EnemyDeactivated(enemy);
         }
     }
 }
