@@ -4,6 +4,7 @@ using Pickupables;
 using Player;
 using Unity.VisualScripting;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 
 [RequireComponent(typeof(BoxCollider2D))]
@@ -18,9 +19,8 @@ public class Enemy : MonoBehaviour, IDamageable
     protected int _moveSpeed;
     
     protected bool _canDropPOW;
-    //protected VulkanPOWType _type; TODO
-    [SerializeField] VulkanPOWs _vulkanPOWsGO;
-    [SerializeField] private GameObject itemDropped;
+    [SerializeField] protected SpawneableItems spawneableItems;
+    private GameObject itemDropped;
     public GameObject _player;
 
     protected float _fireRateCounter = 0;
@@ -64,7 +64,6 @@ public class Enemy : MonoBehaviour, IDamageable
         Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
         AudioManager.instance.enemyDestroyedAudio.Play();
         EventBus.instance.EnemyDestroyed(this);
-        //Destroy(gameObject);
         EnemyPool.EnemyDeactivated(this);
         Debug.Log("Enemy Destroyed");
     }
@@ -75,9 +74,11 @@ public class Enemy : MonoBehaviour, IDamageable
         Debug.Log(_health);
         
         if (_health <= 0f)
-        {            
-            DropItem();
-           // EnemyPool.EnemyDestroyed(this);
+        {
+            if (_canDropPOW && enemyDataParent.canDrop)
+            {
+                DropItem();
+            }
             DestroyEnemy();
             Debug.Log("Enemy Destroy");
         }
@@ -109,8 +110,18 @@ public class Enemy : MonoBehaviour, IDamageable
 
     private void DropItem()
     {
+        int index = Random.Range(0, spawneableItems.spawnableItems.Length);
+        itemDropped = spawneableItems.spawnableItems[index];
         if (itemDropped == null) return;
         Instantiate(itemDropped, transform.position, Quaternion.identity);
     }
-    
+
+    public void CanDrop()
+    {
+        _canDropPOW = true;
+    }
+    public void CannotDrop()
+    {
+        _canDropPOW = false;
+    }
 }

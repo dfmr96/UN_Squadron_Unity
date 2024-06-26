@@ -23,15 +23,6 @@ public class Helo : Enemy
       //  _type = _dropType;
 
         
-        if ( Random.value >= 0.5)
-        {
-            _canDropPOW = true;
-        }
-        else
-        {
-            _canDropPOW = false;
-        }
-        
         
         _sprites = _heloSprite.enemySprites;
         _customAnim = _enemyData.customAnim;

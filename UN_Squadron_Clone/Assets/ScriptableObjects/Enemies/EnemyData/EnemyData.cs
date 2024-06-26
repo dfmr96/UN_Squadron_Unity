@@ -15,4 +15,6 @@ public class EnemyData : ScriptableObject
     [field: SerializeField] public GameObject explosionPrefab { get; private set; }
     [field: SerializeField] public int moveSpeed { get; private set; }
     
+    [field: SerializeField] public bool canDrop { get; private set; }
+    
 }
