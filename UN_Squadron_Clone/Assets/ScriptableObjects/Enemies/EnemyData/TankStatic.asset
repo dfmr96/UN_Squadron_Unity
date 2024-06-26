@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f0b726596a5409f85946c3df3b35fdf, type: 3}
-  m_Name: DefaultGreenCombatPlane
+  m_Name: TankStatic
   m_EditorClassIdentifier: 
-  <ID>k__BackingField: GreenCombatePlane
-  <prefab>k__BackingField: {fileID: 1685840484141325682, guid: 05a5b48daa9640042a33d7eeaef04f2e, type: 3}
+  <ID>k__BackingField: Tank
+  <prefab>k__BackingField: {fileID: 5830056127727285571, guid: 74c87151af8923b44ba5903e6d938284, type: 3}
   <customAnim>k__BackingField: 0
-  <fireRate>k__BackingField: 0.3
+  <fireRate>k__BackingField: 0.5
   <collisionDamage>k__BackingField: 25
   <health>k__BackingField: 1
-  <EnemySprites>k__BackingField: {fileID: 11400000, guid: f8ae2c236e62a4b4c806a533672ed372, type: 2}
+  <EnemySprites>k__BackingField: {fileID: 11400000, guid: a4be33513c76af946a6637e7090755c9, type: 2}
   <bulletPrefab>k__BackingField: {fileID: 1744197573988224712, guid: 62ab3dd4cfe8a314f8625e515a587ace, type: 3}
   <explosionPrefab>k__BackingField: {fileID: 3336104701328597698, guid: d207451a5c8262b4d9753a7d39dbe53b, type: 3}
-  <moveSpeed>k__BackingField: -1
+  <moveSpeed>k__BackingField: 0

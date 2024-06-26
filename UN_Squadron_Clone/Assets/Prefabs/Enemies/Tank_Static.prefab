@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7822597874666545456
+--- !u!1 &2674018841052043662
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,24 +8,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7822597874666545868}
-  - component: {fileID: 7822597874666545459}
-  - component: {fileID: 7822597874666545458}
-  - component: {fileID: 8038570968513324231}
+  - component: {fileID: 2674018841052043697}
+  - component: {fileID: 2674018841052043696}
+  - component: {fileID: 2674018841052043698}
+  - component: {fileID: 5830056127727285571}
   m_Layer: 8
-  m_Name: Green_Turret
+  m_Name: Tank_Static
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7822597874666545868
+--- !u!4 &2674018841052043697
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7822597874666545456}
+  m_GameObject: {fileID: 2674018841052043662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -34,13 +34,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &7822597874666545459
+--- !u!212 &2674018841052043696
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7822597874666545456}
+  m_GameObject: {fileID: 2674018841052043662}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -74,54 +74,54 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: -1304448410, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 1756284312, guid: 64dc3db828679c5478fe17d44ca3e1e1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.75, y: 2.375}
+  m_Size: {x: 4.875, y: 1.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7822597874666545458
+--- !u!61 &2674018841052043698
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7822597874666545456}
+  m_GameObject: {fileID: 2674018841052043662}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.66836166}
+  m_Offset: {x: 0, y: -0.2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.6363636, y: 0.84210527}
-    oldSize: {x: 2.75, y: 2.375}
-    newSize: {x: 2.75, y: 2.375}
+    pivot: {x: 0.64102566, y: 0.73333335}
+    oldSize: {x: 4.875, y: 1.875}
+    newSize: {x: 4.875, y: 1.875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.75, y: 2.3007374}
+  m_Size: {x: 3.1890583, y: 1.875}
   m_EdgeRadius: 0
---- !u!114 &8038570968513324231
+--- !u!114 &5830056127727285571
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7822597874666545456}
+  m_GameObject: {fileID: 2674018841052043662}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 676096b6fdbe4b1281a651bab8af5010, type: 3}
+  m_Script: {fileID: 11500000, guid: ca39c07f842d407799db55b462d34945, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _vulkanPOWsGO: {fileID: 11400000, guid: 68f6019a60be4fd469da8f41f1e56031, type: 2}
@@ -130,7 +130,6 @@ MonoBehaviour:
   enemyDataParent: {fileID: 0}
   scorePerKill: 100
   moneyPerKill: 300
-  enemyData: {fileID: 11400000, guid: 6b423f8599245634cb32b4b3aa5c8041, type: 2}
-  _canDrop: 0
-  _defaultTurretSprites: {fileID: 11400000, guid: f2295124f2876534c9afa3860d54821c, type: 2}
-  player: {fileID: 0}
+  enemyData: {fileID: 11400000, guid: 70c16c9f502322d4e9dfe7a5684d9908, type: 2}
+  canDrop: 0
+  tankSprite: {fileID: 11400000, guid: a4be33513c76af946a6637e7090755c9, type: 2}
