@@ -124,10 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 676096b6fdbe4b1281a651bab8af5010, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _canDropPOW: 0
   spawneableItems: {fileID: 11400000, guid: ca4a3516a5dd60943b28aecc0660bcb0, type: 2}
-  _vulkanPOWsGO: {fileID: 11400000, guid: 68f6019a60be4fd469da8f41f1e56031, type: 2}
-  itemDropped: {fileID: 4695770047083689648, guid: eb2df685b715c7346aa2cce08df394e6, type: 3}
   _player: {fileID: 0}
   enemyDataParent: {fileID: 0}
   scorePerKill: 100
