@@ -702,6 +702,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01caa169339be3849bc23e6e72c458e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawneableItems: {fileID: 0}
+  _player: {fileID: 0}
+  enemyDataParent: {fileID: 0}
+  scorePerKill: 100
+  moneyPerKill: 300
   health: 0
   maxHealth: 324
   speed: 0
@@ -719,6 +724,7 @@ MonoBehaviour:
   - {fileID: 4729862272789410071}
   missiles: {fileID: 419144115}
   canFire: 0
+  _enemyData: {fileID: 0}
 --- !u!1 &4841861010486865327
 GameObject:
   m_ObjectHideFlags: 0

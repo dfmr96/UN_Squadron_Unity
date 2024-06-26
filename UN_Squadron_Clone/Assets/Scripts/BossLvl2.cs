@@ -9,22 +9,19 @@ public enum BossLvl2Status
     Danger,
     Destroyed
 }
-public class Boss_Lvl2 : MonoBehaviour
+public class BossLvl2 : Enemy
 {
     public float health;
     public float maxHealth;
     public float speed;
     public float fireRate;
     public float fireTimer;
-    public GameObject bodyDamaged;
     public BossLvl2Status status;
-    [SerializeField] Animator bodyAnim;
-    [SerializeField] Animator crystalAnim;
-    [SerializeField] GameObject missilesPrefab;
     [SerializeField] GameObject miniMisilesPrefab;
     [SerializeField] GameObject flames;
+    [SerializeField] GameObject midiumFlames;
+    [SerializeField] GameObject finalFlames;
     [SerializeField] Transform[] miniMisilesPos;
-    [SerializeField] Transform missiles;
     [SerializeField] bool canFire = false;
 
     [SerializeField] private EnemyData _enemyData;
@@ -46,7 +43,6 @@ public class Boss_Lvl2 : MonoBehaviour
         fireTimer += Time.deltaTime;
         if (fireTimer > 1 / fireRate && canFire)
         {
-            Instantiate(missilesPrefab, missiles.position, Quaternion.identity);
             for (int i = 0; i < miniMisilesPos.Length; i++)
             {
                 Instantiate(miniMisilesPrefab, miniMisilesPos[i].position, Quaternion.identity);
@@ -63,14 +59,13 @@ public class Boss_Lvl2 : MonoBehaviour
         if (health < maxHealth * 2 / 3)
         {
             status = BossLvl2Status.Caution;
-            crystalAnim.SetInteger("Status", (int)status);
+            flames.SetActive(true);
         }
 
         if (health < maxHealth * 1 / 3)
         {
             status = BossLvl2Status.Danger;
-            crystalAnim.SetInteger("Status", (int)status);
-            bodyDamaged.SetActive(true);
+            midiumFlames.SetActive(true);
         }
 
         if (health < 0)
@@ -104,9 +99,9 @@ public class Boss_Lvl2 : MonoBehaviour
             speed = -1f;
             yield return new WaitForSeconds(4.5f);
             speed = 3.7f;
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(6f);
             speed = 9f;
-            yield return new WaitForSeconds(4f);
+            yield return new WaitForSeconds(2.5f);
         }
 
     }
@@ -117,9 +112,7 @@ public class Boss_Lvl2 : MonoBehaviour
         status = BossLvl2Status.Destroyed;
         StopCoroutine(MovingLoop() );
         speed = 0f;
-        bodyAnim.SetBool("Destroyed", true);
-        crystalAnim.gameObject.SetActive(false);
-        flames.SetActive(true);
+        finalFlames.SetActive(true);
         AudioManager.instance.bossDestroyed.Play();
         //AudioManager.instance.bossBGM.Stop();
         //Destroy(gameObject, 0.5f);
