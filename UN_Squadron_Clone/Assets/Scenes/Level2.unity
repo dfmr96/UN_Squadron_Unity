@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!212 &36112809 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1447852064, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
+  m_PrefabInstance: {fileID: 334039040}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &88765999
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,19 +633,19 @@ PrefabInstance:
       objectReference: {fileID: 2117835378}
     - target: {fileID: 2117767835, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: backgroundSpeed
-      value: -3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2117767835, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: foregroundLayer
       value: 
-      objectReference: {fileID: 1383072654}
+      objectReference: {fileID: 36112809}
     - target: {fileID: 2117767835, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: middlegroundLayer
       value: 
       objectReference: {fileID: 1058460988}
     - target: {fileID: 2117767835, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: middlegroundSpeed
-      value: -2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4878694117584995845, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_Name
@@ -648,7 +653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4878694117584995846, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: orthographic size
-      value: 1.1316667
+      value: 1.245
       objectReference: {fileID: 0}
     - target: {fileID: 4878694117584996089, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_RootOrder
@@ -3862,8 +3867,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1058460989}
   - component: {fileID: 1058460988}
+  - component: {fileID: 1058460990}
   m_Layer: 0
-  m_Name: Fondo_Capa1
+  m_Name: Backgound_Layer_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3889,7 +3895,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 00911b7fff08974478c6c761eb749a9a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3910,7 +3916,7 @@ SpriteRenderer:
   m_SortingLayerID: -7152927
   m_SortingLayer: -1
   m_SortingOrder: -3
-  m_Sprite: {fileID: 1360511743, guid: 5685d7d9485dd6b45bed397210d71999, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 59b51d1592d3e8a4c9e10cce74823ca7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3930,12 +3936,25 @@ Transform:
   m_GameObject: {fileID: 1058460987}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.4779143, y: 1.0265, z: 1.0265}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 312507437}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1058460990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058460987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48f68abe2b09ca64fb31b80ba1215be7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: {x: 0.1, y: 0}
 --- !u!1 &1083589401
 GameObject:
   m_ObjectHideFlags: 0
@@ -5599,8 +5618,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1383072655}
   - component: {fileID: 1383072654}
+  - component: {fileID: 1383072656}
   m_Layer: 0
-  m_Name: Fondo_Capa0
+  m_Name: Backgound_Layer_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5626,7 +5646,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 00911b7fff08974478c6c761eb749a9a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5647,7 +5667,7 @@ SpriteRenderer:
   m_SortingLayerID: -7152927
   m_SortingLayer: -1
   m_SortingOrder: -4
-  m_Sprite: {fileID: 908357717, guid: 5685d7d9485dd6b45bed397210d71999, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 865690d172bcc78439394d902dc0df9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5667,12 +5687,25 @@ Transform:
   m_GameObject: {fileID: 1383072653}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.4779143, y: 1.0265, z: 1.0265}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 312507437}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1383072656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383072653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48f68abe2b09ca64fb31b80ba1215be7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: {x: 0.07, y: 0}
 --- !u!1 &1410754716
 GameObject:
   m_ObjectHideFlags: 0
@@ -9097,8 +9130,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2117835379}
   - component: {fileID: 2117835378}
+  - component: {fileID: 2117835380}
   m_Layer: 0
-  m_Name: Fondo_Capa2
+  m_Name: Backgound_Layer_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9124,7 +9158,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 00911b7fff08974478c6c761eb749a9a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9145,7 +9179,7 @@ SpriteRenderer:
   m_SortingLayerID: -7152927
   m_SortingLayer: -1
   m_SortingOrder: -2
-  m_Sprite: {fileID: 2005510595, guid: 5685d7d9485dd6b45bed397210d71999, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 23bf6612a496cae42bd236b13e42b563, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9155,7 +9189,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!4 &2117835379
 Transform:
   m_ObjectHideFlags: 0
@@ -9165,12 +9199,25 @@ Transform:
   m_GameObject: {fileID: 2117835377}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.4779143, y: 1.0265, z: 1.0265}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 312507437}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2117835380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117835377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48f68abe2b09ca64fb31b80ba1215be7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: {x: 0.3, y: 0}
 --- !u!1 &2135719881
 GameObject:
   m_ObjectHideFlags: 0
