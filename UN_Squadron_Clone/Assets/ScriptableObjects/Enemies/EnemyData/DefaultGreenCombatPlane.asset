@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f0b726596a5409f85946c3df3b35fdf, type: 3}
+  m_Name: DefaultGreenCombatPlane
+  m_EditorClassIdentifier: 
+  <ID>k__BackingField: GreenCombatePlane
+  <prefab>k__BackingField: {fileID: 1685840484141325682, guid: 05a5b48daa9640042a33d7eeaef04f2e, type: 3}
+  <customAnim>k__BackingField: 0
+  <fireRate>k__BackingField: 0.5
+  <collisionDamage>k__BackingField: 25
+  <health>k__BackingField: 1
+  <EnemySprites>k__BackingField: {fileID: 11400000, guid: f8ae2c236e62a4b4c806a533672ed372, type: 2}
+  <bulletPrefab>k__BackingField: {fileID: 1744197573988224712, guid: 62ab3dd4cfe8a314f8625e515a587ace, type: 3}
+  <explosionPrefab>k__BackingField: {fileID: 3336104701328597698, guid: d207451a5c8262b4d9753a7d39dbe53b, type: 3}
+  <moveSpeed>k__BackingField: 0
