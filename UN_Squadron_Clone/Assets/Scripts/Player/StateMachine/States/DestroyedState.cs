@@ -32,7 +32,7 @@ namespace Player
             if (gameOverCounter > gameOverTime)
             {
                 gameOverCounter = 0;
-                //GameManager.instance.GameOver();
+                GameManager.instance.GameOver();
             }
         }
 

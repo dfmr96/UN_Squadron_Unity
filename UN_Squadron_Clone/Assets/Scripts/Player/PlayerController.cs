@@ -54,6 +54,7 @@ namespace Player
 
         private void Start()
         {
+            Time.timeScale = 1; 
             FrontVulkan.InitVulkan();
             _playerStateMachine = new PlayerStateMachine(this);
             GetReferences();
@@ -75,8 +76,13 @@ namespace Player
         {
             FrontVulkan.Update();
             _playerStateMachine.Update();
+            
+            if (_playerStateMachine.CurrentState == _playerStateMachine.DestroyedState) return;
             Movement();
-            if (Input.GetKey(KeyCode.Space)) FrontVulkan.TryFire();
+            if (Input.GetKey(KeyCode.Space))
+            {
+                FrontVulkan.TryFire();
+            }
 
 
             if (Input.GetKey(KeyCode.Alpha0))
