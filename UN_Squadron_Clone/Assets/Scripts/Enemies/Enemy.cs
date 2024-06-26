@@ -62,7 +62,8 @@ public class Enemy : MonoBehaviour, IDamageable
         Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
         AudioManager.instance.enemyDestroyedAudio.Play();
         EventBus.instance.EnemyDestroyed(this);
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        EnemyPool.EnemyDeactivated(this);
         Debug.Log("Enemy Destroyed");
     }
     
@@ -75,8 +76,7 @@ public class Enemy : MonoBehaviour, IDamageable
         {            
             DropItem();
            // EnemyPool.EnemyDestroyed(this);
-           // DestroyEnemy();
-           EnemyPool.EnemyDeactivated(this);
+            DestroyEnemy();
             Debug.Log("Enemy Destroy");
         }
         
