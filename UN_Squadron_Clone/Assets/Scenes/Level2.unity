@@ -2820,17 +2820,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: Core
       objectReference: {fileID: 0}
+    - target: {fileID: 6538092103175832585, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
+      propertyPath: <Vulkans>k__BackingField.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6538092103175832585, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
+      propertyPath: <Vulkans>k__BackingField.Array.data[0].vulkanData
+      value: 
+      objectReference: {fileID: 11400000, guid: 910fd50834c9b2d44aefe8864bb8cacd, type: 2}
+    - target: {fileID: 6538092103175832585, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
+      propertyPath: <Vulkans>k__BackingField.Array.data[1].vulkanData
+      value: 
+      objectReference: {fileID: 11400000, guid: 0e28f5d16678481429671fa9262fc4bb, type: 2}
+    - target: {fileID: 6538092103175832585, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
+      propertyPath: <Vulkans>k__BackingField.Array.data[0].vulkanPosition
+      value: 
+      objectReference: {fileID: 2018258875}
+    - target: {fileID: 6538092103175832585, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
+      propertyPath: <Vulkans>k__BackingField.Array.data[1].vulkanPosition
+      value: 
+      objectReference: {fileID: 2018258874}
     - target: {fileID: 8995489814334474838, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.882202
       objectReference: {fileID: 0}
     - target: {fileID: 8995489814334474921, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: orthographic size
-      value: 0.875
+      value: 0.4375
       objectReference: {fileID: 0}
     - target: {fileID: 8995489814334474921, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.23069938
+      value: 0.45413262
       objectReference: {fileID: 0}
     - target: {fileID: 8995489814334474921, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -2838,14 +2858,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8995489814334474921, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.53873104
+      value: 0.4224731
       objectReference: {fileID: 0}
     - target: {fileID: 8995489814334474921, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 1
+      value: 0.817269
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
+--- !u!4 &2018258874 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 843003204, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
+  m_PrefabInstance: {fileID: 2018258873}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2018258875 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8732541535901088391, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
+  m_PrefabInstance: {fileID: 2018258873}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2019920985
 PrefabInstance:
   m_ObjectHideFlags: 0
