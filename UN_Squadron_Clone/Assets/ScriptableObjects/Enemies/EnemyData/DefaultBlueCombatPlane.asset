@@ -15,10 +15,11 @@ MonoBehaviour:
   <ID>k__BackingField: BlueCombatPlane
   <prefab>k__BackingField: {fileID: 7662149739216456789, guid: b39f7d38ce53bd545b9dc951f953f2fc, type: 3}
   <customAnim>k__BackingField: 0
-  <fireRate>k__BackingField: 0.15
+  <fireRate>k__BackingField: 0.75
   <collisionDamage>k__BackingField: 25
   <health>k__BackingField: 1
   <EnemySprites>k__BackingField: {fileID: 0}
   <bulletPrefab>k__BackingField: {fileID: 1744197573988224712, guid: 62ab3dd4cfe8a314f8625e515a587ace, type: 3}
   <explosionPrefab>k__BackingField: {fileID: 3336104701328597698, guid: d207451a5c8262b4d9753a7d39dbe53b, type: 3}
   <moveSpeed>k__BackingField: -2
+  <canDrop>k__BackingField: 0

@@ -200,10 +200,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 565393556}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b924dda019dc694b9cd840517535e2b, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c214881d7bf212409b2910b9bc9f3df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadingSceneName: 
 --- !u!1001 &664418057
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public enum BossLvl2Status
@@ -117,6 +118,7 @@ public class BossLvl2 : Enemy
         //AudioManager.instance.bossBGM.Stop();
         //Destroy(gameObject, 0.5f);
         EventBus.instance.BossDestroyed();
+        SceneManager.LoadScene("Victory");
         //Pausar gameplay
         //Desahablitar InputJugador
         //Correr video de cuenta atras
