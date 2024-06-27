@@ -8,10 +8,14 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     [field: SerializeField] public int Score { get; private set; }
     [field: SerializeField] public int Money { get; private set; }
-    
+
     [field: SerializeField] public int VulkanPoints { get; private set; }
 
     [SerializeField] private Inventory playerInventory;
+
+    [SerializeField] private bool[] levelCompleted = new bool[2];
+
+    [SerializeField] private string[] levelSceneNames = new string[2];
     //public event Action OnGameOver;
 
     private void Awake()
@@ -28,8 +32,13 @@ public class GameManager : MonoBehaviour
         Score = 0;
         Money = 3000;
         DontDestroyOnLoad(gameObject);
-        
+
         if (SceneManager.GetActiveScene().name == "Shop") playerInventory.slots.Clear();
+    }
+
+    public void SetLevelCompleted(int i)
+    {
+        levelCompleted[i] = true;
     }
 
     private void OnEnable()
@@ -117,6 +126,19 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(1f);
         Time.timeScale = 1f;
         LoadingManager.Instance.LoadNewScene("Victory");
+    }
+
+    public string CheckLevelToLoad()
+    {
+        for (int i = 0; i < levelCompleted.Length; i++)
+        {
+            if (levelCompleted[i] == false)
+            {
+                return levelSceneNames[i];
+            }
+        }
+
+        return null;
     }
 
     public void SaveVulkanPoints(int points)

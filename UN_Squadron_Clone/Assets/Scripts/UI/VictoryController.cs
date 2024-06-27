@@ -8,6 +8,13 @@ public class VictoryController : MonoBehaviour
     {
         StartCoroutine(BackToMainTitle());
     }
+
+    public void LoadLevel()
+    {
+        string newLevel = GameManager.instance.CheckLevelToLoad();
+        LoadingManager.Instance.LoadNewScene(newLevel);
+    }
+    
     public IEnumerator BackToMainTitle()
     {
         yield return new WaitForSeconds(10.0f);

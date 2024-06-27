@@ -4051,7 +4051,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4567490189875452399, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.882202
+      value: 1.3475189
       objectReference: {fileID: 0}
     - target: {fileID: 4567490190220607068, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_Enabled
@@ -4079,7 +4079,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5739556721728020979, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 344.3
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5739556721728020979, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4143,7 +4143,7 @@ PrefabInstance:
       objectReference: {fileID: 2018258874}
     - target: {fileID: 8995489814334474838, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.882202
+      value: 1.3475189
       objectReference: {fileID: 0}
     - target: {fileID: 8995489814334474921, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: orthographic size
@@ -4151,7 +4151,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8995489814334474921, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.23620309
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8995489814334474921, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -4159,7 +4159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8995489814334474921, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.52853996
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8995489814334474921, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
