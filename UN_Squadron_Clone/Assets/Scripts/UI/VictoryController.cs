@@ -6,7 +6,7 @@ public class VictoryController : MonoBehaviour
 {
     private void Start()
     {
-        StartCoroutine(BackToMainTitle());
+        StartCoroutine(LoadNewScene());
     }
 
     public void LoadLevel()
@@ -15,9 +15,10 @@ public class VictoryController : MonoBehaviour
         LoadingManager.Instance.LoadNewScene(newLevel);
     }
     
-    public IEnumerator BackToMainTitle()
+    public IEnumerator LoadNewScene()
     {
         yield return new WaitForSeconds(10.0f);
-        LoadingManager.Instance.LoadNewScene("Intro");
+        LoadLevel();
+        //LoadingManager.Instance.LoadNewScene("Intro");
     }
 }

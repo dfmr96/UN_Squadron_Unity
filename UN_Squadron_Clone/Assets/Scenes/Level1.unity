@@ -373,6 +373,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1871476942}
+    - target: {fileID: 6472233641969189628, guid: cc75fb854fc86084582fced3154a32cf, type: 3}
+      propertyPath: levelSceneNames.Array.data[1]
+      value: LoadingLevel2
+      objectReference: {fileID: 0}
     - target: {fileID: 6472233641969189629, guid: cc75fb854fc86084582fced3154a32cf, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -3481,19 +3485,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8995489814334474921, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: orthographic size
-      value: 0.875
+      value: 0.4375
       objectReference: {fileID: 0}
     - target: {fileID: 8995489814334474921, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.24410163
+      value: 0.45644283
       objectReference: {fileID: 0}
     - target: {fileID: 8995489814334474921, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.5112782
+      value: 0.41897848
       objectReference: {fileID: 0}
     - target: {fileID: 8995489814334474921, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 1
+      value: 0.8194726
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
