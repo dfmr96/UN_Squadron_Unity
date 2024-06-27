@@ -29,6 +29,8 @@ public class Boss : Enemy
 
     [SerializeField] private EnemyData _enemyData;
 
+    [SerializeField] private int BossLevel;
+
     private void Awake()
     {
         _explosionPrefab = _enemyData.explosionPrefab;
@@ -124,6 +126,7 @@ public class Boss : Enemy
         AudioManager.instance.bossDestroyed.Play();
         //AudioManager.instance.bossBGM.Stop();
         //Destroy(gameObject, 0.5f);
+        GameManager.instance.SetLevelCompleted(BossLevel);
         EventBus.instance.BossDestroyed();
         //Pausar gameplay
         //Desahablitar InputJugador
