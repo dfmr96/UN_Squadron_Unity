@@ -32,6 +32,14 @@ public class Boss_Missiles : MonoBehaviour
             DestroyMissile();
         }
     }
+    
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("CameraBounds"))
+        {
+            Destroy(gameObject);
+        }
+    }
 
     public void DestroyMissile()
     {

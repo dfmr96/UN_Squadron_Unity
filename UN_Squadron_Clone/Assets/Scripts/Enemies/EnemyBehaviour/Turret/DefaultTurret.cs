@@ -10,9 +10,13 @@ public class DefaultTurret: Enemy
     [SerializeField] private EnemySprites _defaultTurretSprites;
 
     [SerializeField] private GameObject player;
-    public void Awake()
+    /*public void Awake()
     {
+        InitData();
+    }*/
 
+    private void InitData()
+    {
         enemyDataParent = enemyData;
         _health = enemyData.health;
         _moveSpeed = enemyData.moveSpeed;
@@ -35,7 +39,6 @@ public class DefaultTurret: Enemy
         
         _fireRate = enemyData.fireRate;
         _bulletPrefab = enemyData.bulletPrefab;
-        
     }
 
 
@@ -96,6 +99,6 @@ public class DefaultTurret: Enemy
     }
     private void OnEnable()
     {
-        Awake();
+        InitData();
     }
 }

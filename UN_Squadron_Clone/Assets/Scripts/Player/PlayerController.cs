@@ -27,6 +27,9 @@ namespace Player
         [field: SerializeField] public Vulkan[] Vulkans { get; private set; }
         private PlayerStateMachine _playerStateMachine;
 
+        
+        [field: SerializeField] public bool isInvulnerable { get; private set; }
+        
         //Privados
         private float _horizontal;
         private SpriteRenderer _aircraftRenderer;
@@ -178,6 +181,8 @@ namespace Player
             Health -= damage;
             EventBus.instance.PlayerDamaged(damage);
 
+            if (isInvulnerable) return;
+            
             if (_playerStateMachine.CurrentState == _playerStateMachine.HealthyState)
             {
                 _playerStateMachine.ChangeStateTo(_playerStateMachine.DangerState);
@@ -196,6 +201,11 @@ namespace Player
                 _playerStateMachine.ChangeStateTo(_playerStateMachine.CriticalState);
                 AudioManager.instance.playerUnableToRecover.Play();
             }
+        }
+
+        public void SetVulnerability(bool active)
+        {
+            isInvulnerable = active;
         }
     }
 }

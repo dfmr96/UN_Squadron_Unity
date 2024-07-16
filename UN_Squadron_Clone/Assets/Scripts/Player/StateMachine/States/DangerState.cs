@@ -25,7 +25,7 @@ namespace Player
             playerStateMachine.Controller.DamagedFlames.SetActive(true);
             AudioManager.instance.playerDamaged.Play();
             AudioManager.instance.playerRecovery.Play();
-            isInvulnerable = true;
+            playerStateMachine.Controller.SetVulnerability(true);
             
             Debug.Log("Danger State enter");
         }
@@ -56,7 +56,7 @@ namespace Player
             if (invulnerabilityCounter >= invulnerabilityTime)
             {
                 invulnerabilityCounter = 0;
-                isInvulnerable = false;
+                playerStateMachine.Controller.SetVulnerability(false);
             }
         }
 

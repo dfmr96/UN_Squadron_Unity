@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 
 public class ClusterLogic : MonoBehaviour
@@ -16,7 +17,12 @@ public class ClusterLogic : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<Enemy>() != null)
+        if (collision.TryGetComponent(out IClusterDamageable clusterDamageable))
+        {
+            clusterDamageable.TakeDamage(damage);
+        }
+        
+        /*if (collision.GetComponent<Enemy>() != null)
         {
             collision.GetComponent<Enemy>().TakeDamage(damage);
         }
@@ -29,8 +35,10 @@ public class ClusterLogic : MonoBehaviour
         if (collision.GetComponent<MiniMissile>() != null)
         {
             collision.GetComponent<MiniMissile>().DestroyMissiles();
-        }
+        }*/
     }
+
+
 
     public void DestroyCluster()
     {

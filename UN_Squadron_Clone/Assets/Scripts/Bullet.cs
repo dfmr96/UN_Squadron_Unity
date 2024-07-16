@@ -25,7 +25,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("CameraBounds"))
+        if (collision.CompareTag("CameraBounds"))
         {
             Destroy(gameObject);
         }
