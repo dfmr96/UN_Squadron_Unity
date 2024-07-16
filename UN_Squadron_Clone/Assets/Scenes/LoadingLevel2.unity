@@ -149,7 +149,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 565393556}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 75f39fda6f57f414f84814f9d708a6db, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 09d5a1211d694664b91375a918f04360, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1228291838}
@@ -240,7 +240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4878694117584995846, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0
+      value: 0.24410163
       objectReference: {fileID: 0}
     - target: {fileID: 4878694117584995846, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -248,7 +248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4878694117584995846, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 1
+      value: 0.5112782
       objectReference: {fileID: 0}
     - target: {fileID: 4878694117584995846, guid: 46c197429c6d5da49984aff7901189cb, type: 3}
       propertyPath: m_NormalizedViewPortRect.height

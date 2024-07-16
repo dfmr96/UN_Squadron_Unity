@@ -5,67 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fb987ce-2f2d-4ce1-ac22-85f547a8a0f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IClusterDamageable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IClusterDamageable.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IDamagable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IInstantDamageable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IInstantDamageable.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UN_Squadron_Clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UN_Squadron_Clone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EnemyLocator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/EnemyLocator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EnemyLocator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/EnemyLocator.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet_4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet_4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MiniMissile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MiniMissile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Items/DestroyAllEnemies.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Items/DestroyAllEnemies.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BossLvl2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/BossLvl2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BossLvl2.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/BossLvl2.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Boss.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/Boss.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Boss.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/Boss.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Boss_Missiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/Boss_Missiles.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Boss_Missiles.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/Boss_Missiles.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/Enemy.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviour/Helo/Helo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviour/Helo/Helo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviour/Tank/Tank.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviour/Tank/Tank.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviour/Tank/Tank.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviour/Tank/Tank.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviour/Turret/DefaultTurret.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviour/Turret/DefaultTurret.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/EnemyBullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBullet.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/EnemyBullet.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyEnabler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/EnemyEnabler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyEnabler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/EnemyEnabler.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/EnemyPool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyPool.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/EnemyPool.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/IDamagable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/IDamagable.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IDamagable.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/VulkanPOWs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/VulkanPOWs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/VulkanPOWs.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/VulkanPOWs.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IPickupable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPickupable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IPickupable.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPickupable.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MiniMissile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MiniMissile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pickupables/BonusStar.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pickupables/BonusStar.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pickupables/EnergyCapsule.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pickupables/EnergyCapsule.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pickupables/SmartBomb.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pickupables/SmartBomb.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pickupables/Unicorn.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pickupables/Unicorn.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pickupables/WeaponReload.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pickupables/WeaponReload.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pickupables/Windmill.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pickupables/Windmill.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/StateMachine/States/DangerState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/StateMachine/States/DangerState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/ClusterLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/ClusterLogic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Boss_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Boss_01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LoadingLevel2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LoadingLevel2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Video/LoadingRenderer.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Video/LoadingRenderer.renderTexture" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +105,7 @@
       <workItem from="1719438382675" duration="3803000" />
       <workItem from="1719450206500" duration="379000" />
       <workItem from="1721131630775" duration="8579000" />
-      <workItem from="1721167157407" duration="2470000" />
+      <workItem from="1721167157407" duration="3082000" />
     </task>
     <servers />
   </component>

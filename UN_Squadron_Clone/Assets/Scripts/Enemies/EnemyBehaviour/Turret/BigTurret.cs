@@ -12,7 +12,9 @@ public class BigTurret: Enemy
     [SerializeField] private float _timeBetweenBullets;
     [SerializeField] private EnemySprites _bigTurretSprite;
     private Vector3 _raycastDir = Vector3.zero;
-    public void Awake()
+    
+
+    private void InitData()
     {
         enemyDataParent = _enemyData;
         _health = _enemyData.health;
@@ -115,6 +117,8 @@ public class BigTurret: Enemy
     
     private void OnEnable()
     {
-        Awake();
+        InitData();
     }
+    
+    
 }

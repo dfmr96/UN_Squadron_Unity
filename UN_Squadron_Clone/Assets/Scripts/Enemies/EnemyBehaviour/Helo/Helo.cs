@@ -9,7 +9,9 @@ namespace Enemies.EnemyBehaviour.Helo
     
         [SerializeField] private EnemySprites _heloSprite;
         private Vector3 aimdir;
-        private void Awake()
+        
+
+        private void InitData()
         {
             _health = _enemyData.health;
             _moveSpeed = _enemyData.moveSpeed;
@@ -21,7 +23,7 @@ namespace Enemies.EnemyBehaviour.Helo
             _fireRate = _enemyData.fireRate;
             _bulletPrefab = _enemyData.bulletPrefab;
         }
-    
+
         private void Start()
         {
             if (_customAnim) GetComponent<Animator>().SetBool("CustomAnim", _customAnim);
@@ -53,7 +55,7 @@ namespace Enemies.EnemyBehaviour.Helo
 
         private void OnEnable()
         {
-            Awake();
+            InitData();
         }
     }
 }

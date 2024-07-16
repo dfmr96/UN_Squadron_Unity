@@ -10,8 +10,8 @@ namespace Enemies.EnemyBehaviour.Tank
         // [SerializeField] private VulkanPOWType dropType;
 
         [SerializeField] private EnemySprites tankSprite;
-    
-        private void Awake()
+
+        private void InitData()
         {
             enemyDataParent = enemyData;
             _health = enemyData.health;
@@ -33,7 +33,7 @@ namespace Enemies.EnemyBehaviour.Tank
             _fireRate = enemyData.fireRate;
             _bulletPrefab = enemyData.bulletPrefab;
         }
-    
+
         private void Start()
         {
             if (_customAnim) GetComponent<Animator>().SetBool("CustomAnim", _customAnim);
@@ -71,7 +71,7 @@ namespace Enemies.EnemyBehaviour.Tank
     
         private void OnEnable()
         {
-            Awake();
+            InitData();
         }
     }
 } 
