@@ -1,9 +1,10 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using ScriptableObjects.Enemies.EnemyData;
 using UnityEngine;
 
-public class EnemyLocator : MonoBehaviour
+namespace Enemies.Core
 {
-    [SerializeField] private EnemyData enemyData;
+    public class EnemyLocator : MonoBehaviour
+    {
+        [SerializeField] private EnemyData enemyData;
+    }
 }

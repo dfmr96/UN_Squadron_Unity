@@ -1,38 +1,37 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using DefaultNamespace;
 using Interfaces;
 using UnityEngine;
 
-public class ClusterLogic : MonoBehaviour
+namespace Weapons
 {
-    [SerializeField] int damage;
-    [SerializeField] AudioSource audioSource;
-    [SerializeField] AudioClip clip;
-    [SerializeField] private LayerMask damagableMask;
-
-    private void Start()
+    public class ClusterLogic : MonoBehaviour
     {
-        audioSource = GetComponent<AudioSource>();
-        audioSource.PlayOneShot(clip);
-    }
+        [SerializeField] int damage;
+        [SerializeField] AudioSource audioSource;
+        [SerializeField] AudioClip clip;
+        [SerializeField] private LayerMask damagableMask;
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (((1 << other.gameObject.layer) & damagableMask) != 0)
+        private void Start()
         {
-            Debug.Log($"Detectado {other.gameObject.name}");
-            if (other.gameObject.TryGetComponent(out IDamagable damagable))
+            audioSource = GetComponent<AudioSource>();
+            audioSource.PlayOneShot(clip);
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (((1 << other.gameObject.layer) & damagableMask) != 0)
             {
-                Debug.Log("Dañado");
-                damagable.TakeDamage(damage);
+                Debug.Log($"Detectado {other.gameObject.name}");
+                if (other.gameObject.TryGetComponent(out IDamagable damagable))
+                {
+                    Debug.Log("Dañado");
+                    damagable.TakeDamage(damage);
+                }
             }
         }
-    }
 
-    public void DestroyCluster()
-    {
-        Destroy(gameObject);
+        public void DestroyCluster()
+        {
+            Destroy(gameObject);
+        }
     }
 }

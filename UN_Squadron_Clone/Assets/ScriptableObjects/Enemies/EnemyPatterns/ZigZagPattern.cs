@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Enemies.Patterns
+namespace ScriptableObjects.Enemies.EnemyPatterns
 {
     [CreateAssetMenu(fileName = "ZigZagPattern", menuName = "Pattern/ZigZag", order = 2)]
     public class ZigZagPattern : EnemyPattern
@@ -9,7 +9,6 @@ namespace Enemies.Patterns
         public override Vector3[] GetPattern(int enemyCount)
         {
             Vector3[] positions = new Vector3[enemyCount];
-
             for (int i = 0; i < enemyCount; i++)
             {
                 float y = Mathf.Sin(((Mathf.PI/2)+i*Mathf.PI));
@@ -23,7 +22,6 @@ namespace Enemies.Patterns
                 }
                 positions[i] = new Vector3((i * OffsetX) * offsetXMultiplier, y * OffsetY,0f);
             }
-
             return positions;
         }
     }

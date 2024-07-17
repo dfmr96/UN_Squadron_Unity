@@ -1,6 +1,6 @@
 ﻿using Player;
 
-namespace DefaultNamespace
+namespace Interfaces
 {
     public interface IPickupable
     {

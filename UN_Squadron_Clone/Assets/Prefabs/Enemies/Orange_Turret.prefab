@@ -126,10 +126,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawneableItems: {fileID: 11400000, guid: ca4a3516a5dd60943b28aecc0660bcb0, type: 2}
   _player: {fileID: 0}
-  enemyDataParent: {fileID: 0}
+  enemyDataParent: {fileID: 11400000, guid: 3b9af35f0a51a3242817ded763df462e, type: 2}
   scorePerKill: 100
   moneyPerKill: 300
   enemyData: {fileID: 11400000, guid: 3b9af35f0a51a3242817ded763df462e, type: 2}
-  _canDrop: 1
-  _defaultTurretSprites: {fileID: 11400000, guid: 0eb6954f29289794099d7a4a5bc1a334, type: 2}
+  canDrop: 0
+  defaultTurretSprites: {fileID: 11400000, guid: 0eb6954f29289794099d7a4a5bc1a334, type: 2}
   player: {fileID: 0}

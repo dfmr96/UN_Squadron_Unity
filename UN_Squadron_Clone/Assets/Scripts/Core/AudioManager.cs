@@ -1,31 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioManager : MonoBehaviour
+namespace Core
 {
-    public static AudioManager instance;
-    public AudioSource bgmAudio;
-    public AudioSource vulkanAudio;
-    public AudioSource enemyDestroyedAudio;
-    public AudioSource playerDamaged;
-    public AudioSource playerDestroyed;
-    public AudioSource playerRecovery;
-    public AudioSource vulkanPOW;
-    public AudioSource playerUnableToRecover;
-    public AudioSource bossBGM;
-    public AudioSource bossMisiles;
-    public AudioSource bossDestroyed;
-    public AudioSource bossReward;
-
-    private void Awake()
+    public class AudioManager : MonoBehaviour
     {
-        if (instance == null)
+        public static AudioManager instance;
+        public AudioSource bgmAudio;
+        public AudioSource vulkanAudio;
+        public AudioSource enemyDestroyedAudio;
+        public AudioSource playerDamaged;
+        public AudioSource playerDestroyed;
+        public AudioSource playerRecovery;
+        public AudioSource vulkanPOW;
+        public AudioSource playerUnableToRecover;
+        public AudioSource bossBGM;
+        public AudioSource bossMisiles;
+        public AudioSource bossDestroyed;
+        public AudioSource bossReward;
+        private void Awake()
         {
-            instance = this;
-        } else
-        {
-            Destroy(gameObject);
+            if (instance == null)
+            {
+                instance = this;
+            } else
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

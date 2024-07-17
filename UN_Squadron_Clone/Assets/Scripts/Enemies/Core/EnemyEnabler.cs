@@ -1,32 +1,33 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
-public class EnemyEnabler : MonoBehaviour
+namespace Enemies.Core
 {
-    [SerializeField] BoxCollider2D _cameraBounds;
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class EnemyEnabler : MonoBehaviour
     {
-        if (collision.CompareTag("Enemy"))
+        [SerializeField] BoxCollider2D cameraBounds;
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            collision.gameObject.GetComponent<SpriteRenderer>().enabled = true;
-            Behaviour[] comps = collision.gameObject.GetComponents<Behaviour>();
-            foreach (Behaviour comp in comps)
+            if (collision.CompareTag("Enemy"))
             {
-                //Debug.Log(comp);
-                comp.enabled = true;
+                collision.gameObject.GetComponent<SpriteRenderer>().enabled = true;
+                Behaviour[] comps = collision.gameObject.GetComponents<Behaviour>();
+                foreach (Behaviour comp in comps)
+                {
+                    comp.enabled = true;
+                }
             }
         }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.GetComponent<EnemyBullet>() != null)
+        private void OnTriggerExit2D(Collider2D collision)
         {
-            Destroy(collision.gameObject);
-        }
-        else if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
-        {
-            EnemyPool.EnemyDeactivated(enemy);
+            if (collision.GetComponent<EnemyBullet>() != null)
+            {
+                Destroy(collision.gameObject);
+            }
+            else if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
+            {
+                EnemyPool.EnemyDeactivated(enemy);
+            }
         }
     }
 }

@@ -1,12 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
+using UI;
 using UnityEngine;
 
-public class HealthBarTrigger : MonoBehaviour
+namespace Core
 {
-    [SerializeField] private UIGameplayManager UIGameplayManager;
-    public void HealthBarToNormal()
+    public class HealthBarTrigger : MonoBehaviour
     {
-        UIGameplayManager.HealthBarBackToNormal();
+        [SerializeField] private UIGameplayManager UIGameplayManager;
+        public void HealthBarToNormal()
+        {
+            UIGameplayManager.HealthBarBackToNormal();
+        }
     }
 }

@@ -1,36 +1,37 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using ScriptableObjects.Enemies.EnemyData;
+using ScriptableObjects.Enemies.EnemyPatterns;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-public class Spawner : MonoBehaviour
+namespace Enemies.Spawner
 {
-    [SerializeField] private SpawnerManager spawnerManager;
-    [SerializeField] private EnemyData enemyToSpawn;
-    [SerializeField] private EnemyPattern pattern;
-    [SerializeField] private int amountToSpawn;
-
-    private void Start()
+    public class Spawner : MonoBehaviour
     {
-        spawnerManager = SpawnerManager.instance;
-    }
+        [SerializeField] private SpawnerManager spawnerManager;
+        [SerializeField] private EnemyData enemyToSpawn;
+        [SerializeField] private EnemyPattern pattern;
+        [SerializeField] private int amountToSpawn;
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("CameraBounds"))
+        private void Start()
         {
-            Vector3[] enemyPosition = pattern.GetPattern(amountToSpawn);
-            for (int i = 0; i < amountToSpawn; i++)
+            spawnerManager = SpawnerManager.instance;
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.CompareTag("CameraBounds"))
             {
-                if (i == amountToSpawn - 1)
+                Vector3[] enemyPosition = pattern.GetPattern(amountToSpawn);
+                for (int i = 0; i < amountToSpawn; i++)
                 {
-                    spawnerManager.GenerateEnemy(enemyToSpawn.ID,this.transform.position + enemyPosition[i],spawnerManager.player.gameObject,true);
-                }
-                else
-                {
-                    spawnerManager.GenerateEnemy(enemyToSpawn.ID, this.transform.position + enemyPosition[i],
-                        spawnerManager.player.gameObject, false);
+                    if (i == amountToSpawn - 1)
+                    {
+                        spawnerManager.GenerateEnemy(enemyToSpawn.ID,this.transform.position + enemyPosition[i],spawnerManager.player.gameObject,true);
+                    }
+                    else
+                    {
+                        spawnerManager.GenerateEnemy(enemyToSpawn.ID, this.transform.position + enemyPosition[i],
+                            spawnerManager.player.gameObject, false);
+                    }
                 }
             }
         }

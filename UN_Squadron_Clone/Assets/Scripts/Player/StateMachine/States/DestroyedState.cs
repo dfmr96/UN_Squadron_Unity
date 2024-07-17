@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using Core;
 using UnityEngine;
 
 namespace Player
@@ -16,7 +17,6 @@ namespace Player
         }
         public override void Enter()
         {
-            //StopAllCoroutines();
             playerStateMachine.Controller.Anim.SetInteger("PlayerState", 3); //TODO Magic number
             playerStateMachine.Controller.DamagedFlames.SetActive(false); //TODO Extraer sprite y animaciones
             EventBus.instance.PlayerDestroyed();
@@ -35,12 +35,8 @@ namespace Player
                 GameManager.instance.GameOver();
             }
         }
-
         public override void Exit()
         {
-            //throw new NotImplementedException();
         }
-        
-        
     }
 }

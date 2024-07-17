@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using Enemies.Core;
+using ScriptableObjects.Enemies.EnemyData;
+using ScriptableObjects.Enemies.EnemySprites;
+using UnityEngine;
 using Random = UnityEngine.Random;
 namespace Enemies.EnemyBehaviour.Tank
 {
@@ -6,11 +9,7 @@ namespace Enemies.EnemyBehaviour.Tank
     {
         [SerializeField] private EnemyData enemyData;
         [SerializeField] private bool canDrop;
-
-        // [SerializeField] private VulkanPOWType dropType;
-
         [SerializeField] private EnemySprites tankSprite;
-
         private void InitData()
         {
             enemyDataParent = enemyData;
@@ -57,7 +56,7 @@ namespace Enemies.EnemyBehaviour.Tank
 
         private void MoveTank(Vector3 dir)
         {
-            transform.Translate(new Vector3(dir.x, 0, 0) * _moveSpeed * Time.deltaTime);
+            transform.Translate(new Vector3(dir.x, 0, 0) * (_moveSpeed * Time.deltaTime));
         }
 
         private void ChangeTankSprite(Vector3 dir)

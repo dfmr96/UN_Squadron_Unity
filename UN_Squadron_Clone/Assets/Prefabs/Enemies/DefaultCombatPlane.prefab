@@ -125,16 +125,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1cd41c0b3e04a618e2c22ca3a2ccbac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _canDropPOW: 0
   spawneableItems: {fileID: 11400000, guid: ca4a3516a5dd60943b28aecc0660bcb0, type: 2}
-  _vulkanPOWsGO: {fileID: 11400000, guid: 68f6019a60be4fd469da8f41f1e56031, type: 2}
-  itemDropped: {fileID: 0}
   _player: {fileID: 0}
-  enemyDataParent: {fileID: 0}
+  enemyDataParent: {fileID: 11400000, guid: 0ed22b98fd01cc64094c76b2e13837b6, type: 2}
   scorePerKill: 100
   moneyPerKill: 300
-  _enemyData: {fileID: 11400000, guid: 0ed22b98fd01cc64094c76b2e13837b6, type: 2}
-  _heloSprite: {fileID: 11400000, guid: f8ae2c236e62a4b4c806a533672ed372, type: 2}
+  enemyData: {fileID: 11400000, guid: 0ed22b98fd01cc64094c76b2e13837b6, type: 2}
+  heloSprite: {fileID: 11400000, guid: f8ae2c236e62a4b4c806a533672ed372, type: 2}
 --- !u!95 &8383802559247598457
 Animator:
   serializedVersion: 5

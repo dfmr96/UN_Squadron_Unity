@@ -1,4 +1,5 @@
-﻿using Player;
+﻿using Core;
+using Player;
 using UnityEngine;
 
 namespace ScriptableObjects.Items

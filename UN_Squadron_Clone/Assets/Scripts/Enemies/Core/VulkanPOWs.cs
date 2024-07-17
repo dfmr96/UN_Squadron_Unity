@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 
-
-[CreateAssetMenu(fileName = "DropsPrefabs", menuName = "Drops", order = 0)]
-public class VulkanPOWs : ScriptableObject
+namespace Enemies.Core
 {
-    public GameObject[] vulkanPOWsGO;
+    [CreateAssetMenu(fileName = "DropsPrefabs", menuName = "Drops", order = 0)]
+    public class VulkanPOWs : ScriptableObject
+    {
+        public GameObject[] vulkanPOWsGO;
+    }
 }

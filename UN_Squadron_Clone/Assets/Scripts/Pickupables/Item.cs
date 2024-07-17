@@ -1,4 +1,4 @@
-﻿using DefaultNamespace;
+﻿using Interfaces;
 using Player;
 using ScriptableObjects.Items;
 using UnityEngine;
@@ -13,7 +13,6 @@ namespace Pickupables
         {
             foreach (ItemBehavior itemBehavior in itemBehaviors)
             {
-                Debug.Log("Item used");
                 itemBehavior.Use(playerController);
             }
         }

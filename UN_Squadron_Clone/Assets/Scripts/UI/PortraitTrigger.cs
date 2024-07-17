@@ -1,12 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PortraitTrigger : MonoBehaviour
+namespace UI
 {
-    [SerializeField] private UIGameplayManager UIGameplayManager;
-    public void ChangeAnimation()
+    public class PortraitTrigger : MonoBehaviour
     {
-        UIGameplayManager.PlayPortraitRecovery();
+        [SerializeField] private UIGameplayManager UIGameplayManager;
+        public void ChangeAnimation()
+        {
+            UIGameplayManager.PlayPortraitRecovery();
+        }
     }
 }

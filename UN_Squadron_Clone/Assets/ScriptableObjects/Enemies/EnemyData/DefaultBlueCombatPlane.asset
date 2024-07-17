@@ -18,7 +18,7 @@ MonoBehaviour:
   <fireRate>k__BackingField: 0.75
   <collisionDamage>k__BackingField: 25
   <health>k__BackingField: 1
-  <EnemySprites>k__BackingField: {fileID: 0}
+  <EnemySprites>k__BackingField: {fileID: 11400000, guid: f1517737299b1804c9c44a1a25d45932, type: 2}
   <bulletPrefab>k__BackingField: {fileID: 1744197573988224712, guid: 62ab3dd4cfe8a314f8625e515a587ace, type: 3}
   <explosionPrefab>k__BackingField: {fileID: 3336104701328597698, guid: d207451a5c8262b4d9753a7d39dbe53b, type: 3}
   <moveSpeed>k__BackingField: -2

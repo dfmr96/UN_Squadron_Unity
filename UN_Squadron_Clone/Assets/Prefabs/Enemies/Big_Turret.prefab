@@ -124,16 +124,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e6136db1094571900b10c1f1b827b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _canDropPOW: 0
   spawneableItems: {fileID: 11400000, guid: ca4a3516a5dd60943b28aecc0660bcb0, type: 2}
-  _vulkanPOWsGO: {fileID: 11400000, guid: 68f6019a60be4fd469da8f41f1e56031, type: 2}
-  itemDropped: {fileID: 0}
   _player: {fileID: 0}
-  enemyDataParent: {fileID: 0}
+  enemyDataParent: {fileID: 11400000, guid: 46601f1007458cc40b82b2463aa9beec, type: 2}
   scorePerKill: 100
   moneyPerKill: 300
-  _enemyData: {fileID: 11400000, guid: 46601f1007458cc40b82b2463aa9beec, type: 2}
-  _canDrop: 0
-  _bulletToShoot: 4
-  _timeBetweenBullets: 0.25
-  _bigTurretSprite: {fileID: 11400000, guid: 12400e5e996dfd74abdad8a2cd052117, type: 2}
+  enemyData: {fileID: 11400000, guid: 46601f1007458cc40b82b2463aa9beec, type: 2}
+  canDrop: 0
+  bulletToShoot: 0
+  timeBetweenBullets: 0
+  bigTurretSprite: {fileID: 11400000, guid: 12400e5e996dfd74abdad8a2cd052117, type: 2}

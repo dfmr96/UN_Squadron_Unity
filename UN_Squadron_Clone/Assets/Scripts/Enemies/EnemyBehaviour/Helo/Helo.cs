@@ -1,31 +1,33 @@
-﻿using UnityEngine;
+﻿using Enemies.Core;
+using ScriptableObjects.Enemies.EnemyData;
+using ScriptableObjects.Enemies.EnemySprites;
+using UnityEngine;
+using UnityEngine.Serialization;
 
 
 namespace Enemies.EnemyBehaviour.Helo
 {
     public class Helo : Enemy
     {
-        [SerializeField] private EnemyData _enemyData;
-    
-        [SerializeField] private EnemySprites _heloSprite;
+        [SerializeField] private EnemyData enemyData;
+        [SerializeField] private EnemySprites heloSprite;
         private Vector3 aimdir;
-        
-
         private void InitData()
         {
-            _health = _enemyData.health;
-            _moveSpeed = _enemyData.moveSpeed;
-            _collisionDamage = _enemyData.collisionDamage;
-            _explosionPrefab = _enemyData.explosionPrefab;
-            enemyDataParent = _enemyData;
-            _sprites = _heloSprite.enemySprites;
-            _customAnim = _enemyData.customAnim;
-            _fireRate = _enemyData.fireRate;
-            _bulletPrefab = _enemyData.bulletPrefab;
+            _health = enemyData.health;
+            _moveSpeed = enemyData.moveSpeed;
+            _collisionDamage = enemyData.collisionDamage;
+            _explosionPrefab = enemyData.explosionPrefab;
+            enemyDataParent = enemyData;
+            //_sprites = heloSprite.enemySprites;
+            _customAnim = enemyData.customAnim;
+            _fireRate = enemyData.fireRate;
+            _bulletPrefab = enemyData.bulletPrefab;
         }
 
         private void Start()
         {
+            InitData();
             if (_customAnim) GetComponent<Animator>().SetBool("CustomAnim", _customAnim);
             _spriteRenderer = GetComponent<SpriteRenderer>();
             DeactiveAllComponents();
@@ -50,7 +52,7 @@ namespace Enemies.EnemyBehaviour.Helo
 
         private void MoveHelo()
         {
-            transform.Translate(transform.right * _moveSpeed * Time.deltaTime);
+            transform.Translate(transform.right * (_moveSpeed * Time.deltaTime));
         }
 
         private void OnEnable()

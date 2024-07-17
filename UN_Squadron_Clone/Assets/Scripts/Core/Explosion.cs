@@ -1,11 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Explosion : MonoBehaviour
+namespace Core
 {
-    public void DestroyEnemy()
+    public class Explosion : MonoBehaviour
     {
-        Destroy(gameObject);
+        public void DestroyEnemy()
+        {
+            Destroy(gameObject);
+        }
     }
 }

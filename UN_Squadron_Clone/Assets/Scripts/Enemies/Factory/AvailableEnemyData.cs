@@ -1,9 +1,11 @@
-﻿using UnityEngine;
-using System.Collections.Generic;
+﻿using ScriptableObjects.Enemies.EnemyData;
+using UnityEngine;
 
-
-[CreateAssetMenu(fileName = "AvailableEnemyData", menuName = "Enemy/AvailableEnemyData", order = 0)]
-public class AvailableEnemyData : ScriptableObject
+namespace Enemies.Factory
 {
-    [SerializeField] public EnemyData[] availableEnemies;
+    [CreateAssetMenu(fileName = "AvailableEnemyData", menuName = "Enemy/AvailableEnemyData", order = 0)]
+    public class AvailableEnemyData : ScriptableObject
+    {
+        [SerializeField] public EnemyData[] availableEnemies;
+    }
 }

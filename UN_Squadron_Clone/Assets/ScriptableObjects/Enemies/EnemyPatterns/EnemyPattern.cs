@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using UnityEngine.UIElements;
 
-
+namespace ScriptableObjects.Enemies.EnemyPatterns
+{
     [CreateAssetMenu(fileName = "Pattern", menuName = "Enemy/Pattern", order = 0)]
     public abstract class EnemyPattern : ScriptableObject
     {
@@ -9,3 +9,4 @@ using UnityEngine.UIElements;
         [field: SerializeField] public float OffsetY { get; private set; }
         public abstract Vector3[] GetPattern(int enemyCount);
     }
+}

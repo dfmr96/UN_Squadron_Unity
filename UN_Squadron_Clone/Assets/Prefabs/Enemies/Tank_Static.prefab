@@ -124,10 +124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca39c07f842d407799db55b462d34945, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _vulkanPOWsGO: {fileID: 11400000, guid: 68f6019a60be4fd469da8f41f1e56031, type: 2}
-  itemDropped: {fileID: 0}
+  spawneableItems: {fileID: 0}
   _player: {fileID: 0}
-  enemyDataParent: {fileID: 0}
+  enemyDataParent: {fileID: 11400000, guid: 70c16c9f502322d4e9dfe7a5684d9908, type: 2}
   scorePerKill: 100
   moneyPerKill: 300
   enemyData: {fileID: 11400000, guid: 70c16c9f502322d4e9dfe7a5684d9908, type: 2}

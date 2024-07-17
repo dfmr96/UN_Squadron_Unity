@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using ScriptableObjects.Enemies.EnemyPatterns;
+using UnityEngine;
 
 namespace Enemies.Patterns
 {
@@ -9,7 +10,6 @@ namespace Enemies.Patterns
         public override Vector3[] GetPattern(int enemyCount)
         {
             Vector3[] positions = new Vector3[enemyCount];
-
             for (int i = 0; i < enemyCount; i++)
             {
                 float y = i * 2f;

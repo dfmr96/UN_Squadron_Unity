@@ -1,15 +1,14 @@
 ﻿using System;
+using Core;
 using UnityEngine;
 
 namespace Player
 {
     public class DangerState : StateBase
-    
     {
         private PlayerStateMachine playerStateMachine;
         private float invulnerabilityTime;
         private float invulnerabilityCounter = 0;
-        private bool isInvulnerable = true;
         private float recoveryTime;
         private float recoveryCounter = 0;
         
@@ -26,8 +25,6 @@ namespace Player
             AudioManager.instance.playerDamaged.Play();
             AudioManager.instance.playerRecovery.Play();
             playerStateMachine.Controller.SetVulnerability(true);
-            
-            Debug.Log("Danger State enter");
         }
 
         public override void Update()
@@ -43,7 +40,6 @@ namespace Player
 
             if (recoveryCounter >= recoveryTime)
             {
-                Debug.Log("Recovered");
                 recoveryCounter = 0;
                 playerStateMachine.ChangeStateTo(playerStateMachine.HealthyState);
             }
@@ -68,8 +64,6 @@ namespace Player
             controller.DamagedFlames.SetActive(false);
             controller.Anim.SetInteger("PlayerState", 0);
             controller.Rb.velocity = Vector3.zero;
-            
-            Debug.Log("Danger State exit");
         }
     }
 }

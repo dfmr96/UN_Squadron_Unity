@@ -1,4 +1,5 @@
-﻿using Player;
+﻿using Core;
+using Player;
 using UnityEngine;
 
 namespace ScriptableObjects.Items
@@ -13,7 +14,6 @@ namespace ScriptableObjects.Items
             {
                 t.AddPoints(points);
             }
-
             AudioManager.instance.vulkanPOW.Play();
         }
     }

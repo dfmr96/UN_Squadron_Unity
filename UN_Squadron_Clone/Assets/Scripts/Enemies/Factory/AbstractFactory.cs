@@ -1,4 +1,9 @@
-﻿public abstract class AbstractFactory<T> where T: Enemy
+﻿using Enemies.Core;
+
+namespace Enemies.Factory
 {
-    public abstract T CreateSpawnable(string enemyID);
+    public abstract class AbstractFactory<T> where T: Enemy
+    {
+        public abstract T CreateSpawnable(string enemyID);
+    }
 }

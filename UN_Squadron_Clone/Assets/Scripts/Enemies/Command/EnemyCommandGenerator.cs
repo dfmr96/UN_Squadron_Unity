@@ -1,15 +1,19 @@
-﻿using UnityEngine;
+﻿using Enemies.Factory;
+using UnityEngine;
 
-[CreateAssetMenu(fileName = "EnemyCommandFactory", menuName = "EnemyCommandFactory", order = 0)]
-public class EnemyCommandGenerator : ScriptableObject
+namespace Enemies.Command
 {
-    [SerializeField] public EnemyFactoryInitializer enemyFactoryInitializer;
-
-    public bool TryGenerateEnemyCreationCommand(string enemyType, Vector3 position,Quaternion rotation,GameObject player,bool CanDrop, out ICommand command)
+    [CreateAssetMenu(fileName = "EnemyCommandFactory", menuName = "EnemyCommandFactory", order = 0)]
+    public class EnemyCommandGenerator : ScriptableObject
     {
-        var enemy = enemyFactoryInitializer.GetEnemy(enemyType);
+        [SerializeField] public EnemyFactoryInitializer enemyFactoryInitializer;
+
+        public bool TryGenerateEnemyCreationCommand(string enemyType, Vector3 position,Quaternion rotation,GameObject player,bool CanDrop, out ICommand command)
+        {
+            var enemy = enemyFactoryInitializer.GetEnemy(enemyType);
         
-        command = new CreateEnemyCoommand(enemy, position, rotation,player,CanDrop);
-        return command != null;
+            command = new CreateEnemyCoommand(enemy, position, rotation,player,CanDrop);
+            return command != null;
+        }
     }
 }

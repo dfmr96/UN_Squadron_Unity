@@ -1,69 +1,69 @@
-﻿using UnityEngine;
-using System;
-using System.Collections.Generic;
-using System.Collections;
+﻿using System.Collections.Generic;
 
-public static class EnemyPool 
+namespace Enemies.Core
 {
-    public static List<Enemy> activeList = new List<Enemy>();
-    public static List<Enemy> notActiveList = new List<Enemy>();
-    
-    public static Enemy GetEnemy(string enemyType)
+    public static class EnemyPool 
     {
-        if (notActiveList.Count > 0)
+        public static List<Enemy> activeList = new List<Enemy>();
+        public static List<Enemy> notActiveList = new List<Enemy>();
+    
+        public static Enemy GetEnemy(string enemyType)
+        {
+            if (notActiveList.Count > 0)
+            {
+                foreach (Enemy notActiveEnemy in notActiveList)
+                {
+                    if (notActiveEnemy.enemyDataParent.ID == enemyType)
+                    {
+                        Enemy enemy = notActiveEnemy;
+                        notActiveList.Remove(notActiveEnemy);
+                        activeList.Add(enemy);
+                        return enemy;
+                    }
+                }
+            }
+            return null;
+        }
+
+        public static void EnemyDeactivated(Enemy enemyNotActive)
+        {
+            activeList.Remove(enemyNotActive);
+            notActiveList.Add(enemyNotActive);
+            enemyNotActive.gameObject.SetActive(false);
+        }
+
+        public static void EnemyActivated(Enemy activeEnemy)
+        {
+            activeList.Add(activeEnemy);
+        }
+        public static bool ExistEnemyType(string enemyType)
         {
             foreach (Enemy notActiveEnemy in notActiveList)
             {
-                if (notActiveEnemy.enemyDataParent.ID == enemyType)
+                if (enemyType == notActiveEnemy.enemyDataParent.ID)
                 {
-                    Enemy enemy = notActiveEnemy;
-                    notActiveList.Remove(notActiveEnemy);
-                    activeList.Add(enemy);
-                    return enemy;
+                    return true;
                 }
             }
+
+            return false;
         }
-        return null;
-    }
 
-    public static void EnemyDeactivated(Enemy enemyNotActive)
-    {
-        activeList.Remove(enemyNotActive);
-        notActiveList.Add(enemyNotActive);
-        enemyNotActive.gameObject.SetActive(false);
-    }
-
-    public static void EnemyActivated(Enemy activeEnemy)
-    {
-        activeList.Add(activeEnemy);
-    }
-    public static bool ExistEnemyType(string enemyType)
-    {
-        foreach (Enemy notActiveEnemy in notActiveList)
+        public static void ClearPool()
         {
-            if (enemyType == notActiveEnemy.enemyDataParent.ID)
+            activeList.Clear();
+            notActiveList.Clear();
+        }
+
+        public static void EnemyDestroyed(Enemy destroyedEnemy)
+        {
+            if (activeList.Contains(destroyedEnemy))
             {
-                return true;
+                activeList.Remove(destroyedEnemy);
+            }else if (notActiveList.Contains(destroyedEnemy))
+            {
+                notActiveList.Remove(destroyedEnemy);
             }
-        }
-
-        return false;
-    }
-
-    public static void ClearPool()
-    {
-        activeList.Clear();
-        notActiveList.Clear();
-    }
-
-    public static void EnemyDestroyed(Enemy destroyedEnemy)
-    {
-        if (activeList.Contains(destroyedEnemy))
-        {
-            activeList.Remove(destroyedEnemy);
-        }else if (notActiveList.Contains(destroyedEnemy))
-        {
-            notActiveList.Remove(destroyedEnemy);
         }
     }
 }

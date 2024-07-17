@@ -1,4 +1,6 @@
-using DefaultNamespace;
+using Core;
+using Interfaces;
+using ScriptableObjects.Vulkan;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -7,38 +9,25 @@ namespace Player
     [RequireComponent(typeof(BoxCollider2D))]
     public class PlayerController : MonoBehaviour
     {
-
+        [field: SerializeField] public float MaxHealth { get;  private set;}
         [field: SerializeField] public float Health { get; private set; }
-
         [field: SerializeField] public float Speed { get; } = 15;
         [field: SerializeField] public float InvulnerabilityTime { get; private set; }
-
-
         [field: SerializeField] public int RecoveryTime { get; private set;}
-
         [field: SerializeField] public SideScrollController SideScroll { get; private set; }
-
         [field: SerializeField] public GameObject DamagedFlames { get; private set;}
-
         [SerializeField] private Sprite[] aircraftSprites;
         [field: SerializeField] public Animator Anim { get; private set; }
         [field: SerializeField] public Rigidbody2D Rb { get; private set; }
-
         [field: SerializeField] public Vulkan[] Vulkans { get; private set; }
         private PlayerStateMachine _playerStateMachine;
-
-        
         [field: SerializeField] public bool isInvulnerable { get; private set; }
-        
-        //Privados
         private float _horizontal;
         private SpriteRenderer _aircraftRenderer;
         private float _vertical;
         private BoxCollider2D _cameraCol;
         private BoxCollider2D _playerCol;
-        [field: SerializeField] public float MaxHealth { get;  private set;}
-
-
+        
         private void OnEnable()
         {
             EventBus.instance.OnBossDestroyed += OnBossDestroyed;
@@ -134,7 +123,6 @@ namespace Player
         {
             var bounds = _playerCol.bounds;
             float playerwidth = (bounds.max.x - bounds.min.x)/2;
-            //Chequeo de colisiones, si el jugador intenta atravesar la pantalla no podra
             if (_playerCol.bounds.min.x < _cameraCol.bounds.min.x && _horizontal == -1)
             {
                 _horizontal = 0;
@@ -144,7 +132,6 @@ namespace Player
             if (_playerCol.bounds.max.x > _cameraCol.bounds.max.x - 1 && _horizontal == 1)
             {
                 _horizontal = 0;
-                //transform.position = new Vector3(_cameraCol.bounds.max.x - playerwidth,transform.position.y,0); Causa Jitter si se descomenta
             }
 
             if (_playerCol.bounds.min.y < _cameraCol.bounds.min.y && _vertical == -1)
@@ -168,7 +155,6 @@ namespace Player
 
             if (collision.gameObject.CompareTag("Obstacles"))
             {
-                Debug.Log("Impacto contra bala");
                 if (collision.gameObject.CompareTag("Obstacles"))
                 {
                     TakeDamage(2);

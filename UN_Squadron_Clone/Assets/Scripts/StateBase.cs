@@ -1,16 +1,14 @@
 ﻿using System;
+using Player;
 
-namespace Player
+[Serializable]
+public abstract class StateBase : IState
 {
-    [Serializable]
-    public abstract class StateBase : IState
-    {
-        protected string stateName;
-        public string StateName => stateName;
-        public abstract void Enter();
+    protected string stateName;
+    public string StateName => stateName;
+    public abstract void Enter();
 
-        public abstract void Update();
+    public abstract void Update();
 
-        public abstract void Exit();
-    }
+    public abstract void Exit();
 }
