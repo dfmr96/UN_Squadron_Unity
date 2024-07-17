@@ -10,7 +10,12 @@ public class Spawner : MonoBehaviour
     [SerializeField] private EnemyData enemyToSpawn;
     [SerializeField] private EnemyPattern pattern;
     [SerializeField] private int amountToSpawn;
-    
+
+    private void Start()
+    {
+        spawnerManager = SpawnerManager.instance;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("CameraBounds"))
@@ -20,16 +25,14 @@ public class Spawner : MonoBehaviour
             {
                 if (i == amountToSpawn - 1)
                 {
-                    spawnerManager.GenerateEnemy(enemyToSpawn.ID,this.transform.position + enemyPosition[i],spawnerManager.player,true);
+                    spawnerManager.GenerateEnemy(enemyToSpawn.ID,this.transform.position + enemyPosition[i],spawnerManager.player.gameObject,true);
                 }
                 else
                 {
                     spawnerManager.GenerateEnemy(enemyToSpawn.ID, this.transform.position + enemyPosition[i],
-                        spawnerManager.player, false);
+                        spawnerManager.player.gameObject, false);
                 }
             }
         }
     }
-
-
 }

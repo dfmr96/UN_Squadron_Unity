@@ -155,7 +155,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: TurretSpawner11
@@ -233,7 +233,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: HeloSpawner14
@@ -306,7 +306,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: HeloSpawner02
@@ -421,7 +421,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3463531970313218630, guid: cc75fb854fc86084582fced3154a32cf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cc75fb854fc86084582fced3154a32cf, type: 3}
 --- !u!1001 &345982837
 PrefabInstance:
@@ -445,7 +446,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: HeloSpawner12
@@ -518,7 +519,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: TurretSpawner08
@@ -591,7 +592,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: HeloSpawner07
@@ -745,7 +746,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: TurretSpawner06
@@ -1008,7 +1009,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: TurretSpawner01
@@ -1059,6 +1060,65 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
+--- !u!1 &750523005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 750523007}
+  - component: {fileID: 750523006}
+  - component: {fileID: 750523008}
+  m_Layer: 0
+  m_Name: SpawnerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &750523006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750523005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bf1a0ed2a73992409a98cf49fdbb55c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 4567490189310072811}
+  enemyCommandGenerator: {fileID: 11400000, guid: edf3554a2ca0edc40af1aa74dc345f1b, type: 2}
+--- !u!4 &750523007
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750523005}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 60.766518, y: 1.3305469, z: -0.28122377}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &750523008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750523005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd14d0cd0ee48fe9e1b00c438fd46c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &774781597
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,7 +1191,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: TurretSpawner07
@@ -1209,7 +1269,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: TankSpawner01
@@ -1287,7 +1347,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: HeloSpawner09
@@ -1453,7 +1513,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: TurretSpawner09
@@ -1721,7 +1781,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: HeloSpawner13
@@ -1787,17 +1847,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5457007567671832749, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
   m_PrefabInstance: {fileID: 973930880}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1227098103 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3463531970313218630, guid: cc75fb854fc86084582fced3154a32cf, type: 3}
-  m_PrefabInstance: {fileID: 298814067}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bf1a0ed2a73992409a98cf49fdbb55c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1311200261 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5457007567671832749, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
@@ -1835,7 +1884,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: HeloSpawner05
@@ -2057,7 +2106,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: TurretSpawner13
@@ -2130,7 +2179,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: HeloSpawner08
@@ -2203,7 +2252,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: TurretSpawner03
@@ -2286,7 +2335,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: HeloSpawner04
@@ -2369,7 +2418,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: TurretSpawner10
@@ -2442,7 +2491,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: TurretSpawner02
@@ -2604,7 +2653,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: HeloSpawner11
@@ -2766,7 +2815,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: TurretSpawner05
@@ -2916,7 +2965,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: HeloSpawner10
@@ -2989,7 +3038,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: TurretSpawner12
@@ -3062,7 +3111,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: HeloSpawner03
@@ -3135,7 +3184,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: HeloSpawner06
@@ -3213,7 +3262,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: TurretSpawner04
@@ -3365,7 +3414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4567490189875452399, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 181.59418
+      value: -10.905821
       objectReference: {fileID: 0}
     - target: {fileID: 4567490190220607068, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: backgroundLayer
@@ -3401,7 +3450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4567490190682109203, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 168.8
+      value: -23.7
       objectReference: {fileID: 0}
     - target: {fileID: 5739556721728020979, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_RootOrder
@@ -3489,26 +3538,37 @@ PrefabInstance:
       objectReference: {fileID: 843003204}
     - target: {fileID: 8995489814334474838, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 181.59418
+      value: -10.905821
       objectReference: {fileID: 0}
     - target: {fileID: 8995489814334474921, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: orthographic size
-      value: 0.875
+      value: 0.4375
       objectReference: {fileID: 0}
     - target: {fileID: 8995489814334474921, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.24502712
+      value: 0.44944853
       objectReference: {fileID: 0}
     - target: {fileID: 8995489814334474921, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.51046246
+      value: 0.42331934
       objectReference: {fileID: 0}
     - target: {fileID: 8995489814334474921, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 1
+      value: 0.8157895
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
+--- !u!114 &4567490189310072811 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6538092103175832585, guid: 821d9662563d3834fba91fdca839ad4b, type: 3}
+  m_PrefabInstance: {fileID: 4567490189310072810}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871476942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f81ce14d1c22cc847b8bce2584471171, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6161333323779422977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3531,7 +3591,7 @@ PrefabInstance:
     - target: {fileID: 3257913359017059333, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: spawnerManager
       value: 
-      objectReference: {fileID: 1227098103}
+      objectReference: {fileID: 0}
     - target: {fileID: 3706220839938255864, guid: 9f7463d083d71ef4aa8bc0932c182e4a, type: 3}
       propertyPath: m_Name
       value: HeloSpawner01

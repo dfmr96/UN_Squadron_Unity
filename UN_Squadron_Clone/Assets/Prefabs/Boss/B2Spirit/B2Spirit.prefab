@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 349797319269693457}
   - component: {fileID: 3959630366322694322}
   m_Layer: 8
-  m_Name: B2Spirit_0
+  m_Name: B2Spirit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

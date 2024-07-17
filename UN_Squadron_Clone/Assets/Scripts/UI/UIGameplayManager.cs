@@ -23,7 +23,10 @@ public class UIGameplayManager : MonoBehaviour
 
     private void Start()
     {
+        if (GameManager.instance == null) return;
         GameManager.instance.SetUIGameplayManager(this);
+        UpdateMoneySprites(GameManager.instance.Money);
+        UpdateScoreSprites(GameManager.instance.Score);
     }
 
     private void OnEnable()

@@ -19,19 +19,36 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private string[] sceneNames = new string[2];
 
-    [SerializeField] private UIGameplayManager uiGameplayManager;
+    [field: SerializeField] public UIGameplayManager GameplayManager { get; private set; }
 
     [SerializeField] private UIStoreManager uiStoreManager;
+
+    [field: SerializeField] public EventBus EventBus { get; private set; }
     //public event Action OnGameOver;
 
     public void SetUIGameplayManager(UIGameplayManager uiGameplayManager)
     {
-        this.uiGameplayManager = uiGameplayManager;
+        this.GameplayManager = uiGameplayManager;
     }
     
     public void SetUIStoreManager(UIStoreManager uiStoreManager)
     {
         this.uiStoreManager = uiStoreManager;
+    }
+
+    public void SetEventBus(EventBus eventBus)
+    {
+        EventBus = eventBus;
+        EventBus.OnEnemyDestroyed += UpdateMoney;
+        EventBus.OnEnemyDestroyed += UpdateScore;
+    }
+
+    public void UnsuscribeToCurrentEventBus()
+    {
+        if (EventBus == null) return;
+        EventBus.OnEnemyDestroyed -= UpdateMoney;
+        EventBus.OnEnemyDestroyed -= UpdateScore;
+        EventBus = null;
     }
 
     private void Awake()
@@ -57,31 +74,12 @@ public class GameManager : MonoBehaviour
         levelCompleted[i] = true;
     }
 
-    private void OnEnable()
-    {
-        if (EventBus.instance != null)
-        {
-            EventBus.instance.OnEnemyDestroyed += UpdateMoney;
-            EventBus.instance.OnEnemyDestroyed += UpdateScore;
-            //EventBus.instance.OnBossDestroyed += BossDefeated;
-        }
-    }
-
-    private void OnDisable()
-    {
-        if (EventBus.instance != null)
-        {
-            EventBus.instance.OnEnemyDestroyed -= UpdateMoney;
-            EventBus.instance.OnEnemyDestroyed -= UpdateScore;
-            //EventBus.instance.OnBossDestroyed -= BossDefeated;
-        }
-
-    }
-
     public void UpdateMoney(Enemy enemy)
     {
         Money += enemy.moneyPerKill;
-        uiGameplayManager.UpdateMoneySprites(Money);
+        if (GameplayManager == null) return;
+        GameplayManager.UpdateMoneySprites(Money);
+        Debug.Log("MoneyUpdated");
     }
 
     public void RemoveMoney(WeaponData weaponData)
@@ -108,13 +106,14 @@ public class GameManager : MonoBehaviour
     public void UpdateScore(Enemy enemy)
     {
         Score += enemy.scorePerKill;
-        uiGameplayManager.UpdateScoreSprites(Score);
+        if (GameplayManager == null) return;
+        GameplayManager.UpdateScoreSprites(Score);
     }
     
     public void UpdateScore(int score)
     {
         Score += score;
-        uiGameplayManager.UpdateScoreSprites(Score);
+        GameplayManager.UpdateScoreSprites(Score);
     }
 
     public void GameOver()

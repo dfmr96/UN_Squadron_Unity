@@ -23,15 +23,23 @@ public class EventBus : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        
         if (instance == null)
         {
             instance = this;
+            if (GameManager.instance != null)
+            {
+                GameManager.instance.SetEventBus(this);
+            }
             Debug.Log("EventBus Instance Created");
         } else
         {
             Destroy(gameObject);
         }
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.instance.UnsuscribeToCurrentEventBus();
     }
 
     public void PowTaken(int remaining, int total)

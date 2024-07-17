@@ -15,4 +15,9 @@ public class SideScrollController : MonoBehaviour
     {
         transform.Translate(Vector3.right * (speed * Time.deltaTime));
     }
+
+    public void PauseScroll()
+    {
+        speed = 0;
+    }
 }

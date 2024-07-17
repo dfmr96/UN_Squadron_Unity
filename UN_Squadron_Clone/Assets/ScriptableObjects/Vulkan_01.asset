@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Vulkan_01
   m_EditorClassIdentifier: 
   <VulkanFireRate>k__BackingField: 6
-  <VulkanLevels>k__BackingField: 000000000200000009000000120000001e000000
+  <VulkanLevels>k__BackingField: 00000000020000000900000012000000e7030000
   <VulkanBullets>k__BackingField:
   - {fileID: 1457241944293754282, guid: e795918af96f9ee4ab61cee281a34202, type: 3}
   - {fileID: 6497947059426979470, guid: cceda420fd7424e42855dc01dce2594e, type: 3}

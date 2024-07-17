@@ -27,6 +27,7 @@ namespace Player
             currentVulkanPoints = GameManager.instance.VulkanPoints;
             nextVulkanPoints = CalculateNextVulkanPoints();
             CheckVulkanPoints();
+            GameManager.instance.GameplayManager.UpdatePowSprites(nextVulkanPoints, currentVulkanPoints);
             //EventBus.instance.PowTaken(pointsToNextVulkan,currentVulkanPoints);
         }
 
