@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8955458519161575865}
   - component: {fileID: 8955458519161575862}
+  - component: {fileID: 7449648258516651067}
   m_Layer: 0
   m_Name: Cluster
   m_TagString: Untagged
@@ -92,6 +93,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7449648258516651067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8955458519161575863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1b64c83bb5acc4286c7a88f60ee99d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: 0, y: 0, z: 0}
+  speed: 0
+  damage: 0
 --- !u!1001 &8572485291864045200
 PrefabInstance:
   m_ObjectHideFlags: 0

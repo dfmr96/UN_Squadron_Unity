@@ -6,18 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6fb987ce-2f2d-4ce1-ac22-85f547a8a0f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UN_Squadron_Clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UN_Squadron_Clone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/BossLvl2/B2Spirit_2.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/BossLvl2/B2Spirit_2.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/BossLvl2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/BossLvl2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IClusterDamageable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IClusterDamageable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IDamagable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IDamagable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/ClusterLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/ClusterLogic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/B2Spirit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/B2Spirit.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/BossLvl2/B2Spirit.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/BossLvl2/B2Spirit.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/B2Spirit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/B2Spirit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boss/B2Spirit/B2Spirit_0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boss/B2Spirit/B2Spirit_0.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boss/B2Spirit/Cluster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boss/B2Spirit/Cluster.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +114,7 @@
       <workItem from="1719438382675" duration="3803000" />
       <workItem from="1719450206500" duration="379000" />
       <workItem from="1721131630775" duration="8579000" />
-      <workItem from="1721167157407" duration="16013000" />
+      <workItem from="1721167157407" duration="17409000" />
     </task>
     <servers />
   </component>

@@ -8,6 +8,7 @@ using UnityEngine.Serialization;
 public class B2Spirit : MonoBehaviour, IDamagable
 {
     [SerializeField] private int health;
+    [SerializeField] private int maxHealth;
     [SerializeField] private GameObject bombPrefab;
     [SerializeField] private Transform bombSpawn;
     [SerializeField] private GameObject clusterBombPrefab;
@@ -24,11 +25,14 @@ public class B2Spirit : MonoBehaviour, IDamagable
     [SerializeField] private bool entryFinished;
     [SerializeField] private GameObject[] triggers;
     [SerializeField] private Collider2D col;
+    [SerializeField] private GameObject flames;
+    [SerializeField] private GameObject destroyedFX;
 
     private void Start()
     {
         canShootBurst = true;
         canFireClusters = true;
+        health = maxHealth;
         animator = GetComponent<Animator>();
         col = GetComponent<Collider2D>();
     }
@@ -37,9 +41,15 @@ public class B2Spirit : MonoBehaviour, IDamagable
     {
         health -= damage;
 
+        if (health <= maxHealth / 2 && !flames.activeSelf)
+        {
+            flames.SetActive(true);
+            clusterBombCooldown *= 0.33f;
+        }
+        
         if (health <= 0)
         {
-            Destroy(gameObject);
+            DestroyBoss();
         }
     }
 
@@ -95,5 +105,18 @@ public class B2Spirit : MonoBehaviour, IDamagable
         col.enabled = true;
         animator.SetBool("entryFinished", entryFinished);
         StartCoroutine(ClusterBombs_CO());
+    }
+
+    private void DestroyBoss()
+    {
+        destroyedFX.SetActive(true);
+        col.enabled = false;
+        canShootBurst = false;
+        canFireClusters = false;
+        foreach (GameObject trigger in triggers)
+        {
+            trigger.SetActive(false);
+        }
+        animator.SetBool("isDestroyed", true);
     }
 }

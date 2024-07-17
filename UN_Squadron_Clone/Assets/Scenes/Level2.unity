@@ -5001,7 +5001,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3730404081086070715, guid: 3055e064dad84f143bc8d22241d2ad32, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.45
+      value: -8.85
       objectReference: {fileID: 0}
     - target: {fileID: 3730404081086070715, guid: 3055e064dad84f143bc8d22241d2ad32, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5042,6 +5042,10 @@ PrefabInstance:
     - target: {fileID: 3730404081086070717, guid: 3055e064dad84f143bc8d22241d2ad32, type: 3}
       propertyPath: health
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3730404081086070717, guid: 3055e064dad84f143bc8d22241d2ad32, type: 3}
+      propertyPath: maxHealth
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3730404081086070717, guid: 3055e064dad84f143bc8d22241d2ad32, type: 3}
       propertyPath: clusterBombCooldown
