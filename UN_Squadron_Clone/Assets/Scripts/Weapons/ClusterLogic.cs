@@ -17,7 +17,7 @@ public class ClusterLogic : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent(out IClusterDamageable clusterDamageable))
+        if (collision.TryGetComponent(out IClusterDamagable clusterDamageable))
         {
             clusterDamageable.TakeDamage(damage);
         }

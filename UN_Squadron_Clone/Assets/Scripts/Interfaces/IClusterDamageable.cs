@@ -1,4 +1,6 @@
-﻿public interface IClusterDamageable : IDamageable
+﻿using Interfaces;
+
+public interface IClusterDamagable : IDamagable
 {
         
 }

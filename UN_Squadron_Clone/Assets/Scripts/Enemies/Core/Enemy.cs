@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Interfaces;
 using Pickupables;
 using Player;
 using Unity.VisualScripting;
@@ -8,7 +9,7 @@ using Random = UnityEngine.Random;
 
 
 [RequireComponent(typeof(BoxCollider2D))]
-public class Enemy : MonoBehaviour, IDamageable
+public class Enemy : MonoBehaviour, IDamagable
 {
     protected bool _customAnim;
     protected SpriteRenderer _spriteRenderer;

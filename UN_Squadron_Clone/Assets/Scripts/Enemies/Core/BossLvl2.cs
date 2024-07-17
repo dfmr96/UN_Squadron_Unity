@@ -27,6 +27,8 @@ public class BossLvl2 : Enemy
 
     [SerializeField] private EnemyData _enemyData;
 
+    [SerializeField] private string nextSceneName;
+
     private void Awake()
     {
        // _explosionPrefab = _enemyData.explosionPrefab;
@@ -118,7 +120,7 @@ public class BossLvl2 : Enemy
         //AudioManager.instance.bossBGM.Stop();
         //Destroy(gameObject, 0.5f);
         EventBus.instance.BossDestroyed();
-        SceneManager.LoadScene("Victory");
+        SceneManager.LoadScene(nextSceneName);
         //Pausar gameplay
         //Desahablitar InputJugador
         //Correr video de cuenta atras

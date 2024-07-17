@@ -1,3 +1,4 @@
+using Interfaces;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -14,7 +15,7 @@ public class Bullet : MonoBehaviour
 
         if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy")) //TODO
         {
-            collision.gameObject.TryGetComponent(out IDamageable enemy);
+            collision.gameObject.TryGetComponent(out IDamagable enemy);
             enemy.TakeDamage(damage);
             Debug.Log("Bala colisiono con enemigo");
             Destroy(gameObject);
