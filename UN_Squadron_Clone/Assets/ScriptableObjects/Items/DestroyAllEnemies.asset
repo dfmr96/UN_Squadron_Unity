@@ -12,3 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5b1ddce32064dbdaee2a41a9003a6e4, type: 3}
   m_Name: DestroyAllEnemies
   m_EditorClassIdentifier: 
+  <EnemiesMask>k__BackingField:
+    serializedVersion: 2
+    m_Bits: 256
+  <Damage>k__BackingField: 50

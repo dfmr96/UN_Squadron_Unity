@@ -26,14 +26,19 @@ public class EventBus : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            if (GameManager.instance != null)
-            {
-                GameManager.instance.SetEventBus(this);
-            }
+            
             Debug.Log("EventBus Instance Created");
         } else
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void Start()
+    {
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.SetEventBus(this);
         }
     }
 

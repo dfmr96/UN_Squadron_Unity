@@ -1,5 +1,6 @@
 ﻿using System;
 using DefaultNamespace;
+using Interfaces;
 using Player;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ namespace ScriptableObjects.Items
     public class DestroyAllEnemies : ItemBehavior
     {
         [field:SerializeField] public LayerMask EnemiesMask { get; private set; }
+        [field:SerializeField] public int Damage { get; private set; }
         public override void Use(PlayerController playerController)
         {
             Debug.Log("DestroyAllEnemies Used");
@@ -20,21 +22,10 @@ namespace ScriptableObjects.Items
             foreach (Collider2D collider in enemiesInside)
             {
                 Debug.Log("Enemy detected");
-                if (collider.TryGetComponent(out IInstantDestroyable destroyable))
+                if (collider.TryGetComponent(out IDamagable damagable))
                 {
-                    destroyable.Destroy();
+                    damagable.TakeDamage(Damage);
                 }
-                
-                /*if (collider.TryGetComponent(out Enemy enemy))
-                {
-                    Debug.Log(enemy.name);
-                    enemy.DestroyEnemy();
-                }
-
-                if (collider.TryGetComponent(out MiniMissile miniMissile))
-                {
-                    Destroy(miniMissile);
-                }*/
             }
         }
     }

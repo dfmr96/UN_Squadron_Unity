@@ -141,6 +141,9 @@ MonoBehaviour:
   damage: 5
   audioSource: {fileID: 0}
   clip: {fileID: 8300000, guid: 6fd0cc5b595d126419e0feb91c32565c, type: 3}
+  damagableMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!50 &1718876421
 Rigidbody2D:
   serializedVersion: 4

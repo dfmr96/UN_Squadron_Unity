@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: PlayerInventory
   m_EditorClassIdentifier: 
   slots:
-  - weaponData: {fileID: 11400000, guid: 7d2ba83557ea9e947a80cd2409da0672, type: 2}
-    amount: 3
   - weaponData: {fileID: 11400000, guid: 7f79c8c1958ede24ea1f7fab3bb438d1, type: 2}
-    amount: 5
+    amount: 3
+  - weaponData: {fileID: 11400000, guid: 7d2ba83557ea9e947a80cd2409da0672, type: 2}
+    amount: 50
+  - weaponData: {fileID: 11400000, guid: 41f5b57cafd613f4caf9778bc32b0813, type: 2}
+    amount: 1
