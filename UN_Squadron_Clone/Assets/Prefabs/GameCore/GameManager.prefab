@@ -51,10 +51,17 @@ MonoBehaviour:
   <Money>k__BackingField: 0
   <VulkanPoints>k__BackingField: 0
   playerInventory: {fileID: 11400000, guid: e4b5f3856548edf4e88ec3c1a41cd91c, type: 2}
-  levelCompleted: 0000
+  levelCompleted: 000000
   levelSceneNames:
   - Level1
-  - Level2
+  - LoadingLevel2
+  - Level3
+  sceneNames:
+  - Victory
+  - Final
+  - 
+  uiGameplayManager: {fileID: 0}
+  uiStoreManager: {fileID: 0}
 --- !u!114 &750023756
 MonoBehaviour:
   m_ObjectHideFlags: 0

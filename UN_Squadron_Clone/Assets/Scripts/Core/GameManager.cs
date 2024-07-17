@@ -16,7 +16,23 @@ public class GameManager : MonoBehaviour
     [SerializeField] private bool[] levelCompleted = new bool[2];
 
     [SerializeField] private string[] levelSceneNames = new string[2];
+
+    [SerializeField] private string[] sceneNames = new string[2];
+
+    [SerializeField] private UIGameplayManager uiGameplayManager;
+
+    [SerializeField] private UIStoreManager uiStoreManager;
     //public event Action OnGameOver;
+
+    public void SetUIGameplayManager(UIGameplayManager uiGameplayManager)
+    {
+        this.uiGameplayManager = uiGameplayManager;
+    }
+    
+    public void SetUIStoreManager(UIStoreManager uiStoreManager)
+    {
+        this.uiStoreManager = uiStoreManager;
+    }
 
     private void Awake()
     {
@@ -26,7 +42,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(this);
         }
 
         Score = 0;
@@ -47,7 +63,7 @@ public class GameManager : MonoBehaviour
         {
             EventBus.instance.OnEnemyDestroyed += UpdateMoney;
             EventBus.instance.OnEnemyDestroyed += UpdateScore;
-            EventBus.instance.OnBossDestroyed += BossDefeated;
+            //EventBus.instance.OnBossDestroyed += BossDefeated;
         }
     }
 
@@ -57,7 +73,7 @@ public class GameManager : MonoBehaviour
         {
             EventBus.instance.OnEnemyDestroyed -= UpdateMoney;
             EventBus.instance.OnEnemyDestroyed -= UpdateScore;
-            EventBus.instance.OnBossDestroyed -= BossDefeated;
+            //EventBus.instance.OnBossDestroyed -= BossDefeated;
         }
 
     }
@@ -65,37 +81,40 @@ public class GameManager : MonoBehaviour
     public void UpdateMoney(Enemy enemy)
     {
         Money += enemy.moneyPerKill;
-        UIGameplayManager.instance.UpdateMoneySprites(Money);
+        uiGameplayManager.UpdateMoneySprites(Money);
     }
 
     public void RemoveMoney(WeaponData weaponData)
     {
         Money -= weaponData.price;
-        UIStoreManager.instance.UpdateMoneySprites(Money);
+        if (uiStoreManager == null) return;
+        uiStoreManager.UpdateMoneySprites(Money);
     }
 
     public void AddMoney(WeaponData weaponData)
     {
         Money += weaponData.price;
-        UIStoreManager.instance.UpdateMoneySprites(Money);
+        if (uiStoreManager == null) return;
+        uiStoreManager.UpdateMoneySprites(Money);
     }
 
     public void AddMoney(int moneyToAdd)
     {
         Money += moneyToAdd;
-        UIStoreManager.instance.UpdateMoneySprites(Money);
+        if (uiStoreManager == null) return;
+        uiStoreManager.UpdateMoneySprites(Money);
     }
 
     public void UpdateScore(Enemy enemy)
     {
         Score += enemy.scorePerKill;
-        UIGameplayManager.instance.UpdateScoreSprites(Score);
+        uiGameplayManager.UpdateScoreSprites(Score);
     }
     
     public void UpdateScore(int score)
     {
         Score += score;
-        UIGameplayManager.instance.UpdateScoreSprites(Score);
+        uiGameplayManager.UpdateScoreSprites(Score);
     }
 
     public void GameOver()
@@ -103,16 +122,16 @@ public class GameManager : MonoBehaviour
         LoadingManager.Instance.LoadNewScene("GameOver");
     }
 
-    public void BossDefeated()
+    /*public void BossDefeated()
     {
-
         StartCoroutine(GetBossMoney());
     }
 
     public IEnumerator GetBossMoney()
     {
+        Debug.Log("GetBoosMoney");
         yield return new WaitForSeconds(2f);
-        UIGameplayManager.instance._victoryPanel.SetActive(true);
+        uiGameplayManager._victoryPanel.SetActive(true);
         AudioManager.instance.bossReward.Play();
         Time.timeScale = 0f;
         int moneyGranted = 0;
@@ -120,14 +139,27 @@ public class GameManager : MonoBehaviour
         {
             moneyGranted += 1000;
             Money += 1000;
-            UIGameplayManager.instance.UpdateMoneySprites(Money);
+            uiGameplayManager.UpdateMoneySprites(Money);
             yield return new WaitForSecondsRealtime(0.02f);
         }
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(2f);
         Time.timeScale = 1f;
-        LoadingManager.Instance.LoadNewScene("Victory");
-    }
+        LoadingManager.Instance.LoadNewScene($"{CheckSceneToLoad()}");
+    }*/
 
+    public string CheckSceneToLoad()
+    {
+        for (int i = 0; i < levelCompleted.Length; i++)
+        {
+            if (levelCompleted[i] == false)
+            {
+                return sceneNames[i - 1];
+            }
+        }
+
+        return null;
+    }
+    
     public string CheckLevelToLoad()
     {
         for (int i = 0; i < levelCompleted.Length; i++)
@@ -141,8 +173,25 @@ public class GameManager : MonoBehaviour
         return null;
     }
 
+    public void LoadNextScene()
+    {
+        LoadingManager.Instance.LoadNewScene($"{CheckSceneToLoad()}");
+    }
+
     public void SaveVulkanPoints(int points)
     {
         VulkanPoints = points;
+    }
+
+    public void ResetLevels()
+    {
+        for (int i = 0; i < levelCompleted.Length; i++)
+        {
+            levelCompleted[i] = false;
+        }
+
+        Money = 0;
+        VulkanPoints = 0;
+        Score = 0;
     }
 }

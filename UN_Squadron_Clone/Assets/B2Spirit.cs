@@ -27,6 +27,7 @@ public class B2Spirit : MonoBehaviour, IDamagable
     [SerializeField] private Collider2D col;
     [SerializeField] private GameObject flames;
     [SerializeField] private GameObject destroyedFX;
+    [SerializeField] private int bossLevel;
 
     private void Start()
     {
@@ -118,5 +119,11 @@ public class B2Spirit : MonoBehaviour, IDamagable
             trigger.SetActive(false);
         }
         animator.SetBool("isDestroyed", true);
+    }
+
+    private void LevelCompleted()
+    {
+        GameManager.instance.SetLevelCompleted(bossLevel);
+        GameManager.instance.LoadNextScene();
     }
 }

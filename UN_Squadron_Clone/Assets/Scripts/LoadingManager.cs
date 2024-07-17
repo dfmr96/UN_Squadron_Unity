@@ -39,7 +39,6 @@ public class LoadingManager : MonoBehaviour
             Debug.Log($"Cargando al {l_asyncOperation.progress * 100}%");
             yield return null;
         }
-        Debug.Log("Carga terminada!! Presione una tecla para continuar...");
         //yield return new WaitUntil(() => Input.anyKey);
         l_asyncOperation.allowSceneActivation = true;
     }

@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using Player;
 using UnityEngine;
@@ -5,7 +6,7 @@ using UnityEngine.UI;
 
 public class UIGameplayManager : MonoBehaviour
 {
-    public static UIGameplayManager instance;
+    //public static UIGameplayManager instance;
     [SerializeField] private Number_Fonts _numberFonts;
     [SerializeField] private Image[] _moneyImages;
     [SerializeField] private Image[] _scoreImages;
@@ -22,14 +23,7 @@ public class UIGameplayManager : MonoBehaviour
 
     private void Start()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        GameManager.instance.SetUIGameplayManager(this);
     }
 
     private void OnEnable()
@@ -42,6 +36,7 @@ public class UIGameplayManager : MonoBehaviour
         EventBus.instance.OnSubweaponUsed += UpdateSubWeaponRemaining;
         EventBus.instance.OnSubweaponChanged += UpdateSubWeaponSprites;
         EventBus.instance.OnPlayerDestroyed += PlayPortraitDestroyed;
+        EventBus.instance.OnBossDestroyed += BossDefeated;
     }
     private void OnDisable()
     {
@@ -53,6 +48,7 @@ public class UIGameplayManager : MonoBehaviour
         EventBus.instance.OnSubweaponUsed -= UpdateSubWeaponRemaining;
         EventBus.instance.OnSubweaponChanged -= UpdateSubWeaponSprites;
         EventBus.instance.OnPlayerDestroyed -= PlayPortraitDestroyed;
+        EventBus.instance.OnBossDestroyed -= BossDefeated;
     }
 
     private void UpdateSubWeaponRemaining(float remaining)
@@ -199,5 +195,30 @@ public class UIGameplayManager : MonoBehaviour
             //Debug.Log(healthBar.fillAmount);
             healthBar.fillAmount = i * healthRatio;
         }
+    }
+    
+    public void BossDefeated()
+    {
+        StartCoroutine(GetBossMoney());
+    }
+
+    public IEnumerator GetBossMoney()
+    {
+        Debug.Log("GetBoosMoney");
+        yield return new WaitForSeconds(2f);
+        _victoryPanel.SetActive(true);
+        AudioManager.instance.bossReward.Play();
+        Time.timeScale = 0f;
+        int moneyGranted = 0;
+        while (moneyGranted < 50000)
+        {
+            moneyGranted += 1000;
+            GameManager.instance.AddMoney(1000);
+            UpdateMoneySprites(GameManager.instance.Money);
+            yield return new WaitForSecondsRealtime(0.02f);
+        }
+        yield return new WaitForSecondsRealtime(2f);
+        Time.timeScale = 1f;
+        LoadingManager.Instance.LoadNewScene($"{GameManager.instance.CheckSceneToLoad()}");
     }
 }

@@ -78,7 +78,9 @@ public class Boss : Enemy
 
         if (health < 0)
         {
+            Debug.Log("Destroy enemy");
             DestroyEnemy();
+            Debug.Log("Destroy enemy post");
         }
     }
 
@@ -132,11 +134,5 @@ public class Boss : Enemy
         //Desahablitar InputJugador
         //Correr video de cuenta atras
         //Ir a ventana de victoria
-    }
-
-
-    public void Fire(Vector3 direction)
-    {
-        throw new System.NotImplementedException();
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class VictoryController : MonoBehaviour
 {
+    [SerializeField] private string levelToLoad;
     private void Start()
     {
         StartCoroutine(LoadNewScene());
@@ -11,8 +12,7 @@ public class VictoryController : MonoBehaviour
 
     public void LoadLevel()
     {
-        string newLevel = GameManager.instance.CheckLevelToLoad();
-        LoadingManager.Instance.LoadNewScene(newLevel);
+        LoadingManager.Instance.LoadNewScene(levelToLoad);
     }
     
     public IEnumerator LoadNewScene()

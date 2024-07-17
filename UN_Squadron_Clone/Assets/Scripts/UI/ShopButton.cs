@@ -14,6 +14,7 @@ public class ShopButton : MonoBehaviour, IDeselectHandler, ISelectHandler, ISubm
     public AudioClip[] clip;
     public bool isExitBtn = false;
     public bool isBuyable = true;
+    [SerializeField] private UIStoreManager uiStoreManager;
 
     private void Start()
     {
@@ -83,7 +84,7 @@ public class ShopButton : MonoBehaviour, IDeselectHandler, ISelectHandler, ISubm
 
     public void OnSubmit(BaseEventData eventData)
     {
-        Debug.Log("Money Cheat " + UIStoreManager.instance.moneyCheat);
+        Debug.Log("Money Cheat " + uiStoreManager.moneyCheat);
         if (isBuyable)
         {
             if (!ItemPurchased())
@@ -96,13 +97,13 @@ public class ShopButton : MonoBehaviour, IDeselectHandler, ISelectHandler, ISubm
             }
         } else if (isExitBtn)
         {
-            LoadingManager.Instance.LoadNewScene("Level1");
+            LoadingManager.Instance.LoadNewScene(GameManager.instance.CheckLevelToLoad());
         }
         else
         {
-            UIStoreManager.instance.moneyCheat++;
+            uiStoreManager.moneyCheat++;
 
-            if (UIStoreManager.instance.moneyCheat == 10) 
+            if (uiStoreManager.moneyCheat == 10) 
             {
                 GameManager.instance.AddMoney(7000);
             }

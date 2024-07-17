@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PortraitTrigger : MonoBehaviour
 {
+    [SerializeField] private UIGameplayManager UIGameplayManager;
     public void ChangeAnimation()
     {
-        UIGameplayManager.instance.PlayPortraitRecovery();
+        UIGameplayManager.PlayPortraitRecovery();
     }
 }

@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class HealthBarTrigger : MonoBehaviour
 {
+    [SerializeField] private UIGameplayManager UIGameplayManager;
     public void HealthBarToNormal()
     {
-        UIGameplayManager.instance.HealthBarBackToNormal();
+        UIGameplayManager.HealthBarBackToNormal();
     }
 }

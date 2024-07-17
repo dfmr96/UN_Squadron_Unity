@@ -798,6 +798,7 @@ MonoBehaviour:
   clip: []
   isExitBtn: 0
   isBuyable: 1
+  uiStoreManager: {fileID: 0}
 --- !u!114 &281264105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1144,6 +1145,7 @@ MonoBehaviour:
   clip: []
   isExitBtn: 1
   isBuyable: 1
+  uiStoreManager: {fileID: 0}
 --- !u!82 &319445979
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1431,6 +1433,7 @@ MonoBehaviour:
   clip: []
   isExitBtn: 0
   isBuyable: 1
+  uiStoreManager: {fileID: 0}
 --- !u!114 &384807992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1684,6 +1687,7 @@ MonoBehaviour:
   clip: []
   isExitBtn: 0
   isBuyable: 1
+  uiStoreManager: {fileID: 0}
 --- !u!114 &426840746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2137,6 +2141,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
+      propertyPath: uiStoreManager
+      value: 
+      objectReference: {fileID: 1139317230}
+    - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 4a4e9687d6523f14e870ed8e6578e0f8, type: 3}
@@ -2414,6 +2422,7 @@ MonoBehaviour:
   clip: []
   isExitBtn: 0
   isBuyable: 1
+  uiStoreManager: {fileID: 0}
 --- !u!114 &790616928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2667,6 +2676,7 @@ MonoBehaviour:
   clip: []
   isExitBtn: 0
   isBuyable: 1
+  uiStoreManager: {fileID: 0}
 --- !u!114 &838880039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2977,6 +2987,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 41f5b57cafd613f4caf9778bc32b0813, type: 2}
     - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
+      propertyPath: uiStoreManager
+      value: 
+      objectReference: {fileID: 1139317230}
+    - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 4a4e9687d6523f14e870ed8e6578e0f8, type: 3}
@@ -3254,6 +3268,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
+      propertyPath: uiStoreManager
+      value: 
+      objectReference: {fileID: 1139317230}
+    - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 4a4e9687d6523f14e870ed8e6578e0f8, type: 3}
@@ -3335,6 +3353,7 @@ MonoBehaviour:
   clip: []
   isExitBtn: 0
   isBuyable: 1
+  uiStoreManager: {fileID: 0}
 --- !u!114 &987530940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3662,6 +3681,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
+      propertyPath: uiStoreManager
+      value: 
+      objectReference: {fileID: 1139317230}
+    - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 4a4e9687d6523f14e870ed8e6578e0f8, type: 3}
@@ -3806,6 +3829,10 @@ PrefabInstance:
       propertyPath: weaponData
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
+      propertyPath: uiStoreManager
+      value: 
+      objectReference: {fileID: 1139317230}
     - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
@@ -4001,6 +4028,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
+      propertyPath: uiStoreManager
+      value: 
+      objectReference: {fileID: 1139317230}
+    - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 4a4e9687d6523f14e870ed8e6578e0f8, type: 3}
@@ -4183,9 +4214,9 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.08510638
+    x: 0.24502712
     y: 0
-    width: 0.8316109
+    width: 0.51046246
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -4341,6 +4372,7 @@ MonoBehaviour:
   clip: []
   isExitBtn: 0
   isBuyable: 1
+  uiStoreManager: {fileID: 0}
 --- !u!114 &1359245828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4594,6 +4626,7 @@ MonoBehaviour:
   clip: []
   isExitBtn: 0
   isBuyable: 1
+  uiStoreManager: {fileID: 0}
 --- !u!114 &1386691759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4916,6 +4949,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
+      propertyPath: uiStoreManager
+      value: 
+      objectReference: {fileID: 1139317230}
+    - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 4a4e9687d6523f14e870ed8e6578e0f8, type: 3}
@@ -4997,6 +5034,7 @@ MonoBehaviour:
   clip: []
   isExitBtn: 0
   isBuyable: 1
+  uiStoreManager: {fileID: 0}
 --- !u!114 &1455286390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5796,6 +5834,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
+      propertyPath: uiStoreManager
+      value: 
+      objectReference: {fileID: 1139317230}
+    - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 4a4e9687d6523f14e870ed8e6578e0f8, type: 3}
@@ -6171,6 +6213,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
+      propertyPath: uiStoreManager
+      value: 
+      objectReference: {fileID: 1139317230}
+    - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 4a4e9687d6523f14e870ed8e6578e0f8, type: 3}
@@ -6404,14 +6450,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6472233641969189628, guid: cc75fb854fc86084582fced3154a32cf, type: 3}
-      propertyPath: money
-      value: 3000
-      objectReference: {fileID: 0}
-    - target: {fileID: 6472233641969189628, guid: cc75fb854fc86084582fced3154a32cf, type: 3}
-      propertyPath: playerInventory
-      value: 
-      objectReference: {fileID: 11400000, guid: e4b5f3856548edf4e88ec3c1a41cd91c, type: 2}
     - target: {fileID: 6472233641969189629, guid: cc75fb854fc86084582fced3154a32cf, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -6586,6 +6624,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 7d2ba83557ea9e947a80cd2409da0672, type: 2}
     - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
+      propertyPath: uiStoreManager
+      value: 
+      objectReference: {fileID: 1139317230}
+    - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 4a4e9687d6523f14e870ed8e6578e0f8, type: 3}
@@ -6667,6 +6709,7 @@ MonoBehaviour:
   clip: []
   isExitBtn: 0
   isBuyable: 1
+  uiStoreManager: {fileID: 0}
 --- !u!114 &1933861851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6920,6 +6963,7 @@ MonoBehaviour:
   clip: []
   isExitBtn: 0
   isBuyable: 1
+  uiStoreManager: {fileID: 0}
 --- !u!114 &1994241974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7242,6 +7286,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
+      propertyPath: uiStoreManager
+      value: 
+      objectReference: {fileID: 1139317230}
+    - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
       propertyPath: clip.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 4a4e9687d6523f14e870ed8e6578e0f8, type: 3}
@@ -7514,6 +7562,10 @@ PrefabInstance:
       propertyPath: weaponData
       value: 
       objectReference: {fileID: 11400000, guid: 7f79c8c1958ede24ea1f7fab3bb438d1, type: 2}
+    - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
+      propertyPath: uiStoreManager
+      value: 
+      objectReference: {fileID: 1139317230}
     - target: {fileID: 6825653786085256262, guid: 3044568d062a0184ab289bbb89e9a8ef, type: 3}
       propertyPath: clip.Array.size
       value: 2

@@ -6,11 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="6fb987ce-2f2d-4ce1-ac22-85f547a8a0f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UN_Squadron_Clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UN_Squadron_Clone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/BossLvl2/B2Spirit.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/BossLvl2/B2Spirit.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/BossLvl2/Destroyed_B2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/BossLvl2/Destroyed_B2.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/FX/Explosion.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/FX/Explosion.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/B2Spirit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/B2Spirit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boss/B2Spirit/B2Spirit_0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boss/B2Spirit/B2Spirit_0.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boss/B2Spirit/Cluster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boss/B2Spirit/Cluster.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameCore/Core.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameCore/Core.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameCore/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameCore/GameManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameOver.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameOver.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Shop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Shop.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Victory.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Victory.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/HealthBarTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/HealthBarTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/Boss.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Core/Boss.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LoadingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LoadingManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PortraitTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PortraitTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ShopButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ShopButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIGameOverController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIGameOverController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIGameplayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIGameplayManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIStoreManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIStoreManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/VictoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/VictoryController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +42,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/B2SpiritProjectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CinematicController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ClusterShard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GameResetter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PlayerDetector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Items/SpawneableItems.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -114,7 +131,7 @@
       <workItem from="1719438382675" duration="3803000" />
       <workItem from="1719450206500" duration="379000" />
       <workItem from="1721131630775" duration="8579000" />
-      <workItem from="1721167157407" duration="17409000" />
+      <workItem from="1721167157407" duration="24588000" />
     </task>
     <servers />
   </component>

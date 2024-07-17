@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class UIStoreManager : MonoBehaviour
 {
-    public static UIStoreManager instance;
     public GameObject firstAvalaible;
     [SerializeField] Number_Fonts _numberFonts;
     [SerializeField] Image[] _moneyImages;
@@ -14,13 +13,7 @@ public class UIStoreManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        } else
-        {
-            Destroy(this);
-        }
+        GameManager.instance.SetUIStoreManager(this);
     }
     void Start()
     {
